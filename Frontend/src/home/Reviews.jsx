@@ -7,18 +7,11 @@ export default function Reviews() {
     "https://www.google.com/search?sca_esv=a34ddc620dd62935&sxsrf=APpeQnukQVfxCYe_YEyXuAtYeBRZ9POfyQ:1782126983296&kgmid=/g/11y_9y8bhw&q=Ekalavya+Event+%26+Entertainment&shem=dlvsc,epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=e774348bc4828039&utm_source=dlvsc,epsd1,ltae,rimspwouoe,sh/x/loc/uni/m1/1#lrd=0x3a0279d65d026ee5:0x653731fc067a368f,1,,,,";
 
   return (
-    <section className="relative overflow-hidden bg-[#fff8fb] py-20 sm:py-24 lg:py-28">
-      <div className="absolute -left-40 top-10 h-96 w-96 rounded-full bg-[#650a34]/10 blur-[120px]" />
-      <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#ed1968]/10 blur-[120px]" />
+    <section className="relative overflow-hidden bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34] shadow-md shadow-[#650a34]/5">
-            <FaGoogle />
-            Google Reviews
-          </span>
-
-          <h2 className="mt-5 text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
             Trusted By Clients For Beautiful Event Experiences
           </h2>
 
@@ -28,7 +21,7 @@ export default function Reviews() {
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-5xl rounded-[2.5rem] border border-[#650a34]/10 bg-white p-6 text-center shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-8 lg:p-10">
+        <div className="mx-auto mt-5 max-w-5xl rounded-[2.5rem] border border-[#650a34]/10 bg-white p-6 text-center shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-8 lg:p-10">
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34]">
             <FaGoogle size={30} />
           </div>
@@ -48,7 +41,7 @@ export default function Reviews() {
             decor, hospitality, entertainment and coordination experience.
           </p>
 
-          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+          <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href={googleReviewUrl}
               target="_blank"
@@ -71,7 +64,7 @@ export default function Reviews() {
           </div>
         </div>
 
-        <div className="mt-14 rounded-[2.2rem] bg-[#650a34] p-7 text-center shadow-2xl shadow-[#650a34]/20 sm:p-10 lg:flex lg:items-center lg:justify-between lg:text-left">
+        <div className="mt-5 rounded-[2.2rem] bg-[#650a34] p-7 text-center shadow-2xl shadow-[#650a34]/20 sm:p-10 lg:flex lg:items-center lg:justify-between lg:text-left">
           <div>
             <h3 className="text-2xl font-extrabold text-white sm:text-3xl">
               Want to create your own memorable event?

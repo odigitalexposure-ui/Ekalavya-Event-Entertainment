@@ -3,7 +3,6 @@ import {
   MapPin,
   Phone,
   Mail,
-  MessageCircle,
   Send,
   Clock,
   Navigation,
@@ -110,16 +109,10 @@ ${formData.message}
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-32 pb-16 sm:pt-40 sm:pb-20 lg:pb-28">
-        <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#ed1968]/10 blur-[120px]" />
-        <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#650a34]/10 blur-[120px]" />
+      <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 sm:pb-8 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <span className="inline-flex rounded-full bg-white px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34] shadow-md shadow-[#650a34]/5">
-            Contact Us
-          </span>
-
-          <h1 className="mx-auto mt-6 max-w-4xl text-3xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
+          <h1 className="mx-auto max-w-4xl text-3xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
             Let&apos;s Plan Your Next Beautiful Event Together
           </h1>
 
@@ -131,15 +124,11 @@ ${formData.message}
       </section>
 
       {/* Contact Details + Form */}
-      <section className="relative py-16 sm:py-24 lg:py-28">
+      <section className="relative py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* Left Info */}
           <div>
-            <span className="inline-flex rounded-full bg-[#650a34]/8 px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34]">
-              Get In Touch
-            </span>
-
-            <h2 className="mt-5 text-2xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
+            <h2 className="text-2xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
               Contact Details
             </h2>
 
@@ -149,7 +138,7 @@ ${formData.message}
               directly.
             </p>
 
-            <div className="mt-8 space-y-5">
+            <div className="mt-5 space-y-5">
               <ContactCard
                 icon={MapPin}
                 title="Business Address"
@@ -177,17 +166,7 @@ ${formData.message}
               />
             </div>
 
-            <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
-              <a
-                href={`https://wa.me/${whatsappNumber}`}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-1"
-              >
-                <MessageCircle size={18} />
-                WhatsApp
-              </a>
-
+            <div className="mt-5 grid gap-3 sm:flex sm:flex-wrap">
               <a
                 href={mapLink}
                 target="_blank"
@@ -199,7 +178,7 @@ ${formData.message}
               </a>
             </div>
 
-            <div className="mt-8 flex items-center gap-4 text-[#650a34]">
+            <div className="mt-5 flex items-center gap-4 text-[#650a34]">
               <a
                 href="https://www.instagram.com/ekalavyaevententertainment/"
                 target="_blank"
@@ -236,10 +215,10 @@ ${formData.message}
             </h3>
 
             <p className="mt-2 text-gray-600">
-              Fill the form and your details will open directly in WhatsApp.
+              Fill the form and our team will receive your enquiry details.
             </p>
 
-            <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+            <form onSubmit={handleSubmit} className="mt-5 space-y-5">
               <div className="grid gap-5 sm:grid-cols-2">
                 <FormField
                   label="Full Name"
@@ -325,7 +304,7 @@ ${formData.message}
                 type="submit"
                 className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#650a34] px-5 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8"
               >
-                Send On WhatsApp
+                Send Enquiry
                 <Send size={18} className="transition group-hover:translate-x-1" />
               </button>
             </form>
@@ -334,15 +313,11 @@ ${formData.message}
       </section>
 
       {/* Map */}
-      <section className="bg-[#fff8fb] py-16 sm:py-24">
+      <section className="bg-[#fff8fb] py-6 sm:py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <span className="inline-flex rounded-full bg-white px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34] shadow-md shadow-[#650a34]/5">
-                Location
-              </span>
-
-              <h2 className="mt-5 text-2xl font-extrabold text-gray-800 sm:text-4xl">
+              <h2 className="text-2xl font-extrabold text-gray-800 sm:text-4xl">
                 Visit Our Location
               </h2>
 

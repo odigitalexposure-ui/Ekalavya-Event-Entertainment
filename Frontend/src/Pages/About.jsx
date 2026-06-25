@@ -5,11 +5,8 @@ import {
   CheckCircle2,
   Crown,
   HeartHandshake,
-  Lightbulb,
   PartyPopper,
   ShieldCheck,
-  Sparkles,
-  Star,
   Target,
   Users,
 } from "lucide-react";
@@ -35,19 +32,12 @@ export default function About() {
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-32 pb-20 sm:pt-40 lg:pb-28">
-        <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#ed1968]/10 blur-[120px]" />
-        <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#650a34]/10 blur-[120px]" />
+      <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.9fr] lg:gap-16">
+          <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34] shadow-md shadow-[#650a34]/5">
-                <Sparkles size={15} />
-                About Ekalavya
-              </span>
-
-              <h1 className="mt-6 max-w-4xl text-4xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
+              <h1 className="max-w-4xl text-4xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
                 Designing Events That Feel Premium, Personal & Unforgettable
               </h1>
 
@@ -57,7 +47,7 @@ export default function About() {
                 creating beautiful, smooth and memorable event experiences.
               </p>
 
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-5 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="#journey"
                   className="inline-flex items-center justify-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
@@ -76,8 +66,6 @@ export default function About() {
             </div>
 
             <div className="relative">
-              <div className="absolute -left-5 -top-5 h-36 w-36 rounded-full bg-[#ed1968]/15" />
-              <div className="absolute -right-5 -bottom-5 h-44 w-44 rounded-full bg-[#650a34]/10" />
 
               <div className="relative overflow-hidden rounded-[2.7rem] bg-white p-3 shadow-[0_30px_90px_rgba(101,10,52,0.18)]">
                 <div className="relative overflow-hidden rounded-[2.2rem]">
@@ -87,26 +75,13 @@ export default function About() {
                     className="h-[480px] w-full object-cover"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#650a34]/85 via-[#650a34]/20 to-transparent" />
-
-                  <div className="absolute bottom-6 left-6 right-6 rounded-[2rem] border border-white/25 bg-white/15 p-5 text-white backdrop-blur-md">
-                    <p className="text-xs font-bold uppercase tracking-[0.24em] text-white/75">
-                      Since 2024
-                    </p>
-                    <h3 className="mt-2 text-2xl font-extrabold">
-                      We Build Your Dream Event
-                    </h3>
-                    <p className="mt-2 text-sm leading-6 text-white/85">
-                      A unit of J N Media & Advertising.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Stats */}
-          <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((item) => {
               const Icon = item.icon;
 
@@ -134,9 +109,9 @@ export default function About() {
       </section>
 
       {/* Journey */}
-      <section id="journey" className="relative bg-white py-20 sm:py-24 lg:py-28">
+      <section id="journey" className="relative bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
+          <div className="grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
             <div className="relative">
               <div className="relative overflow-hidden rounded-[2.5rem] p-3 shadow-[0_30px_90px_rgba(101,10,52,0.16)]">
                 <img
@@ -146,44 +121,10 @@ export default function About() {
                 />
               </div>
 
-              <div className="absolute -bottom-8 left-6 right-6 rounded-[2rem] bg-white p-5 shadow-2xl shadow-[#650a34]/15">
-                <div className="grid grid-cols-3 gap-3 text-center">
-                  <div>
-                    <h4 className="text-2xl font-extrabold text-[#650a34]">
-                      9+
-                    </h4>
-                    <p className="text-xs font-semibold text-gray-500">
-                      Years
-                    </p>
-                  </div>
-
-                  <div className="border-x border-[#650a34]/10">
-                    <h4 className="text-2xl font-extrabold text-[#650a34]">
-                      200+
-                    </h4>
-                    <p className="text-xs font-semibold text-gray-500">
-                      Events
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 className="text-2xl font-extrabold text-[#650a34]">
-                      30+
-                    </h4>
-                    <p className="text-xs font-semibold text-gray-500">
-                      Clients
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div>
-              <span className="inline-flex rounded-full bg-[#650a34]/8 px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34]">
-                Our Journey
-              </span>
-
-              <h2 className="mt-5 text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+              <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
                 From Ideas To Experiences, We Manage Every Detail With Passion
               </h2>
 
@@ -203,7 +144,7 @@ export default function About() {
                 smoothly from beginning to end.
               </p>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="mt-5 grid gap-4 sm:grid-cols-2">
                 {values.map((value) => (
                   <div
                     key={value}
@@ -225,22 +166,16 @@ export default function About() {
       </section>
 
       {/* Mission Vision */}
-      <section className="relative bg-[#fff8fb] py-20 sm:py-24 lg:py-28">
-        <div className="absolute -left-40 top-10 h-96 w-96 rounded-full bg-[#650a34]/10 blur-[120px]" />
-        <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#ed1968]/10 blur-[120px]" />
+      <section className="relative bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex rounded-full bg-white px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34] shadow-md shadow-[#650a34]/5">
-              Purpose & Promise
-            </span>
-
-            <h2 className="mt-5 text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
               Built On Creativity, Trust & Seamless Execution
             </h2>
           </div>
 
-          <div className="mt-14 grid gap-6 lg:grid-cols-3">
+          <div className="mt-5 grid gap-6 lg:grid-cols-3">
             <div className="rounded-[2rem] border border-[#650a34]/10 bg-white p-7 shadow-lg shadow-[#650a34]/5">
               <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34]">
                 <Target size={29} />
@@ -290,15 +225,11 @@ export default function About() {
       </section>
 
       {/* Work Process */}
-      <section className="bg-white py-20 sm:py-24 lg:py-28">
+      <section className="bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <span className="inline-flex rounded-full bg-[#650a34]/8 px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34]">
-                How We Work
-              </span>
-
-              <h2 className="mt-5 text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+              <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
                 Simple Process. Premium Result.
               </h2>
 
@@ -317,7 +248,7 @@ export default function About() {
             </Link>
           </div>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 step: "01",
@@ -362,7 +293,7 @@ export default function About() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-[#650a34] py-16">
+      <section className="bg-[#650a34] py-8">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
           <div className="mx-auto max-w-3xl">
             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white text-[#650a34]">
@@ -380,7 +311,7 @@ export default function About() {
 
             <Link
               to="/contact"
-              className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
+              className="mt-5 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
             >
               Enquire Now
               <ArrowRight size={18} />

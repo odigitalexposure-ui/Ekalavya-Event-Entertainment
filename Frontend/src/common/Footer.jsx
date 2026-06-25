@@ -2,7 +2,6 @@ import {
   ArrowRight,
   Mail,
   MapPin,
-  MessageCircle,
   Phone,
 } from "lucide-react";
 import { FaFacebookF, FaGoogle, FaInstagram } from "react-icons/fa";
@@ -11,9 +10,6 @@ import { servicesData } from "../data/servicesData";
 
 export default function Footer() {
   const phone = "+919007744772";
-  const whatsappMessage = encodeURIComponent(
-    "Hello Ekalavya Event & Entertainment, I want to enquire about your event services."
-  );
 
   const quickLinks = [
     { name: "Home", to: "/" },
@@ -24,35 +20,32 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative overflow-hidden bg-[#650a34] text-white">
-      <div className="absolute -left-40 top-10 h-96 w-96 rounded-full bg-[#ed1968]/20 blur-[120px]" />
-      <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-white/10 blur-[120px]" />
-
-      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20">
+    <footer className="relative overflow-hidden border-t border-[#650a34]/15 bg-white text-gray-700">
+      <div className="relative mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:py-10">
         <div className="grid gap-10 lg:grid-cols-[1.15fr_0.8fr_1fr_1fr]">
           <div>
             <Link to="/" className="inline-flex items-center gap-4">
               <img
                 src="/logo.png"
                 alt="Ekalavya Event & Entertainment"
-                className="h-20 w-20 rounded-2xl bg-white object-contain p-2"
+                className="h-20 w-20 rounded-2xl border border-[#650a34]/10 bg-white object-contain p-2"
               />
 
               <div>
-                <h2 className="text-2xl font-extrabold">Ekalavya</h2>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.24em] text-white/70">
+                <h2 className="text-2xl font-extrabold text-[#650a34]">Ekalavya</h2>
+                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.24em] text-gray-500">
                   Event & Entertainment
                 </p>
               </div>
             </Link>
 
-            <p className="mt-6 max-w-md leading-8 text-white/75">
+            <p className="mt-6 max-w-md leading-8 text-gray-600">
               Premium event planning, venue management, decor, F&B,
               entertainment, hospitality and celebrity coordination for
               memorable celebrations.
             </p>
 
-            <div className="mt-7 flex gap-3">
+            <div className="mt-5 flex gap-3">
               <SocialLink
                 href="https://www.instagram.com/ekalavyaevententertainment/"
                 label="Instagram"
@@ -115,30 +108,20 @@ export default function Footer() {
               />
             </div>
 
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:flex-col">
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row lg:flex-col">
               <a
                 href={`tel:${phone}`}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-bold text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-[#ed1968]"
               >
                 <Phone size={17} />
                 Call Now
-              </a>
-
-              <a
-                href={`https://wa.me/919007744772?text=${whatsappMessage}`}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-[#25D366] hover:border-[#25D366]"
-              >
-                <MessageCircle size={17} />
-                WhatsApp
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/15 pt-6">
-          <div className="flex flex-col gap-3 text-sm text-white/70 md:flex-row md:items-center md:justify-between">
+        <div className="mt-5 border-t border-[#650a34]/10 pt-6">
+          <div className="flex flex-col gap-3 text-sm text-gray-500 md:flex-row md:items-center md:justify-between">
             <p>
               © {new Date().getFullYear()} Ekalavya Event & Entertainment. All
               rights reserved.
@@ -150,7 +133,7 @@ export default function Footer() {
                 href="https://www.teamdeoskolkata.in/"
                 target="_blank"
                 rel="noreferrer"
-                className="font-bold text-white transition hover:text-[#ffb8d5]"
+                className="font-bold text-[#650a34] transition hover:text-[#ed1968]"
               >
                 Digital Exposure Online Services
               </a>
@@ -164,7 +147,7 @@ export default function Footer() {
 
 function FooterTitle({ children }) {
   return (
-    <h3 className="text-lg font-extrabold text-white">
+    <h3 className="text-lg font-extrabold text-[#650a34]">
       {children}
     </h3>
   );
@@ -174,11 +157,11 @@ function FooterRoute({ to, children }) {
   return (
     <Link
       to={to}
-      className="group inline-flex items-center gap-2 text-sm font-semibold text-white/75 transition hover:text-white"
+      className="group inline-flex items-center gap-2 text-sm font-semibold text-gray-600 transition hover:text-[#650a34]"
     >
       <ArrowRight
         size={14}
-        className="text-[#ffb8d5] transition group-hover:translate-x-1"
+        className="text-[#ed1968] transition group-hover:translate-x-1"
       />
       {children}
     </Link>
@@ -187,8 +170,8 @@ function FooterRoute({ to, children }) {
 
 function FooterContact({ icon: Icon, text, href }) {
   const content = (
-    <span className="flex gap-3 text-sm font-medium leading-7 text-white/75 transition hover:text-white">
-      <Icon size={18} className="mt-1 shrink-0 text-[#ffb8d5]" />
+    <span className="flex gap-3 text-sm font-medium leading-7 text-gray-600 transition hover:text-[#650a34]">
+      <Icon size={18} className="mt-1 shrink-0 text-[#ed1968]" />
       {text}
     </span>
   );
@@ -209,7 +192,7 @@ function SocialLink({ href, label, icon: Icon }) {
       target="_blank"
       rel="noreferrer"
       aria-label={label}
-      className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition hover:-translate-y-1 hover:bg-[#ed1968]"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-[#650a34]/10 bg-[#650a34]/5 text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
     >
       <Icon />
     </a>

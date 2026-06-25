@@ -4,7 +4,6 @@ import {
   CalendarDays,
   Clock,
   Share2,
-  Tag,
   X,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -77,16 +76,10 @@ export default function Blog() {
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-32 pb-20 sm:pt-40 lg:pb-28">
-        <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#ed1968]/10 blur-[120px]" />
-        <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#650a34]/10 blur-[120px]" />
+      <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <span className="inline-flex rounded-full bg-white px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34] shadow-md shadow-[#650a34]/5">
-            Event Blogs
-          </span>
-
-          <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
+          <h1 className="mx-auto max-w-4xl text-4xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
             Event Planning Tips, Ideas & Inspiration
           </h1>
 
@@ -113,12 +106,7 @@ export default function Blog() {
               </div>
 
               <div className="p-6 sm:p-8 lg:p-10">
-                <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#650a34]">
-                  <Tag size={14} />
-                  Featured Blog
-                </span>
-
-                <h2 className="mt-5 text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
+                <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
                   {blogs[0].title}
                 </h2>
 
@@ -138,7 +126,7 @@ export default function Blog() {
                   {blogs[0].excerpt}
                 </p>
 
-                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row">
                   <button
                     onClick={() => setSelectedBlog(blogs[0])}
                     className="inline-flex items-center justify-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
@@ -162,7 +150,7 @@ export default function Blog() {
       )}
 
       {/* Blog Grid */}
-      <section className="pb-20 sm:pb-24 lg:pb-28">
+      <section className="pb-6 sm:pb-8 lg:pb-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
             {blogs.map((blog) => (
@@ -176,10 +164,6 @@ export default function Blog() {
                       alt={blog.title}
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
                     />
-
-                    <div className="absolute left-5 top-5 rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#650a34]">
-                      {blog.category}
-                    </div>
                   </div>
 
                   <div className="p-6">
@@ -227,7 +211,7 @@ export default function Blog() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#650a34] py-16">
+      <section className="bg-[#650a34] py-8">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             Need Help Planning Your Event?
@@ -240,7 +224,7 @@ export default function Blog() {
 
           <Link
             to="/contact"
-            className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
+            className="mt-5 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
           >
             Enquire Now
             <ArrowRight size={18} />
@@ -266,11 +250,7 @@ export default function Blog() {
             />
 
             <div className="p-5 sm:p-7">
-              <span className="inline-flex rounded-full bg-[#650a34]/8 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#650a34]">
-                {selectedBlog.category}
-              </span>
-
-              <h2 className="mt-5 text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
+              <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
                 {selectedBlog.title}
               </h2>
 
@@ -292,7 +272,7 @@ export default function Blog() {
 
               <button
                 onClick={() => handleShare(selectedBlog)}
-                className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#ed1968]"
+                className="mt-5 inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#ed1968]"
               >
                 <Share2 size={18} />
                 Share Blog

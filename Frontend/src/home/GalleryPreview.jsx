@@ -15,19 +15,13 @@ export default function GalleryPreview() {
   return (
     <section
       id="gallery"
-      className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-10"
     >
-      <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#650a34]/10 blur-[120px]" />
-      <div className="absolute -right-40 bottom-10 h-96 w-96 rounded-full bg-[#ed1968]/10 blur-[120px]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
-            <span className="inline-flex rounded-full bg-[#650a34]/8 px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34]">
-              Gallery
-            </span>
-
-            <h2 className="mt-5 text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
               Moments, Memories & Event Highlights
             </h2>
 
@@ -46,19 +40,17 @@ export default function GalleryPreview() {
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {photos.map((photo, index) => (
+        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {photos.map((photo) => (
             <button
               key={photo.src}
               onClick={() => setSelectedItem(photo)}
-              className={`group overflow-hidden rounded-[2rem] shadow-xl shadow-[#650a34]/10 ${
-                index === 1 || index === 2 ? "lg:mt-10" : ""
-              }`}
+              className="group aspect-square overflow-hidden shadow-xl shadow-[#650a34]/10"
             >
               <img
                 src={photo.src}
                 alt={photo.title}
-                className="h-80 w-full object-cover transition duration-500 group-hover:scale-105"
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
             </button>
           ))}

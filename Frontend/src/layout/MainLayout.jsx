@@ -4,6 +4,7 @@ import PageWrapper from "../scroll/PageWrapper";
 import ScrollToTop from "../scroll/ScrollToTop";
 import Footer from "../common/Footer";
 import Navbar from "../common/Navbar";
+import WhatsAppButton from "../whatsapp/WhatsAppButton";
 
 
 const MainLayout = () => {
@@ -22,6 +23,7 @@ const MainLayout = () => {
         </AnimatePresence>
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 };

@@ -4,7 +4,6 @@ import {
   X,
   Phone,
   Mail,
-  MessageCircle,
   ChevronDown,
 } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaGoogle } from "react-icons/fa";
@@ -17,10 +16,6 @@ export default function Navbar() {
   const [serviceOpen, setServiceOpen] = useState(false);
 
   const phone = "+919007744772";
-  const whatsappPhone = "919007744772";
-  const whatsappMessage = encodeURIComponent(
-    "Hello Ekalavya Event & Entertainment, I want to enquire about your event services."
-  );
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -118,22 +113,10 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="Ekalavya Event & Entertainment"
-                className={`object-contain transition-all duration-300 ${
-                  scrolled
-                    ? "h-20 w-20 sm:h-16 sm:w-16"
-                    : "h-28 w-28 sm:h-28 sm:w-28"
-                }`}
+                className="object-contain w-52 h-52 -my-16 transition-all duration-300"
               />
             
 
-            <div className="leading-tight">
-              <h1 className="hidden text-lg font-bold tracking-wide text-[#650a34] sm:text-xl sm:block">
-                Ekalavya
-              </h1>
-              <p className="hidden text-xs font-medium uppercase tracking-[0.22em] text-gray-500 sm:block">
-                Event & Entertainment
-              </p>
-            </div>
           </Link>
 
           {/* Desktop Menu */}
@@ -142,7 +125,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.href}
-                className="group relative text-md font-bold text-gray-700 transition hover:text-[#650a34]"
+                className="group relative text-md font-semibold text-gray-700 transition hover:text-[#650a34]"
               >
                 {link.name}
                 <span className="absolute -bottom-2 left-0 h-[2px] w-0 rounded-full bg-[#ed1968] transition-all duration-300 group-hover:w-full" />
@@ -155,7 +138,12 @@ export default function Navbar() {
               onMouseEnter={() => setServiceOpen(true)}
               onMouseLeave={() => setServiceOpen(false)}
             >
-              <button className="group flex items-center gap-1 text-md font-bold text-gray-700 transition hover:text-[#650a34]">
+              <button
+                type="button"
+                onClick={() => setServiceOpen((open) => !open)}
+                className="group flex items-center gap-1 text-md font-semibold text-gray-700 transition hover:text-[#650a34]"
+                aria-expanded={serviceOpen}
+              >
                 Services
                 <ChevronDown
                   size={16}
@@ -176,7 +164,7 @@ export default function Navbar() {
                     key={item.name}
                     to={item.href}
                     onClick={() => setServiceOpen(false)}
-                    className="block rounded-2xl px-4 py-3 text-md font-bold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
+                    className="block rounded-2xl px-4 py-3 text-md font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
                   >
                     {item.name}
                   </Link>
@@ -188,7 +176,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.href}
-                className="group relative text-md font-bold text-gray-700 transition hover:text-[#650a34]"
+                className="group relative text-md font-semibold text-gray-700 transition hover:text-[#650a34]"
               >
                 {link.name}
                 <span className="absolute -bottom-2 left-0 h-[2px] w-0 rounded-full bg-[#ed1968] transition-all duration-300 group-hover:w-full" />
@@ -198,15 +186,6 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden items-center gap-3 lg:flex">
-            <a
-              href={`https://wa.me/${whatsappPhone}?text=${whatsappMessage}`}
-              target="_blank"
-              rel="noreferrer"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#650a34]/20 text-[#650a34] transition hover:bg-[#650a34] hover:text-white"
-            >
-              <MessageCircle size={19} />
-            </a>
-
             <a
               href={`tel:${phone}`}
               className="inline-flex items-center gap-2 rounded-full bg-[#650a34] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#650a34]/25 transition hover:-translate-y-0.5 hover:bg-[#ed1968]"
@@ -278,7 +257,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="mt-7 rounded-3xl bg-[#650a34]/6 p-4">
+          <div className="mt-5 rounded-3xl bg-[#650a34]/6 p-4">
             <h3 className="mb-3 font-bold text-[#650a34]">
               Our Services
             </h3>
@@ -297,23 +276,13 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="mt-7 space-y-3">
+          <div className="mt-5 space-y-3">
             <a
               href={`tel:${phone}`}
               className="flex items-center justify-center gap-2 rounded-full border border-[#650a34] px-5 py-3 font-semibold text-[#650a34]"
             >
               <Phone size={18} />
               Call Now
-            </a>
-
-            <a
-              href={`https://wa.me/${whatsappPhone}?text=${whatsappMessage}`}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-3 font-semibold text-white"
-            >
-              <MessageCircle size={18} />
-              WhatsApp
             </a>
 
             <Link
@@ -325,7 +294,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="mt-7 flex items-center justify-center gap-5 text-[#650a34]">
+          <div className="mt-5 flex items-center justify-center gap-5 text-[#650a34]">
             <a
               href="https://www.instagram.com/ekalavyaevententertainment/"
               target="_blank"

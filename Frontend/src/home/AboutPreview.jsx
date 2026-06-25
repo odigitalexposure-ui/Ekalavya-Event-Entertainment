@@ -26,17 +26,13 @@ export default function AboutPreview() {
   ];
 
   return (
-    <section id="about" className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28">
+    <section id="about" className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-10">
       {/* Background */}
-      <div className="absolute left-[-120px] top-20 h-72 w-72 rounded-full bg-[#ed1968]/10 blur-[90px]" />
-      <div className="absolute right-[-140px] bottom-10 h-80 w-80 rounded-full bg-[#650a34]/10 blur-[100px]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+        <div className="grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
           {/* Left Image */}
           <div className="relative">
-            <div className="absolute -left-5 -top-5 h-36 w-36 rounded-full bg-[#ed1968]/15" />
-            <div className="absolute -right-5 -bottom-5 h-44 w-44 rounded-full bg-[#650a34]/10" />
 
             <div className="relative overflow-hidden rounded-[2.5rem] bg-white p-3 shadow-[0_25px_80px_rgba(101,10,52,0.16)]">
               <div className="relative overflow-hidden rounded-[2rem]">
@@ -46,27 +42,13 @@ export default function AboutPreview() {
                   className="h-[420px] w-full object-cover sm:h-[520px]"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#650a34]/75 via-transparent to-transparent" />
-
-                <div className="absolute bottom-5 left-5 right-5 rounded-3xl border border-white/20 bg-white/15 p-5 text-white backdrop-blur-md">
-                  <p className="text-sm uppercase tracking-[0.22em] text-white/80">
-                    Since 2024
-                  </p>
-                  <h3 className="mt-1 text-2xl font-extrabold">
-                    Creating Moments That Stay Forever
-                  </h3>
-                </div>
               </div>
             </div>
           </div>
 
           {/* Right Content */}
           <div>
-            <span className="inline-flex rounded-full bg-[#650a34]/8 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34]">
-              About Ekalavya
-            </span>
-
-            <h2 className="mt-5 max-w-3xl text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+            <h2 className="max-w-3xl text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
               Complete Event Solutions With Creativity, Class & Flawless Execution
             </h2>
 
@@ -86,7 +68,7 @@ export default function AboutPreview() {
             </p>
 
             {/* Highlight Box */}
-            <div className="mt-8 rounded-[2rem] border border-[#650a34]/10 bg-[#650a34]/5 p-5 sm:p-6">
+            <div className="mt-5 rounded-[2rem] border border-[#650a34]/10 bg-[#650a34]/5 p-5 sm:p-6">
               <h3 className="text-xl font-extrabold text-[#650a34]">
                 A unit of J N Media & Advertising
               </h3>
@@ -97,7 +79,7 @@ export default function AboutPreview() {
               </p>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-5">
               <Link
                 to="/#services"
                 className="group inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
@@ -110,7 +92,7 @@ export default function AboutPreview() {
         </div>
 
         {/* Stats Grid */}
-        <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((item) => {
             const Icon = item.icon;
 

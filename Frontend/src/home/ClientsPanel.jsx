@@ -1,4 +1,4 @@
-import { ArrowRight, Building2, Crown, Handshake, Sparkles } from "lucide-react";
+import { ArrowRight, Building2, Handshake, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function ClientsPanel() {
@@ -14,20 +14,13 @@ export default function ClientsPanel() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#fff8fb] py-20 sm:py-24 lg:py-28">
-      <div className="absolute left-[-180px] top-10 h-96 w-96 rounded-full bg-[#ed1968]/10 blur-[120px]" />
-      <div className="absolute right-[-180px] bottom-0 h-96 w-96 rounded-full bg-[#650a34]/10 blur-[120px]" />
+    <section className="relative overflow-hidden bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+        <div className="grid items-center gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           {/* Left Content */}
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34] shadow-md shadow-[#650a34]/5">
-              <Crown size={15} />
-              Trusted By Clients
-            </span>
-
-            <h2 className="mt-5 text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
               A Growing Network of Happy Clients & Memorable Events
             </h2>
 
@@ -37,7 +30,7 @@ export default function ClientsPanel() {
               brands, celebrations and entertainment experiences.
             </p>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="mt-5 grid gap-4 sm:grid-cols-3">
               <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
                 <Building2 className="text-[#650a34]" size={26} />
                 <h3 className="mt-4 text-3xl font-extrabold text-gray-800">
@@ -71,7 +64,7 @@ export default function ClientsPanel() {
 
             <Link
               to="/contact"
-              className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+              className="mt-5 inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
             >
               Work With Us
               <ArrowRight size={18} />
@@ -85,10 +78,7 @@ export default function ClientsPanel() {
 
             <div className="mb-6 flex items-center justify-between">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#ed1968]">
-                  Client Categories
-                </p>
-                <h3 className="mt-2 text-2xl font-extrabold text-gray-800">
+                <h3 className="text-2xl font-extrabold text-gray-800">
                   Events We Proudly Serve
                 </h3>
               </div>
@@ -116,9 +106,6 @@ export default function ClientsPanel() {
                       </div>
                     </div>
 
-                    <span className="hidden rounded-full bg-white/70 px-4 py-2 text-xs font-bold text-[#650a34] sm:inline-flex">
-                      Trusted
-                    </span>
                   </div>
                 ))}
               </div>
