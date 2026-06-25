@@ -1,0 +1,150 @@
+import { ArrowRight, Building2, Crown, Handshake, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
+
+export default function ClientsPanel() {
+  const clients = [
+    "Corporate Events",
+    "Wedding Clients",
+    "Private Parties",
+    "Brand Activations",
+    "Cultural Events",
+    "Artist Shows",
+    "Hospitality Events",
+    "Luxury Celebrations",
+  ];
+
+  return (
+    <section className="relative overflow-hidden bg-[#fff8fb] py-20 sm:py-24 lg:py-28">
+      <div className="absolute left-[-180px] top-10 h-96 w-96 rounded-full bg-[#ed1968]/10 blur-[120px]" />
+      <div className="absolute right-[-180px] bottom-0 h-96 w-96 rounded-full bg-[#650a34]/10 blur-[120px]" />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          {/* Left Content */}
+          <div>
+            <span className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 text-xs font-bold uppercase tracking-[0.24em] text-[#650a34] shadow-md shadow-[#650a34]/5">
+              <Crown size={15} />
+              Trusted By Clients
+            </span>
+
+            <h2 className="mt-5 text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+              A Growing Network of Happy Clients & Memorable Events
+            </h2>
+
+            <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
+              With years of industry experience, Ekalavya Event & Entertainment
+              has successfully managed events for private clients, corporate
+              brands, celebrations and entertainment experiences.
+            </p>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
+                <Building2 className="text-[#650a34]" size={26} />
+                <h3 className="mt-4 text-3xl font-extrabold text-gray-800">
+                  30+
+                </h3>
+                <p className="mt-1 text-sm font-semibold text-gray-500">
+                  Corporate Clients
+                </p>
+              </div>
+
+              <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
+                <Sparkles className="text-[#ed1968]" size={26} />
+                <h3 className="mt-4 text-3xl font-extrabold text-gray-800">
+                  200+
+                </h3>
+                <p className="mt-1 text-sm font-semibold text-gray-500">
+                  Events Managed
+                </p>
+              </div>
+
+              <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
+                <Handshake className="text-[#650a34]" size={26} />
+                <h3 className="mt-4 text-3xl font-extrabold text-gray-800">
+                  1000+
+                </h3>
+                <p className="mt-1 text-sm font-semibold text-gray-500">
+                  Happy Guests
+                </p>
+              </div>
+            </div>
+
+            <Link
+              to="/contact"
+              className="mt-9 inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+            >
+              Work With Us
+              <ArrowRight size={18} />
+            </Link>
+          </div>
+
+          {/* Right Sliding Panel */}
+          <div className="relative overflow-hidden rounded-[2.5rem] border border-[#650a34]/10 bg-white p-5 shadow-[0_30px_90px_rgba(101,10,52,0.13)] sm:p-7">
+            <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent z-10" />
+            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent z-10" />
+
+            <div className="mb-6 flex items-center justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#ed1968]">
+                  Client Categories
+                </p>
+                <h3 className="mt-2 text-2xl font-extrabold text-gray-800">
+                  Events We Proudly Serve
+                </h3>
+              </div>
+            </div>
+
+            <div className="relative h-[430px] overflow-hidden">
+              <div className="animate-clientSlide space-y-4">
+                {[...clients, ...clients].map((client, index) => (
+                  <div
+                    key={`${client}-${index}`}
+                    className="group flex items-center justify-between rounded-[1.7rem] border border-[#650a34]/10 bg-[#fff8fb] p-5 transition hover:bg-[#650a34] hover:text-white"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#650a34] shadow-sm">
+                        <Sparkles size={21} />
+                      </div>
+
+                      <div>
+                        <h4 className="text-lg font-extrabold">
+                          {client}
+                        </h4>
+                        <p className="text-sm text-gray-500 group-hover:text-white/75">
+                          Premium event planning & execution
+                        </p>
+                      </div>
+                    </div>
+
+                    <span className="hidden rounded-full bg-white/70 px-4 py-2 text-xs font-bold text-[#650a34] sm:inline-flex">
+                      Trusted
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <style>{`
+              @keyframes clientSlide {
+                0% {
+                  transform: translateY(0);
+                }
+                100% {
+                  transform: translateY(-50%);
+                }
+              }
+
+              .animate-clientSlide {
+                animation: clientSlide 18s linear infinite;
+              }
+
+              .animate-clientSlide:hover {
+                animation-play-state: paused;
+              }
+            `}</style>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
