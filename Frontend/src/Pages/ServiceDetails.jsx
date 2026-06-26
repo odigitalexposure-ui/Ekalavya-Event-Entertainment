@@ -162,7 +162,7 @@ export default function ServiceDetails() {
             {service.process.map((step, index) => (
               <div
                 key={step}
-                className="relative rounded-[2rem] bg-white p-6 "
+                className="relative border-r-1 bg-white p-6 "
               >
                 <div className="mb-6 flex items-center justify-between">
                   <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#650a34] text-lg font-extrabold text-white">
@@ -193,7 +193,7 @@ export default function ServiceDetails() {
             {service.whyChoose.map((point) => (
               <div
                 key={point}
-                className="flex gap-4 rounded-[1.7rem] bg-white p-5"
+                className="flex gap-4 bg-white p-5 "
               >
                 <CheckCircle2 className="mt-1 shrink-0 text-[#ed1968]" size={22} />
                 <p className="font-semibold leading-7 text-gray-700">{point}</p>
@@ -235,7 +235,7 @@ export default function ServiceDetails() {
               <Link
                 key={item.slug}
                 to={`/services/${item.slug}`}
-                className="group rounded-[1.7rem] border border-[#650a34]/10 bg-[#fff8fb] p-5 transition hover:-translate-y-1 hover:bg-white hover:shadow-xl hover:shadow-[#650a34]/10"
+                className="group  border-r-1  p-5 transition hover:-translate-y-1 hover:bg-white "
               >
                 <h3 className="text-lg font-extrabold text-gray-800">
                   {item.title}

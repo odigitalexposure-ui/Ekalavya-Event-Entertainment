@@ -40,7 +40,7 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="mt-5 grid grid-cols-3 gap-3 sm:max-w-xl lg:max-w-2xl">
+          {/* <div className="mt-5 grid grid-cols-3 gap-3 sm:max-w-xl lg:max-w-2xl">
             <div className="rounded-3xl border border-[#650a34]/10 bg-white/80 p-4 shadow-lg shadow-[#650a34]/5 backdrop-blur">
               <h3 className="text-2xl font-extrabold text-[#650a34] sm:text-3xl">
                 9+
@@ -67,7 +67,7 @@ export default function Hero() {
                 Corporate Clients
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Visual */}

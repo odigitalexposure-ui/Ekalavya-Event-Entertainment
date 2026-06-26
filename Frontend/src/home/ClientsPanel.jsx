@@ -30,7 +30,7 @@ export default function ClientsPanel() {
               brands, celebrations and entertainment experiences.
             </p>
 
-            <div className="mt-5 grid gap-4 sm:grid-cols-3">
+            {/* <div className="mt-5 grid gap-4 sm:grid-cols-3">
               <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
                 <Building2 className="text-[#650a34]" size={26} />
                 <h3 className="mt-4 text-3xl font-extrabold text-gray-800">
@@ -60,7 +60,7 @@ export default function ClientsPanel() {
                   Happy Guests
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <Link
               to="/contact"

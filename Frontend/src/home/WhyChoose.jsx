@@ -62,7 +62,7 @@ export default function WhyChoose() {
                 return (
                   <div
                     key={item.title}
-                    className="group flex gap-4 rounded-[1.5rem] border border-[#650a34]/10 bg-white p-4 shadow-md shadow-[#650a34]/5 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-[#650a34]/10"
+                    className="group flex gap-4 rounded-[1.5rem] bg-white p-4 transition hover:-translate-y-1 "
                   >
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white">
                       <Icon size={22} />

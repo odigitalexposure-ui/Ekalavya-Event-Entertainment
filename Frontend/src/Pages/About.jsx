@@ -81,7 +81,7 @@ export default function About() {
           </div>
 
           {/* Stats */}
-          <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {/* <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((item) => {
               const Icon = item.icon;
 
@@ -104,7 +104,7 @@ export default function About() {
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </section>
 

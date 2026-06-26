@@ -159,10 +159,10 @@ function FooterRoute({ to, children }) {
       to={to}
       className="group inline-flex items-center gap-2 text-sm font-semibold text-gray-600 transition hover:text-[#650a34]"
     >
-      <ArrowRight
+      {/* <ArrowRight
         size={14}
         className="text-[#ed1968] transition group-hover:translate-x-1"
-      />
+      /> */}
       {children}
     </Link>
   );
