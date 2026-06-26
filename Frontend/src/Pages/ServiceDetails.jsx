@@ -107,7 +107,7 @@ export default function ServiceDetails() {
                 return (
                   <div
                     key={item.label}
-                    className="rounded-[1.5rem] border border-[#650a34]/10 bg-[#fff8fb] p-5 shadow-lg shadow-[#650a34]/5"
+                    className="rounded-[1.5rem] p-5 "
                   >
                     <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-[#650a34] shadow-md shadow-[#650a34]/5">
                       <Icon size={21} />
@@ -136,7 +136,7 @@ export default function ServiceDetails() {
               return (
                 <div
                   key={feature}
-                  className="group rounded-[2rem] border border-[#650a34]/10 bg-white p-6 shadow-lg shadow-[#650a34]/5 transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/12"
+                  className="group rounded-[2rem] bg-white p-6 transition duration-300 hover:-translate-y-2"
                 >
                   <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white">
                     <Icon size={25} />
@@ -162,7 +162,7 @@ export default function ServiceDetails() {
             {service.process.map((step, index) => (
               <div
                 key={step}
-                className="relative rounded-[2rem] border border-[#650a34]/10 bg-white p-6 shadow-lg shadow-[#650a34]/5"
+                className="relative rounded-[2rem] bg-white p-6 "
               >
                 <div className="mb-6 flex items-center justify-between">
                   <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#650a34] text-lg font-extrabold text-white">
@@ -193,7 +193,7 @@ export default function ServiceDetails() {
             {service.whyChoose.map((point) => (
               <div
                 key={point}
-                className="flex gap-4 rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5"
+                className="flex gap-4 rounded-[1.7rem] bg-white p-5"
               >
                 <CheckCircle2 className="mt-1 shrink-0 text-[#ed1968]" size={22} />
                 <p className="font-semibold leading-7 text-gray-700">{point}</p>
@@ -224,7 +224,7 @@ export default function ServiceDetails() {
                 to="/contact"
                 className="inline-flex items-center justify-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
               >
-                Contact Page
+                Contact us
                 <ArrowRight size={18} />
               </Link>
             </div>

@@ -159,11 +159,11 @@ ${formData.message}
                 link="mailto:ekalavyaentertainmentkolkata@gmail.com"
               />
 
-              <ContactCard
+              {/* <ContactCard
                 icon={Clock}
                 title="Business Support"
                 text="Available for event enquiries and consultation"
-              />
+              /> */}
             </div>
 
             <div className="mt-5 grid gap-3 sm:flex sm:flex-wrap">
@@ -359,7 +359,7 @@ ${formData.message}
 
 function ContactCard({ icon: Icon, title, text, link }) {
   const content = (
-    <div className="group flex gap-4 rounded-[1.4rem] border border-[#650a34]/10 bg-white p-4 shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#650a34]/10 sm:rounded-[1.7rem] sm:p-5">
+    <div className="group flex gap-4 rounded-[1.4rem] bg-white p-4 transition hover:-translate-y-1 sm:rounded-[1.7rem] sm:p-5">
       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:h-14 sm:w-14">
         <Icon size={23} />
       </div>
