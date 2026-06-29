@@ -63,7 +63,7 @@ export default function Navbar() {
                 <Phone size={14} />
                 +91 9007744772
               </a>
-
+              <span className="text-white/80">|</span>
               <a
                 href="mailto:ekalavyaentertainmentkolkata@gmail.com"
                 className="flex items-center gap-2 transition hover:text-[#ffb8d5]"
@@ -73,7 +73,7 @@ export default function Navbar() {
               </a>
             </div>
 
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <span className="text-white/80">Follow Us</span>
 
               <a
@@ -102,7 +102,7 @@ export default function Navbar() {
               >
                 <FaGoogle />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 

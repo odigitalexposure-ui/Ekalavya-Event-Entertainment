@@ -15,7 +15,7 @@ export default function Reviews() {
             Trusted By Clients For Beautiful Event Experiences
           </h2>
 
-          <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
+          <p className="mt-5 text-base leading-6 sm:leading-8 text-gray-600 sm:text-lg">
             Read genuine client feedback on Google or share your experience
             after an event with Ekalavya Event & Entertainment.
           </p>
@@ -36,7 +36,7 @@ export default function Reviews() {
             ))}
           </div>
 
-          <p className="mx-auto mt-4 max-w-2xl leading-8 text-gray-600">
+          <p className="mx-auto mt-4 max-w-2xl leading-6 sm:leading-8 text-gray-600">
             Your review helps future clients understand our event planning,
             decor, hospitality, entertainment and coordination experience.
           </p>
@@ -64,7 +64,7 @@ export default function Reviews() {
           </div>
         </div>
 
-        <div className="mt-5 rounded-[2.2rem] bg-[#650a34] p-7 text-center shadow-2xl shadow-[#650a34]/20 sm:p-10 lg:flex lg:items-center lg:justify-between lg:text-left">
+        <div className="mt-5 bg-[#650a34] p-7 text-center sm:p-10 lg:flex lg:items-center lg:justify-between lg:text-left">
           <div>
             <h3 className="text-2xl font-extrabold text-white sm:text-3xl">
               Want to create your own memorable event?

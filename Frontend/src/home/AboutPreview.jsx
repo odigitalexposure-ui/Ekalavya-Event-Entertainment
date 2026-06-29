@@ -1,4 +1,10 @@
-import { ArrowRight, Award, BriefcaseBusiness, HeartHandshake, PartyPopper } from "lucide-react";
+import {
+  ArrowRight,
+  Award,
+  BriefcaseBusiness,
+  HeartHandshake,
+  PartyPopper,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function AboutPreview() {
@@ -26,33 +32,33 @@ export default function AboutPreview() {
   ];
 
   return (
-    <section id="about" className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-10">
-      {/* Background */}
-
+    <section
+      id="about"
+      className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-10"
+    >
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
           {/* Left Image */}
-          <div className="relative">
-
-            <div className="relative overflow-hidden rounded-[2.5rem] bg-white p-3 shadow-[0_25px_80px_rgba(101,10,52,0.16)]">
-              <div className="relative overflow-hidden rounded-[2rem]">
+          <div className="relative order-2 lg:order-1">
+            <div className="relative overflow-hidden bg-white p-3">
+              <div className="relative overflow-hidden">
                 <img
                   src="/images/g9.jpeg"
                   alt="Ekalavya Event Management"
                   className="h-[420px] w-full object-cover sm:h-[520px]"
                 />
-
               </div>
             </div>
           </div>
 
           {/* Right Content */}
-          <div>
+          <div className="order-1 lg:order-2">
             <h2 className="max-w-3xl text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
-              Complete Event Solutions With Creativity, Class & Flawless Execution
+              COMPLETE EVENT SOLUTIONS WITH CREATIVITY, CLASS & FLAWLESS
+              EXECUTION
             </h2>
 
-            <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
+            <p className="mt-6 text-base text-center sm:text-left leading-6 sm:leading-8 text-gray-600 sm:text-lg">
               Ekalavya Event & Entertainment is a professional event management
               brand dedicated to planning, designing and executing unforgettable
               experiences. With strong industry experience and a creative team,
@@ -60,56 +66,47 @@ export default function AboutPreview() {
               production, entertainment and corporate event solutions.
             </p>
 
-            <p className="mt-4 text-base leading-8 text-gray-600">
+            <p className="mt-4 text-base leading-6 sm:leading-8 text-gray-600 sm:text-lg">
               Whether it is a private celebration, corporate gathering,
               destination event, entertainment night or premium hospitality
               requirement, we bring together strategy, style and seamless
               coordination to make every event truly special.
             </p>
 
-            {/* Highlight Box */}
-            <div className="mt-5 rounded-[2rem] border border-[#650a34]/10 bg-[#650a34]/5 p-5 sm:p-6">
-              <h3 className="text-xl font-extrabold text-[#650a34]">
-                A unit of J N Media & Advertising
-              </h3>
-              <p className="mt-2 leading-7 text-gray-600">
-                Backed by professional planning, creative production and guest-first
-                hospitality, we work with one simple promise — to build your dream
-                event with perfection.
-              </p>
-            </div>
-
-            <div className="mt-5">
+            <div className="mt-5 flex justify-center lg:justify-start">
               <Link
                 to="/#services"
-                className="group inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+                className="group inline-flex w-auto items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/25 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Explore Services
-                <ArrowRight size={18} className="transition group-hover:translate-x-1" />
+                <ArrowRight
+                  size={18}
+                  className="transition group-hover:translate-x-1"
+                />
               </Link>
             </div>
           </div>
         </div>
 
         {/* Stats Grid */}
-        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((item) => {
+        <div className="mt-5 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
+          {stats.map((item, index) => {
             const Icon = item.icon;
+            const isPrimary = index % 2 === 0;
 
             return (
               <div
                 key={item.label}
-                className="group rounded-[2rem] border border-[#650a34]/10 bg-white p-6 shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/12"
+                className={`group p-4 transition hover:-translate-y-2 sm:p-6 ${isPrimary ? "bg-[#650a34]" : "bg-[#ed1968]"
+                  }`}
               >
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white">
-                  <Icon size={25} />
-                </div>
+                <Icon size={22} className="text-white sm:h-6 sm:w-6" />
 
-                <h3 className="text-4xl font-extrabold text-gray-800">
+                <h3 className="mt-3 text-2xl font-extrabold text-white sm:mt-5 sm:text-4xl">
                   {item.number}
                 </h3>
 
-                <p className="mt-2 font-semibold text-gray-500">
+                <p className="mt-1 text-xs font-semibold leading-5 text-white sm:mt-2 sm:text-base">
                   {item.label}
                 </p>
               </div>

@@ -24,7 +24,7 @@ export default function ClientsPanel() {
               A Growing Network of Happy Clients & Memorable Events
             </h2>
 
-            <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
+            <p className="mt-5 text-base leading-6 sm:leading-8 text-gray-600 sm:text-lg">
               With years of industry experience, Ekalavya Event & Entertainment
               has successfully managed events for private clients, corporate
               brands, celebrations and entertainment experiences.

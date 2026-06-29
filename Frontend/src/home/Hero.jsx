@@ -11,14 +11,14 @@ export default function Hero() {
         {/* Left Content */}
         <div className="text-center lg:text-left">
           <h1 className="max-w-4xl text-4xl font-extrabold leading-[1.08] tracking-tight text-gray-800 sm:text-5xl md:text-6xl xl:text-7xl">
-            We Build Your{" "}
+            WE BUILD YOUR{" "}
             <span className="relative inline-block text-[#650a34]">
-              Dream Event
+              DREAM EVENT
             </span>{" "}
-            Into Reality
+            INTO REALITY
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 sm:text-lg lg:mx-0">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-6 sm:leading-8 text-gray-600 sm:text-lg lg:mx-0">
             From venue management, decor production and F&B service to
             entertainment, hospitality, logistics and celebrity management —
             Ekalavya Event & Entertainment creates unforgettable celebrations
@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="mt-5 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Link
               to="/contact"
-              className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#650a34] px-8 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/25 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:w-auto"
+              className="group inline-flex w-auto items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/25 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               Plan Your Event
               <ArrowRight
@@ -73,8 +73,8 @@ export default function Hero() {
         {/* Right Visual */}
         <div className="relative mx-auto w-full max-w-xl">
           {/* Main Card */}
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-white bg-white p-3 shadow-[0_30px_90px_rgba(101,10,52,0.22)]">
-            <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] bg-[#650a34]">
+          <div className="relative overflow-hidden border border-white bg-white p-3">
+            <div className="relative min-h-[520px] overflow-hidden bg-[#650a34]">
               <img
                 src="/images/g26.jpeg"
                 alt="Ekalavya Event & Entertainment"

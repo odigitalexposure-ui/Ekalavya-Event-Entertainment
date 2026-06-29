@@ -9,10 +9,10 @@ export default function Services() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
-            Everything You Need To Make Your Event Extraordinary
+            EVERYTHING YOU NEED TO MAKE YOUR EVENT EXTRAORDINARY
           </h2>
 
-          <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
+          <p className="mt-5 text-base leading-6 sm:leading-8 text-gray-600 sm:text-lg">
             From the first idea to the final guest experience, our team manages
             every important detail with creativity, planning and precision.
           </p>
