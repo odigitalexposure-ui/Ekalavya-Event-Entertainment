@@ -26,7 +26,7 @@ export default function Gallery() {
       <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-4xl font-extrabold leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+          <h1 className="mx-auto max-w-4xl text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Explore Our Event Moments, Setups & Highlights
           </h1>
 
@@ -59,7 +59,7 @@ export default function Gallery() {
 
       <section className="bg-[#650a34] py-8">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-extrabold leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+          <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
             Want Your Event To Be Featured Here?
           </h2>
 

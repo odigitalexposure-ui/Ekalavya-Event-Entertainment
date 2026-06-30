@@ -43,11 +43,11 @@ export default function WhyChoose() {
         <div className="grid items-center gap-6 lg:grid-cols-[1fr_1.05fr] lg:gap-8">
           <div>
             <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
-              WE DON’T JUST MANAGE EVENTS, WE CREATE EXPERIENCES
+              WE DON'T JUST MANAGE EVENTS, WE CREATE EXPERIENCES
             </h2>
 
             <p className="mt-5 text-base leading-6 sm:leading-8 text-gray-600 sm:text-lg">
-              Ekalavya Event & Entertainment brings creativity, planning,
+              Ekalavya Event &amp; Entertainment brings creativity, planning,
               hospitality and professional coordination together to deliver
               events that feel smooth, premium and unforgettable.
             </p>

@@ -112,7 +112,7 @@ ${formData.message}
       <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 sm:pb-8 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-3xl font-extrabold leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+          <h1 className="mx-auto max-w-4xl text-3xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Let&apos;s Plan Your Next Beautiful Event Together
           </h1>
 
@@ -128,7 +128,7 @@ ${formData.message}
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* Left Info */}
           <div>
-            <h2 className="text-2xl font-extrabold leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-2xl font-extrabold uppercase leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               Contact Details
             </h2>
 
@@ -317,7 +317,7 @@ ${formData.message}
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <h2 className="text-2xl font-extrabold leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+              <h2 className="text-2xl font-extrabold uppercase leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
                 Visit Our Location
               </h2>
 

@@ -51,7 +51,7 @@ export default function ServiceDetails() {
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div>
-            <h1 className="text-4xl font-extrabold leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+            <h1 className="text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
               {service.title}
             </h1>
 
@@ -90,7 +90,7 @@ export default function ServiceDetails() {
       <section className="py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
-            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               Designed for events that feel effortless and memorable
             </h2>
           </div>
@@ -180,7 +180,7 @@ export default function ServiceDetails() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div>
-            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               Premium execution with personal attention
             </h2>
             <p className="mt-5 leading-6 text-gray-600 sm:leading-8">
@@ -210,7 +210,7 @@ export default function ServiceDetails() {
               <p className="font-heading text-sm font-bold uppercase leading-snug tracking-[0.24em] text-[#ffb8d5]">
                 Let&apos;s Plan Your Event
               </p>
-              <h2 className="mt-4 text-3xl font-extrabold leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+              <h2 className="mt-4 text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
                 Ready to discuss {service.title}?
               </h2>
               <p className="mt-4 max-w-2xl leading-6 text-white/80 sm:leading-8">
@@ -255,7 +255,7 @@ export default function ServiceDetails() {
 function SectionHeading({ title, text }) {
   return (
     <div className="mx-auto max-w-3xl text-center">
-      <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
+      <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
         {title}
       </h2>
       <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">{text}</p>

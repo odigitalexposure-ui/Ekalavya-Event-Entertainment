@@ -79,8 +79,8 @@ export default function Blog() {
       <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-4xl font-extrabold leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
-            Event Planning Tips, Ideas & Inspiration
+          <h1 className="mx-auto max-w-4xl text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+            Event Planning Tips, Ideas &amp; Inspiration
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -106,7 +106,7 @@ export default function Blog() {
               </div>
 
               <div className="p-6 sm:p-8 lg:p-10">
-                <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+                <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
                   {blogs[0].title}
                 </h2>
 
@@ -213,12 +213,12 @@ export default function Blog() {
       {/* CTA */}
       <section className="bg-[#650a34] py-8">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-extrabold leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+          <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
             Need Help Planning Your Event?
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-white/80">
-            Contact Ekalavya Event & Entertainment for premium event planning,
+            Contact Ekalavya Event &amp; Entertainment for premium event planning,
             decor, production, hospitality and entertainment services.
           </p>
 
@@ -250,7 +250,7 @@ export default function Blog() {
             />
 
             <div className="p-5 sm:p-7">
-              <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
                 {selectedBlog.title}
               </h2>
 
