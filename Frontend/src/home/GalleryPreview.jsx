@@ -20,11 +20,11 @@ export default function GalleryPreview() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col items-center gap-6 text-center lg:flex-row lg:items-end lg:justify-between lg:text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
               MOMENTS, MEMORIES & EVENT HIGHLIGHTS
             </h2>
 
-            <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
+            <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
               A beautiful space to showcase real event photos with a clean preview
               experience.
             </p>
@@ -32,7 +32,7 @@ export default function GalleryPreview() {
 
           <Link
             to="/gallery"
-            className="inline-flex items-center justify-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] lg:self-auto"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide lg:self-auto"
           >
             View Full Gallery
             <ArrowRight size={18} />
@@ -44,7 +44,7 @@ export default function GalleryPreview() {
             <button
               key={photo.src}
               onClick={() => setSelectedItem(photo)}
-              className="group aspect-[4/3] overflow-hidden shadow-xl shadow-[#650a34]/10 sm:aspect-square"
+              className="group aspect-[4/3] overflow-hidden sm:aspect-square"
             >
               <img
                 src={photo.src}
@@ -65,11 +65,11 @@ export default function GalleryPreview() {
             <X size={22} />
           </button>
 
-          <div className="w-full max-w-5xl overflow-hidden rounded-[2rem] bg-white p-3">
+          <div className="w-full max-w-5xl overflow-hidden bg-white p-3">
             <img
               src={selectedItem.src}
               alt={selectedItem.title}
-              className="max-h-[82vh] w-full rounded-[1.5rem] object-contain"
+              className="aspect-square max-h-[82vh] w-full object-contain"
             />
           </div>
         </div>

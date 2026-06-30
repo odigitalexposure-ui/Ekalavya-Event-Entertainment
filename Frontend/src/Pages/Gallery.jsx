@@ -26,11 +26,11 @@ export default function Gallery() {
       <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-4xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
+          <h1 className="mx-auto max-w-4xl text-4xl font-extrabold leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Explore Our Event Moments, Setups & Highlights
           </h1>
 
-          <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-gray-600 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
             Browse real Ekalavya event moments including boat party venues,
             decor, dining, entertainment, hospitality and guest celebrations.
           </p>
@@ -44,7 +44,7 @@ export default function Gallery() {
               <button
                 key={item.src}
                 onClick={() => setSelectedIndex(index)}
-                className="group aspect-square w-full overflow-hidden bg-white shadow-xl shadow-[#650a34]/10"
+                className="group aspect-square w-full overflow-hidden bg-white"
               >
                 <img
                   src={item.src}
@@ -59,7 +59,7 @@ export default function Gallery() {
 
       <section className="bg-[#650a34] py-8">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
             Want Your Event To Be Featured Here?
           </h2>
 
@@ -70,7 +70,7 @@ export default function Gallery() {
 
           <Link
             to="/contact"
-            className="mt-5 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
+            className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
           >
             Enquire Now
             <ArrowRight size={18} />
@@ -101,11 +101,11 @@ export default function Gallery() {
             <ArrowRight size={22} />
           </button>
 
-          <div className="w-full max-w-6xl overflow-hidden rounded-[2rem] bg-white p-3">
+          <div className="w-full max-w-6xl overflow-hidden bg-white p-3">
             <img
               src={selectedItem.src}
               alt={selectedItem.title}
-              className="max-h-[82vh] w-full rounded-[1.5rem] object-contain"
+              className="aspect-square max-h-[82vh] w-full object-contain"
             />
           </div>
         </div>

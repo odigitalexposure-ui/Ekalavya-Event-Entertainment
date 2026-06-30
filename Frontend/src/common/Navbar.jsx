@@ -221,8 +221,8 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between border-b border-gray-100 px-5 py-5">
           <div>
-            <h2 className="text-xl font-bold text-[#650a34]">Ekalavya</h2>
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+            <h2 className="text-xl font-bold leading-snug text-[#650a34]">Ekalavya</h2>
+            <p className="font-heading text-xs uppercase leading-snug tracking-[0.2em] text-gray-500">
               Event & Entertainment
             </p>
           </div>
@@ -258,7 +258,7 @@ export default function Navbar() {
           </div>
 
           <div className="mt-5 rounded-3xl bg-[#650a34]/6 p-4">
-            <h3 className="mb-3 font-bold text-[#650a34]">
+            <h3 className="mb-3 font-bold leading-snug text-[#650a34]">
               Our Services
             </h3>
 

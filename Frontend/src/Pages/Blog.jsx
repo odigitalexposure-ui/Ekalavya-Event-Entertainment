@@ -79,11 +79,11 @@ export default function Blog() {
       <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-4xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
+          <h1 className="mx-auto max-w-4xl text-4xl font-extrabold leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Event Planning Tips, Ideas & Inspiration
           </h1>
 
-          <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-gray-600 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
             Read helpful event planning guides, celebration ideas, decor tips,
             hospitality suggestions and professional event management insights.
           </p>
@@ -94,8 +94,8 @@ export default function Blog() {
       {blogs[0] && (
         <section className="py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
-            <div className="grid overflow-hidden rounded-[2.5rem] border border-[#650a34]/10 bg-[#fff8fb] shadow-[0_25px_80px_rgba(101,10,52,0.12)] lg:grid-cols-[1fr_0.9fr]">
-              <div className="relative min-h-[360px] overflow-hidden">
+            <div className="grid bg-[#fff8fb] lg:grid-cols-[1fr_0.9fr]">
+              <div className="relative aspect-square overflow-hidden">
                 <img
                   src={blogs[0].image}
                   alt={blogs[0].title}
@@ -106,7 +106,7 @@ export default function Blog() {
               </div>
 
               <div className="p-6 sm:p-8 lg:p-10">
-                <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
+                <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
                   {blogs[0].title}
                 </h2>
 
@@ -122,14 +122,14 @@ export default function Blog() {
                   </span>
                 </div>
 
-                <p className="mt-5 leading-8 text-gray-600">
+                <p className="mt-5 leading-6 text-gray-600 sm:leading-8">
                   {blogs[0].excerpt}
                 </p>
 
                 <div className="mt-5 flex flex-col gap-3 sm:flex-row">
                   <button
                     onClick={() => setSelectedBlog(blogs[0])}
-                    className="inline-flex items-center justify-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
                   >
                     Read Blog
                     <ArrowRight size={18} />
@@ -137,7 +137,7 @@ export default function Blog() {
 
                   <button
                     onClick={() => handleShare(blogs[0])}
-                    className="inline-flex items-center justify-center gap-3 rounded-full border border-[#650a34]/15 bg-white px-7 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:text-[#ed1968]"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-[#650a34]/15 bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
                   >
                     <Share2 size={18} />
                     Share
@@ -156,9 +156,9 @@ export default function Blog() {
             {blogs.map((blog) => (
                 <article
                   key={blog.title}
-                  className="group overflow-hidden rounded-[2rem] border border-[#650a34]/10 bg-white shadow-xl shadow-[#650a34]/8 transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/15"
+                  className="group bg-white transition hover:-translate-y-2"
                 >
-                  <div className="relative h-64 overflow-hidden">
+                  <div className="relative aspect-square overflow-hidden">
                     <img
                       src={blog.image}
                       alt={blog.title}
@@ -179,7 +179,7 @@ export default function Blog() {
                       </span>
                     </div>
 
-                    <h3 className="mt-4 text-2xl font-extrabold leading-tight text-gray-800">
+                    <h3 className="mt-4 text-2xl font-extrabold leading-snug text-gray-800">
                       {blog.title}
                     </h3>
 
@@ -213,7 +213,7 @@ export default function Blog() {
       {/* CTA */}
       <section className="bg-[#650a34] py-8">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="text-3xl font-extrabold leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
             Need Help Planning Your Event?
           </h2>
 
@@ -224,7 +224,7 @@ export default function Blog() {
 
           <Link
             to="/contact"
-            className="mt-5 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
+            className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
           >
             Enquire Now
             <ArrowRight size={18} />
@@ -242,15 +242,15 @@ export default function Blog() {
             <X size={22} />
           </button>
 
-          <div className="max-h-[88vh] w-full max-w-4xl overflow-y-auto rounded-[2rem] bg-white p-3">
+          <div className="max-h-[88vh] w-full max-w-4xl overflow-y-auto bg-white p-3">
             <img
               src={selectedBlog.image}
               alt={selectedBlog.title}
-              className="h-[320px] w-full rounded-[1.5rem] object-cover"
+              className="aspect-square w-full object-cover"
             />
 
             <div className="p-5 sm:p-7">
-              <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
+              <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
                 {selectedBlog.title}
               </h2>
 
@@ -266,13 +266,13 @@ export default function Blog() {
                 </span>
               </div>
 
-              <p className="mt-6 whitespace-pre-line leading-8 text-gray-600">
+              <p className="mt-6 whitespace-pre-line leading-6 text-gray-600 sm:leading-8">
                 {selectedBlog.content}
               </p>
 
               <button
                 onClick={() => handleShare(selectedBlog)}
-                className="mt-5 inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#ed1968]"
+                className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white transition hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 <Share2 size={18} />
                 Share Blog

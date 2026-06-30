@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto grid min-h-[calc(100vh-120px)] max-w-7xl items-center gap-6 px-4 pb-8 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
         {/* Left Content */}
         <div className="text-center lg:text-left">
-          <h1 className="max-w-4xl text-4xl font-extrabold leading-[1.08] tracking-tight text-gray-800 sm:text-5xl md:text-6xl xl:text-7xl">
+          <h1 className="max-w-4xl text-4xl font-extrabold leading-[1.08] tracking-tight text-gray-800 sm:text-5xl sm:leading-[1.06] md:text-6xl lg:leading-[1.04] xl:text-7xl">
             WE BUILD YOUR{" "}
             <span className="relative inline-block text-[#650a34]">
               DREAM EVENT
@@ -73,7 +73,7 @@ export default function Hero() {
         {/* Right Visual */}
         <div className="relative mx-auto w-full max-w-xl">
           {/* Main Card */}
-          <div className="relative overflow-hidden border border-white bg-white p-3">
+          <div className="relative overflow-hidden bg-white p-3">
             <div className="relative min-h-[520px] overflow-hidden bg-[#650a34]">
               <img
                 src="/images/g26.jpeg"

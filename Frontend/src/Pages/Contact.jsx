@@ -112,11 +112,11 @@ ${formData.message}
       <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 sm:pb-8 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-3xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
+          <h1 className="mx-auto max-w-4xl text-3xl font-extrabold leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Let&apos;s Plan Your Next Beautiful Event Together
           </h1>
 
-          <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-gray-600 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
             Share your event requirement with Ekalavya Event & Entertainment.
             Our team will connect with you and help you plan the perfect event.
           </p>
@@ -128,11 +128,11 @@ ${formData.message}
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* Left Info */}
           <div>
-            <h2 className="text-2xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
+            <h2 className="text-2xl font-extrabold leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               Contact Details
             </h2>
 
-            <p className="mt-4 leading-8 text-gray-600">
+            <p className="mt-4 leading-6 text-gray-600 sm:leading-8">
               For event planning, venue management, decor, entertainment,
               hospitality, corporate events or celebrity management, contact us
               directly.
@@ -171,7 +171,7 @@ ${formData.message}
                 href={mapLink}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ed1968]"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 <Navigation size={18} />
                 Get Direction
@@ -210,11 +210,11 @@ ${formData.message}
 
           {/* Form */}
           <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-[#fff8fb] p-4 shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:rounded-[2.5rem] sm:p-8">
-            <h3 className="text-2xl font-extrabold text-gray-800 sm:text-3xl">
+            <h3 className="text-2xl font-extrabold leading-snug text-gray-800 sm:text-3xl">
               Send Enquiry
             </h3>
 
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 leading-6 text-gray-600 sm:leading-7">
               Fill the form and our team will receive your enquiry details.
             </p>
 
@@ -302,7 +302,7 @@ ${formData.message}
 
               <button
                 type="submit"
-                className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#650a34] px-5 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Send Enquiry
                 <Send size={18} className="transition group-hover:translate-x-1" />
@@ -317,11 +317,11 @@ ${formData.message}
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <h2 className="text-2xl font-extrabold text-gray-800 sm:text-4xl">
+              <h2 className="text-2xl font-extrabold leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
                 Visit Our Location
               </h2>
 
-              <p className="mt-3 max-w-2xl leading-8 text-gray-600">
+              <p className="mt-3 max-w-2xl leading-6 text-gray-600 sm:leading-8">
                 26/1, Bhagaban Chatterjee Ln, Bantra, Ichapur, Howrah, West
                 Bengal 711101
               </p>
@@ -331,7 +331,7 @@ ${formData.message}
               href={mapLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#650a34] px-6 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:w-fit sm:px-7"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:w-fit sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               Open Exact Navigation
               <Navigation size={18} />
@@ -365,8 +365,8 @@ function ContactCard({ icon: Icon, title, text, link }) {
       </div>
 
       <div className="min-w-0">
-        <h3 className="font-extrabold text-gray-800">{title}</h3>
-        <p className="mt-1 break-words leading-7 text-gray-600">{text}</p>
+        <h3 className="font-extrabold leading-snug text-gray-800">{title}</h3>
+        <p className="mt-1 break-words leading-6 text-gray-600 sm:leading-7">{text}</p>
       </div>
     </div>
   );

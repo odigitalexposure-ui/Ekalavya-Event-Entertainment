@@ -20,8 +20,8 @@ export default function ClientsPanel() {
         <div className="grid items-center gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
-              A Growing Network of Happy Clients & Memorable Events
+            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
+              A GROWING NETWORK OF HAPPY CLIENTS & MEMORABLE EVENTS
             </h2>
 
             <p className="mt-5 text-base leading-6 sm:leading-8 text-gray-600 sm:text-lg">
@@ -33,7 +33,7 @@ export default function ClientsPanel() {
             {/* <div className="mt-5 grid gap-4 sm:grid-cols-3">
               <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
                 <Building2 className="text-[#650a34]" size={26} />
-                <h3 className="mt-4 text-3xl font-extrabold text-gray-800">
+                <h3 className="mt-4 text-3xl font-extrabold leading-none text-gray-800">
                   30+
                 </h3>
                 <p className="mt-1 text-sm font-semibold text-gray-500">
@@ -43,7 +43,7 @@ export default function ClientsPanel() {
 
               <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
                 <Sparkles className="text-[#ed1968]" size={26} />
-                <h3 className="mt-4 text-3xl font-extrabold text-gray-800">
+                <h3 className="mt-4 text-3xl font-extrabold leading-none text-gray-800">
                   200+
                 </h3>
                 <p className="mt-1 text-sm font-semibold text-gray-500">
@@ -53,7 +53,7 @@ export default function ClientsPanel() {
 
               <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
                 <Handshake className="text-[#650a34]" size={26} />
-                <h3 className="mt-4 text-3xl font-extrabold text-gray-800">
+                <h3 className="mt-4 text-3xl font-extrabold leading-none text-gray-800">
                   1000+
                 </h3>
                 <p className="mt-1 text-sm font-semibold text-gray-500">
@@ -64,7 +64,7 @@ export default function ClientsPanel() {
 
             <Link
               to="/contact"
-              className="mt-5 inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+              className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               Work With Us
               <ArrowRight size={18} />
@@ -78,7 +78,7 @@ export default function ClientsPanel() {
 
             <div className="mb-6 flex items-center justify-between">
               <div>
-                <h3 className="text-2xl font-extrabold text-gray-800">
+                <h3 className="text-2xl font-extrabold leading-snug text-gray-800">
                   Events We Proudly Serve
                 </h3>
               </div>
@@ -97,7 +97,7 @@ export default function ClientsPanel() {
                       </div>
 
                       <div>
-                        <h4 className="text-lg font-extrabold">
+                        <h4 className="text-lg font-extrabold leading-snug">
                           {client}
                         </h4>
                         <p className="text-sm text-gray-500 group-hover:text-white/75">

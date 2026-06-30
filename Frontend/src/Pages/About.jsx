@@ -37,11 +37,11 @@ export default function About() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
             <div>
-              <h1 className="max-w-4xl text-4xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
+              <h1 className="max-w-4xl text-4xl font-extrabold leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
                 Designing Events That Feel Premium, Personal & Unforgettable
               </h1>
 
-              <p className="mt-6 max-w-2xl text-base leading-8 text-gray-600 sm:text-lg">
+              <p className="mt-6 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
                 Ekalavya Event & Entertainment is a professional event
                 management brand established on 28th May, 2024, dedicated to
                 creating beautiful, smooth and memorable event experiences.
@@ -50,7 +50,7 @@ export default function About() {
               <div className="mt-5 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="#journey"
-                  className="inline-flex items-center justify-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
                 >
                   Our Journey
                   <ArrowRight size={18} />
@@ -58,21 +58,21 @@ export default function About() {
 
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center gap-3 rounded-full border border-[#650a34]/20 bg-white px-7 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-1 hover:border-[#ed1968] hover:text-[#ed1968]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-[#650a34]/20 bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-1 hover:border-[#ed1968] hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
                 >
                   Plan An Event
                 </Link>
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative order-2 lg:order-1">
 
-              <div className="relative overflow-hidden rounded-[2.7rem] bg-white p-3 shadow-[0_30px_90px_rgba(101,10,52,0.18)]">
-                <div className="relative overflow-hidden rounded-[2.2rem]">
+              <div className="relative overflow-hidden bg-white p-3">
+                <div className="relative aspect-square overflow-hidden">
                   <img
                     src="/images/g16.jpeg"
                     alt="Ekalavya Event & Entertainment"
-                    className="h-[480px] w-full object-cover"
+                    className="h-full w-full object-cover"
                   />
 
                 </div>
@@ -94,7 +94,7 @@ export default function About() {
                     <Icon size={25} />
                   </div>
 
-                  <h3 className="text-4xl font-extrabold text-gray-800">
+                  <h3 className="text-4xl font-extrabold leading-none text-gray-800">
                     {item.number}
                   </h3>
 
@@ -112,23 +112,23 @@ export default function About() {
       <section id="journey" className="relative bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
-            <div className="relative">
-              <div className="relative overflow-hidden rounded-[2.5rem] p-3 shadow-[0_30px_90px_rgba(101,10,52,0.16)]">
+            <div className="relative order-2 lg:order-1">
+              <div className="relative overflow-hidden p-3">
                 <img
                   src="/images/g41.jpeg"
                   alt="Event Planning Journey"
-                  className="h-[520px] w-full rounded-[2rem] object-cover"
+                  className="aspect-square w-full object-cover"
                 />
               </div>
 
             </div>
 
-            <div>
-              <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
                 From Ideas To Experiences, We Manage Every Detail With Passion
               </h2>
 
-              <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
+              <p className="mt-6 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
                 Ekalavya Event & Entertainment was built with a vision to offer
                 complete event solutions under one trusted name. With 9 years of
                 industry experience, the team understands how to plan, manage and
@@ -136,7 +136,7 @@ export default function About() {
                 for the guests.
               </p>
 
-              <p className="mt-4 leading-8 text-gray-600">
+              <p className="mt-4 leading-6 text-gray-600 sm:leading-8">
                 Our experience includes venue management, food and beverage
                 support, decor and production, entertainment, hospitality,
                 logistics and celebrity management. We work with creativity,
@@ -170,7 +170,7 @@ export default function About() {
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
               Built On Creativity, Trust & Seamless Execution
             </h2>
           </div>
@@ -181,11 +181,11 @@ export default function About() {
                 <Target size={29} />
               </div>
 
-              <h3 className="text-2xl font-extrabold text-gray-800">
+              <h3 className="text-2xl font-extrabold leading-snug text-gray-800">
                 Our Mission
               </h3>
 
-              <p className="mt-4 leading-8 text-gray-600">
+              <p className="mt-4 leading-6 text-gray-600 sm:leading-8">
                 To provide complete event solutions that combine creative ideas,
                 professional planning and flawless execution for every client.
               </p>
@@ -196,11 +196,11 @@ export default function About() {
                 <Crown size={29} />
               </div>
 
-              <h3 className="text-2xl font-extrabold text-white">
+              <h3 className="text-2xl font-extrabold leading-snug text-white">
                 Our Vision
               </h3>
 
-              <p className="mt-4 leading-8 text-white/80">
+              <p className="mt-4 leading-6 text-white/80 sm:leading-8">
                 To become a trusted event partner known for premium experiences,
                 smooth coordination and memorable celebrations.
               </p>
@@ -211,11 +211,11 @@ export default function About() {
                 <ShieldCheck size={29} />
               </div>
 
-              <h3 className="text-2xl font-extrabold text-gray-800">
+              <h3 className="text-2xl font-extrabold leading-snug text-gray-800">
                 Our Promise
               </h3>
 
-              <p className="mt-4 leading-8 text-gray-600">
+              <p className="mt-4 leading-6 text-gray-600 sm:leading-8">
                 To understand your requirement, respect your vision and manage
                 every detail with care, transparency and professionalism.
               </p>
@@ -229,11 +229,11 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+              <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
                 Simple Process. Premium Result.
               </h2>
 
-              <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
+              <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
                 Our approach keeps your event journey clear, organized and
                 stress-free.
               </p>
@@ -241,7 +241,7 @@ export default function About() {
 
             <Link
               to="/contact"
-              className="inline-flex w-fit items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               Start Now
               <ArrowRight size={18} />
@@ -275,11 +275,11 @@ export default function About() {
                 key={item.step}
                 className="group relative overflow-hidden rounded-[2rem] border border-[#650a34]/10 bg-white p-7 shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/15"
               >
-                <span className="text-6xl font-extrabold text-[#650a34]/8">
+                <span className="font-heading text-6xl font-extrabold leading-none text-[#650a34]/8">
                   {item.step}
                 </span>
 
-                <h3 className="mt-5 text-2xl font-extrabold text-gray-800">
+                <h3 className="mt-5 text-2xl font-extrabold leading-snug text-gray-800">
                   {item.title}
                 </h3>
 
@@ -300,7 +300,7 @@ export default function About() {
               <CalendarCheck size={30} />
             </div>
 
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+            <h2 className="text-3xl font-extrabold leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
               Ready To Plan Your Next Event?
             </h2>
 
@@ -311,7 +311,7 @@ export default function About() {
 
             <Link
               to="/contact"
-              className="mt-5 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
+              className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               Enquire Now
               <ArrowRight size={18} />

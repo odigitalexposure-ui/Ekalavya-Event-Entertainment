@@ -42,7 +42,7 @@ export default function WhyChoose() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-[1fr_1.05fr] lg:gap-8">
           <div>
-            <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
               WE DON’T JUST MANAGE EVENTS, WE CREATE EXPERIENCES
             </h2>
 
@@ -88,7 +88,7 @@ export default function WhyChoose() {
             <div className="mt-5 flex justify-center md:justify-start">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Start Planning
                 <ArrowRight size={18} />

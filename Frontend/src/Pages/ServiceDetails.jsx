@@ -51,22 +51,22 @@ export default function ServiceDetails() {
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div>
-            <h1 className="text-4xl font-extrabold leading-tight text-gray-800 sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-extrabold leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
               {service.title}
             </h1>
 
-            <p className="mt-5 max-w-2xl text-lg font-semibold leading-8 text-[#650a34] sm:text-xl">
+            <p className="mt-5 max-w-2xl font-heading text-lg font-semibold leading-snug text-[#650a34] sm:text-xl">
               {service.subtitle}
             </p>
 
-            <p className="mt-5 max-w-2xl text-base leading-8 text-gray-600 sm:text-lg">
+            <p className="mt-5 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
               {service.shortDescription}
             </p>
 
             <div className="mt-5 flex flex-col gap-3 sm:flex-row">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Enquire Now
                 <ArrowRight size={18} />
@@ -76,11 +76,11 @@ export default function ServiceDetails() {
 
           <div className="relative">
 
-            <div className="relative overflow-hidden rounded-[2.3rem] border border-white bg-white p-3 shadow-[0_30px_90px_rgba(101,10,52,0.18)]">
+            <div className="relative overflow-hidden bg-white p-3">
               <img
                 src={service.heroImage}
                 alt={service.title}
-                className="h-[330px] w-full rounded-[1.8rem] object-cover sm:h-[430px] lg:h-[500px]"
+                className="aspect-square w-full object-cover"
               />
             </div>
           </div>
@@ -90,13 +90,13 @@ export default function ServiceDetails() {
       <section className="py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
-            <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               Designed for events that feel effortless and memorable
             </h2>
           </div>
 
           <div>
-            <p className="text-base leading-8 text-gray-600 sm:text-lg">
+            <p className="text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
               {service.overview}
             </p>
 
@@ -112,7 +112,7 @@ export default function ServiceDetails() {
                     <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-[#650a34] shadow-md shadow-[#650a34]/5">
                       <Icon size={21} />
                     </div>
-                    <h3 className="font-extrabold text-gray-800">{item.label}</h3>
+                    <h3 className="font-extrabold leading-snug text-gray-800">{item.label}</h3>
                     <p className="mt-2 text-sm leading-6 text-gray-600">{item.value}</p>
                   </div>
                 );
@@ -141,7 +141,7 @@ export default function ServiceDetails() {
                   <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white">
                     <Icon size={25} />
                   </div>
-                  <h3 className="text-lg font-extrabold leading-7 text-gray-800">
+                  <h3 className="text-lg font-extrabold leading-snug text-gray-800">
                     {feature}
                   </h3>
                 </div>
@@ -165,7 +165,7 @@ export default function ServiceDetails() {
                 className="relative border-r-1 bg-white p-6 "
               >
                 <div className="mb-6 flex items-center justify-between">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#650a34] text-lg font-extrabold text-white">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#650a34] font-heading text-lg font-extrabold leading-none text-white">
                     {index + 1}
                   </span>
                   <ClipboardList className="text-[#ed1968]" size={25} />
@@ -180,10 +180,10 @@ export default function ServiceDetails() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div>
-            <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               Premium execution with personal attention
             </h2>
-            <p className="mt-5 leading-8 text-gray-600">
+            <p className="mt-5 leading-6 text-gray-600 sm:leading-8">
               We combine creative planning, vendor coordination, and hands-on
               supervision so every important detail has a responsible owner.
             </p>
@@ -207,13 +207,13 @@ export default function ServiceDetails() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="overflow-hidden rounded-[2.4rem] bg-[#650a34] p-8 text-center shadow-2xl shadow-[#650a34]/20 sm:p-12 lg:flex lg:items-center lg:justify-between lg:text-left">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#ffb8d5]">
+              <p className="font-heading text-sm font-bold uppercase leading-snug tracking-[0.24em] text-[#ffb8d5]">
                 Let&apos;s Plan Your Event
               </p>
-              <h2 className="mt-4 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-extrabold leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
                 Ready to discuss {service.title}?
               </h2>
-              <p className="mt-4 max-w-2xl leading-8 text-white/80">
+              <p className="mt-4 max-w-2xl leading-6 text-white/80 sm:leading-8">
                 Share your event requirement and our team will help you shape
                 the right plan, timeline, and experience.
               </p>
@@ -222,7 +222,7 @@ export default function ServiceDetails() {
             <div className="mt-5 flex flex-col gap-3 sm:flex-row lg:mt-0">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Contact us
                 <ArrowRight size={18} />
@@ -237,7 +237,7 @@ export default function ServiceDetails() {
                 to={`/services/${item.slug}`}
                 className="group  border-r-1  p-5 transition hover:-translate-y-1 hover:bg-white "
               >
-                <h3 className="text-lg font-extrabold text-gray-800">
+                <h3 className="text-lg font-extrabold leading-snug text-gray-800">
                   {item.title}
                 </h3>
                 <p className="mt-2 line-clamp-2 text-sm leading-6 text-gray-600">
@@ -255,10 +255,10 @@ export default function ServiceDetails() {
 function SectionHeading({ title, text }) {
   return (
     <div className="mx-auto max-w-3xl text-center">
-      <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+      <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
         {title}
       </h2>
-      <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">{text}</p>
+      <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">{text}</p>
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Services() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
             EVERYTHING YOU NEED TO MAKE YOUR EVENT EXTRAORDINARY
           </h2>
 
@@ -25,7 +25,7 @@ export default function Services() {
               to={`/services/${item.slug}`}
               className="group block border-b border-[#650a34]/15 pb-7 transition hover:border-[#ed1968]"
             >
-              <h3 className="text-2xl font-extrabold text-gray-800">
+              <h3 className="text-2xl font-extrabold leading-snug text-gray-800">
                 {item.title}
               </h3>
 

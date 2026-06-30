@@ -53,7 +53,7 @@ export default function AboutPreview() {
 
           {/* Right Content */}
           <div className="order-1 lg:order-2">
-            <h2 className="max-w-3xl text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+            <h2 className="max-w-3xl text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
               COMPLETE EVENT SOLUTIONS WITH CREATIVITY, CLASS & FLAWLESS
               EXECUTION
             </h2>
@@ -102,7 +102,7 @@ export default function AboutPreview() {
               >
                 <Icon size={22} className="text-white sm:h-6 sm:w-6" />
 
-                <h3 className="mt-3 text-2xl font-extrabold text-white sm:mt-5 sm:text-4xl">
+                <h3 className="mt-3 text-2xl font-extrabold leading-none text-white sm:mt-5 sm:text-4xl">
                   {item.number}
                 </h3>
 

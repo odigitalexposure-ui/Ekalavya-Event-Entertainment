@@ -126,7 +126,7 @@ export default function Footer() {
 }
 
 function FooterTitle({ children }) {
-  return <h3 className="text-base font-extrabold text-white">{children}</h3>;
+  return <h3 className="text-base font-extrabold leading-snug text-white">{children}</h3>;
 }
 
 function FooterRoute({ to, children }) {

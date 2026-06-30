@@ -11,7 +11,7 @@ export default function Reviews() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-extrabold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
             Trusted By Clients For Beautiful Event Experiences
           </h2>
 
@@ -26,7 +26,7 @@ export default function Reviews() {
             <FaGoogle size={30} />
           </div>
 
-          <h3 className="mt-5 text-3xl font-extrabold text-gray-800 sm:text-4xl">
+          <h3 className="mt-5 text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
             Review Us On Google
           </h3>
 
@@ -46,7 +46,7 @@ export default function Reviews() {
               href={googleReviewUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-3 rounded-full bg-[#650a34] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968]"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               <MessageSquarePlus size={18} />
               Give Review
@@ -56,7 +56,7 @@ export default function Reviews() {
               href={googleReviewUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-3 rounded-full border border-[#650a34]/20 bg-[#fff8fb] px-7 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:bg-white hover:text-[#ed1968]"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-[#650a34]/20 bg-[#fff8fb] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:bg-white hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               See Reviews
               <ExternalLink size={18} />
@@ -66,7 +66,7 @@ export default function Reviews() {
 
         <div className="mt-5 bg-[#650a34] p-7 text-center sm:p-10 lg:flex lg:items-center lg:justify-between lg:text-left">
           <div>
-            <h3 className="text-2xl font-extrabold text-white sm:text-3xl">
+            <h3 className="text-2xl font-extrabold leading-snug text-white sm:text-3xl">
               Want to create your own memorable event?
             </h3>
             <p className="mt-3 max-w-2xl text-white/80">
@@ -77,7 +77,7 @@ export default function Reviews() {
 
           <Link
             to="/contact"
-            className="mt-6 inline-flex items-center justify-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white lg:mt-0"
+            className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide lg:mt-0"
           >
             Enquire Now
             <ArrowRight size={18} />
