@@ -124,7 +124,7 @@ export default function About() {
             </div>
 
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
+              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
                 From Ideas To Experiences, We Manage Every Detail With Passion
               </h2>
 
@@ -136,7 +136,7 @@ export default function About() {
                 for the guests.
               </p>
 
-              <p className="mt-4 leading-6 text-gray-600 sm:leading-8">
+              <p className="mt-4 leading-6 text-gray-600 sm:text-lg sm:leading-8">
                 Our experience includes venue management, food and beverage
                 support, decor and production, entertainment, hospitality,
                 logistics and celebrity management. We work with creativity,
@@ -170,7 +170,7 @@ export default function About() {
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
+            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               Built On Creativity, Trust & Seamless Execution
             </h2>
           </div>
@@ -229,7 +229,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
+              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
                 Simple Process. Premium Result.
               </h2>
 

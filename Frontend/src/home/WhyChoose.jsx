@@ -42,7 +42,7 @@ export default function WhyChoose() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-[1fr_1.05fr] lg:gap-8">
           <div>
-            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
+            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               WE DON'T JUST MANAGE EVENTS, WE CREATE EXPERIENCES
             </h2>
 

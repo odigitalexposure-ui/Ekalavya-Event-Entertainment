@@ -51,7 +51,7 @@ export default function ServiceDetails() {
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div>
-            <h1 className="text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+            <h1 className="text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-4xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
               {service.title}
             </h1>
 
@@ -255,7 +255,7 @@ export default function ServiceDetails() {
 function SectionHeading({ title, text }) {
   return (
     <div className="mx-auto max-w-3xl text-center">
-      <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-5xl lg:leading-[1.08]">
+      <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
         {title}
       </h2>
       <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">{text}</p>
