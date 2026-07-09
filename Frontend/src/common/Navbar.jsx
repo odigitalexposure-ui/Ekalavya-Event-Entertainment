@@ -14,6 +14,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);
+  const [mobileServiceOpen, setMobileServiceOpen] = useState(false);
 
   const phone = "+919007744772";
 
@@ -237,7 +238,7 @@ export default function Navbar() {
 
         <div className="flex-1 overflow-y-auto px-5 py-6">
           <div className="space-y-2">
-            {navLinks.map((link) => (
+            {navLinks.slice(0, 2).map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
@@ -248,32 +249,49 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <Link
-              to="/#services"
-              onClick={closeMenu}
-              className="block rounded-2xl px-4 py-3 text-base font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
-            >
-              Services
-            </Link>
-          </div>
-
-          <div className="mt-5 rounded-3xl bg-[#650a34]/6 p-4">
-            <h3 className="mb-3 font-bold leading-snug text-[#650a34]">
-              Our Services
-            </h3>
-
-            <div className="grid gap-2">
-              {services.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  onClick={closeMenu}
-                  className="rounded-xl bg-white px-3 py-2 text-sm font-medium text-gray-600 shadow-sm"
-                >
-                  {item.name}
-                </Link>
-              ))}
+            <div className="relative">
+              <button
+                type="button"
+                onClick={() => setMobileServiceOpen((open) => !open)}
+                className="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-base font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
+              >
+                Services
+                <ChevronDown
+                  size={18}
+                  className={`transition-transform duration-300 ${mobileServiceOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              
+              <div
+                className={`overflow-hidden transition-all duration-300 ${
+                  mobileServiceOpen ? "max-h-[1000px] mt-2 opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="mx-4 grid gap-2 rounded-2xl bg-[#650a34]/5 p-3">
+                  {services.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      onClick={closeMenu}
+                      className="block rounded-xl bg-white px-4 py-3 text-sm font-medium text-gray-600 shadow-sm transition hover:text-[#650a34]"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
+
+            {navLinks.slice(2).map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                onClick={closeMenu}
+                className="block rounded-2xl px-4 py-3 text-base font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
+              >
+                {link.name}
+              </Link>
+            ))}
           </div>
 
           <div className="mt-5 space-y-3">

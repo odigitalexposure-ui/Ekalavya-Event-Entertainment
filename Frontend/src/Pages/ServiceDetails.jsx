@@ -50,23 +50,23 @@ export default function ServiceDetails() {
       <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
-          <div>
-            <h1 className="text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-4xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+          <div className="text-center lg:text-left">
+            <h1 className="mx-auto max-w-3xl text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-4xl sm:leading-[1.06] lg:mx-0 lg:max-w-none lg:text-6xl lg:leading-[1.05]">
               {service.title}
             </h1>
 
-            <p className="mt-5 max-w-2xl font-heading text-lg font-semibold leading-snug text-[#650a34] sm:text-xl">
+            <p className="mx-auto mt-5 max-w-2xl font-heading text-lg font-semibold leading-snug text-[#650a34] sm:text-xl lg:mx-0">
               {service.subtitle}
             </p>
 
-            <p className="mt-5 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
               {service.shortDescription}
             </p>
 
-            <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Enquire Now
                 <ArrowRight size={18} />
@@ -89,31 +89,36 @@ export default function ServiceDetails() {
 
       <section className="py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr]">
-          <div>
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+          <div className="text-center lg:text-left">
+            <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               Designed for events that feel effortless and memorable
             </h2>
           </div>
 
-          <div>
-            <p className="text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
+          <div className="text-center lg:text-left">
+            <p className="mx-auto max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0 lg:max-w-none">
               {service.overview}
             </p>
 
-            <div className="mt-5 grid gap-4 sm:grid-cols-3">
+            <div className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3">
               {highlights.map((item, index) => {
                 const Icon = highlightIcons[index];
+                const isLastOdd = highlights.length % 2 !== 0 && index === highlights.length - 1;
 
                 return (
                   <div
                     key={item.label}
-                    className="rounded-[1.5rem] p-5 "
+                    className={`group flex min-h-[140px] flex-col items-center justify-center rounded-2xl border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md lg:min-h-0 lg:items-start lg:border-none lg:bg-transparent lg:p-0 lg:text-left lg:shadow-none lg:hover:translate-y-0 lg:hover:shadow-none ${
+                      isLastOdd ? "col-span-2 mx-auto w-full max-w-[190px] sm:col-span-1 sm:mx-0 sm:max-w-none" : ""
+                    }`}
                   >
-                    <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-[#650a34] shadow-md shadow-[#650a34]/5">
+                    <div className="mb-3 flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white lg:mb-4 lg:h-12 lg:w-12">
                       <Icon size={21} />
                     </div>
-                    <h3 className="font-extrabold leading-snug text-gray-800">{item.label}</h3>
-                    <p className="mt-2 text-sm leading-6 text-gray-600">{item.value}</p>
+                    <div>
+                      <h3 className="text-sm font-extrabold leading-snug text-gray-800 sm:text-base">{item.label}</h3>
+                      <p className="mt-1 text-xs leading-5 text-gray-600 sm:mt-2 sm:text-sm sm:leading-6">{item.value}</p>
+                    </div>
                   </div>
                 );
               })}
@@ -154,7 +159,13 @@ export default function ServiceDetails() {
       <section className="py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <SectionHeading
-            title="A clear plan from first brief to final applause"
+            title={
+              <>
+                A clear plan <br className="block sm:hidden" />
+                from first brief <br className="block sm:hidden" />
+                to final applause
+              </>
+            }
             text="We keep the workflow transparent, practical, and focused on a calm event-day experience."
           />
 
@@ -164,13 +175,10 @@ export default function ServiceDetails() {
                 key={step}
                 className="relative border-r-1 bg-white p-6 "
               >
-                <div className="mb-6 flex items-center justify-between">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#650a34] font-heading text-lg font-extrabold leading-none text-white">
-                    {index + 1}
-                  </span>
-                  <ClipboardList className="text-[#ed1968]" size={25} />
-                </div>
-                <p className="leading-7 text-gray-600">{step}</p>
+                <span className="font-heading text-6xl font-extrabold leading-none text-gray-200">
+                  {index + 1}
+                </span>
+                <p className="mt-5 leading-7 text-gray-600">{step}</p>
               </div>
             ))}
           </div>
@@ -179,11 +187,11 @@ export default function ServiceDetails() {
 
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <div>
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+          <div className="text-center lg:text-left">
+            <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               Premium execution with personal attention
             </h2>
-            <p className="mt-5 leading-6 text-gray-600 sm:leading-8">
+            <p className="mx-auto mt-5 max-w-2xl leading-6 text-gray-600 sm:leading-8 lg:mx-0 lg:max-w-none">
               We combine creative planning, vendor coordination, and hands-on
               supervision so every important detail has a responsible owner.
             </p>
@@ -219,10 +227,10 @@ export default function ServiceDetails() {
               </p>
             </div>
 
-            <div className="mt-5 flex flex-col gap-3 sm:flex-row lg:mt-0">
+            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row lg:mt-0 lg:justify-end">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Contact us
                 <ArrowRight size={18} />
@@ -230,12 +238,12 @@ export default function ServiceDetails() {
             </div>
           </div>
 
-          <div className="mt-5 grid gap-5 sm:grid-cols-3">
+          <div className="mt-8 grid gap-4 sm:grid-cols-3 lg:mt-10 lg:gap-6">
             {relatedServices.map((item) => (
               <Link
                 key={item.slug}
                 to={`/services/${item.slug}`}
-                className="group  border-r-1  p-5 transition hover:-translate-y-1 hover:bg-white "
+                className="group block rounded-2xl bg-gray-50 p-5 transition hover:-translate-y-1 hover:bg-gray-100 hover:shadow-md"
               >
                 <h3 className="text-lg font-extrabold leading-snug text-gray-800">
                   {item.title}

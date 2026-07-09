@@ -36,18 +36,18 @@ export default function About() {
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
-            <div>
-              <h1 className="max-w-4xl text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+            <div className="text-center lg:text-left">
+              <h1 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:text-6xl lg:leading-[1.05]">
                 Designing Events That Feel Premium, Personal & Unforgettable
               </h1>
 
-              <p className="mt-6 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
                 Ekalavya Event & Entertainment is a professional event
                 management brand established on 28th May, 2024, dedicated to
                 creating beautiful, smooth and memorable event experiences.
               </p>
 
-              <div className="mt-5 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
                 <a
                   href="#journey"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
@@ -111,19 +111,18 @@ export default function About() {
       {/* Journey */}
       <section id="journey" className="relative bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
-            <div className="relative order-2 lg:order-1">
-              <div className="relative overflow-hidden p-3">
+          <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8 lg:items-stretch">
+            <div className="relative order-2 lg:order-1 lg:h-full">
+              <div className="relative h-full overflow-hidden rounded-2xl lg:absolute lg:inset-0">
                 <img
                   src="/images/g41.jpeg"
                   alt="Event Planning Journey"
-                  className="aspect-square w-full object-cover"
+                  className="aspect-square h-full w-full object-cover lg:aspect-auto"
                 />
               </div>
-
             </div>
 
-            <div className="order-1 lg:order-2">
+            <div className="order-1 text-center lg:order-2 lg:text-left">
               <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
                 From Ideas To Experiences, We Manage Every Detail With Passion
               </h2>
@@ -148,15 +147,16 @@ export default function About() {
                 {values.map((value) => (
                   <div
                     key={value}
-                    className="flex items-center gap-3 rounded-2xl border border-[#650a34]/10 bg-[#fff8fb] p-4"
+                    className="group flex flex-col items-center justify-center rounded-2xl border border-[#650a34]/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:flex-row sm:justify-start sm:text-left"
                   >
-                    <CheckCircle2
-                      size={21}
-                      className="shrink-0 text-[#ed1968]"
-                    />
-                    <span className="font-semibold text-gray-700">
-                      {value}
-                    </span>
+                    <div className="mb-3 flex h-11 w-11 shrink-0 items-center justify-center bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12">
+                      <CheckCircle2 size={21} />
+                    </div>
+                    <div>
+                      <span className="text-base font-extrabold leading-snug text-gray-800">
+                        {value}
+                      </span>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -176,24 +176,24 @@ export default function About() {
           </div>
 
           <div className="mt-5 grid gap-6 lg:grid-cols-3">
-            <div className="rounded-[2rem] border border-[#650a34]/10 bg-white p-7 shadow-lg shadow-[#650a34]/5">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34]">
-                <Target size={29} />
+            <div className="rounded-[2rem] bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
+              <div className="mb-6 text-white">
+                <Target size={40} />
               </div>
 
-              <h3 className="text-2xl font-extrabold leading-snug text-gray-800">
+              <h3 className="text-2xl font-extrabold leading-snug text-white">
                 Our Mission
               </h3>
 
-              <p className="mt-4 leading-6 text-gray-600 sm:leading-8">
+              <p className="mt-4 leading-6 text-white/80 sm:leading-8">
                 To provide complete event solutions that combine creative ideas,
                 professional planning and flawless execution for every client.
               </p>
             </div>
 
-            <div className="rounded-[2rem] bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white text-[#650a34]">
-                <Crown size={29} />
+            <div className="rounded-[2rem] bg-[#ed1968] p-7 shadow-2xl shadow-[#ed1968]/20">
+              <div className="mb-6 text-white">
+                <Crown size={40} />
               </div>
 
               <h3 className="text-2xl font-extrabold leading-snug text-white">
@@ -206,16 +206,16 @@ export default function About() {
               </p>
             </div>
 
-            <div className="rounded-[2rem] border border-[#650a34]/10 bg-white p-7 shadow-lg shadow-[#650a34]/5">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#ed1968]/10 text-[#ed1968]">
-                <ShieldCheck size={29} />
+            <div className="rounded-[2rem] bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
+              <div className="mb-6 text-white">
+                <ShieldCheck size={40} />
               </div>
 
-              <h3 className="text-2xl font-extrabold leading-snug text-gray-800">
+              <h3 className="text-2xl font-extrabold leading-snug text-white">
                 Our Promise
               </h3>
 
-              <p className="mt-4 leading-6 text-gray-600 sm:leading-8">
+              <p className="mt-4 leading-6 text-white/80 sm:leading-8">
                 To understand your requirement, respect your vision and manage
                 every detail with care, transparency and professionalism.
               </p>
@@ -227,7 +227,7 @@ export default function About() {
       {/* Work Process */}
       <section className="bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="flex flex-col items-center text-center gap-6 lg:flex-row lg:items-end lg:justify-between lg:text-left">
             <div className="max-w-3xl">
               <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
                 Simple Process. Premium Result.
@@ -293,29 +293,31 @@ export default function About() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-[#650a34] py-8">
-        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <div className="mx-auto max-w-3xl">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white text-[#650a34]">
-              <CalendarCheck size={30} />
+      <section className="bg-white py-10 lg:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="rounded-[2rem] bg-[#650a34] px-4 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-6 lg:py-16">
+            <div className="mx-auto max-w-3xl">
+              <div className="mb-6 flex justify-center text-white">
+                <CalendarCheck size={45} />
+              </div>
+
+              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+                Ready To Plan Your Next Event?
+              </h2>
+
+              <p className="mt-4 text-white/80">
+                Let Ekalavya Event & Entertainment create a beautiful, organized
+                and memorable event experience for you.
+              </p>
+
+              <Link
+                to="/contact"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              >
+                Enquire Now
+                <ArrowRight size={18} />
+              </Link>
             </div>
-
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
-              Ready To Plan Your Next Event?
-            </h2>
-
-            <p className="mt-4 text-white/80">
-              Let Ekalavya Event & Entertainment create a beautiful, organized
-              and memorable event experience for you.
-            </p>
-
-            <Link
-              to="/contact"
-              className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
-            >
-              Enquire Now
-              <ArrowRight size={18} />
-            </Link>
           </div>
         </div>
       </section>

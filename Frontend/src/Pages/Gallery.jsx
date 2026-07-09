@@ -57,24 +57,26 @@ export default function Gallery() {
         </div>
       </section>
 
-      <section className="bg-[#650a34] py-8">
-        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
-            Want Your Event To Be Featured Here?
-          </h2>
+      <section className="bg-white py-10 lg:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="rounded-[2rem] bg-[#650a34] px-4 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-6 lg:py-16">
+            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+              Want Your Event To Be Featured Here?
+            </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-white/80">
-            Let Ekalavya Event & Entertainment create a beautiful and memorable
-            event experience for you.
-          </p>
+            <p className="mx-auto mt-4 max-w-2xl text-white/80">
+              Let Ekalavya Event & Entertainment create a beautiful and memorable
+              event experience for you.
+            </p>
 
-          <Link
-            to="/contact"
-            className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
-          >
-            Enquire Now
-            <ArrowRight size={18} />
-          </Link>
+            <Link
+              to="/contact"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+            >
+              Enquire Now
+              <ArrowRight size={18} />
+            </Link>
+          </div>
         </div>
       </section>
 

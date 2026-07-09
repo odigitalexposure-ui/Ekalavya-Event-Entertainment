@@ -127,12 +127,12 @@ ${formData.message}
       <section className="relative py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* Left Info */}
-          <div>
+          <div className="text-center lg:text-left">
             <h2 className="text-2xl font-extrabold uppercase leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               Contact Details
             </h2>
 
-            <p className="mt-4 leading-6 text-gray-600 sm:leading-8">
+            <p className="mx-auto mt-4 max-w-2xl leading-6 text-gray-600 sm:leading-8 lg:mx-0 lg:max-w-none">
               For event planning, venue management, decor, entertainment,
               hospitality, corporate events or celebrity management, contact us
               directly.
@@ -166,19 +166,19 @@ ${formData.message}
               /> */}
             </div>
 
-            <div className="mt-5 grid gap-3 sm:flex sm:flex-wrap">
+            <div className="mt-8 flex justify-center gap-3 sm:flex-wrap lg:justify-start">
               <a
                 href={mapLink}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 <Navigation size={18} />
                 Get Direction
               </a>
             </div>
 
-            <div className="mt-5 flex items-center gap-4 text-[#650a34]">
+            <div className="mt-8 flex items-center justify-center gap-4 text-[#650a34] lg:justify-start">
               <a
                 href="https://www.instagram.com/ekalavyaevententertainment/"
                 target="_blank"
@@ -359,24 +359,24 @@ ${formData.message}
 
 function ContactCard({ icon: Icon, title, text, link }) {
   const content = (
-    <div className="group flex gap-4 rounded-[1.4rem] bg-white p-4 transition hover:-translate-y-1 sm:rounded-[1.7rem] sm:p-5">
+    <div className="group flex w-full flex-col items-center gap-3 rounded-[1.4rem] bg-white p-4 text-center transition hover:-translate-y-1 sm:flex-row sm:gap-4 sm:rounded-[1.7rem] sm:p-5 sm:text-left">
       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:h-14 sm:w-14">
         <Icon size={23} />
       </div>
 
-      <div className="min-w-0">
-        <h3 className="font-extrabold leading-snug text-gray-800">{title}</h3>
-        <p className="mt-1 break-words leading-6 text-gray-600 sm:leading-7">{text}</p>
+      <div className="min-w-0 flex-1">
+        <h3 className="font-extrabold leading-snug text-gray-800 sm:text-lg">{title}</h3>
+        <p className="mt-1 break-words text-sm leading-6 text-gray-600 sm:text-base sm:leading-7">{text}</p>
       </div>
     </div>
   );
 
   return link ? (
-    <a href={link} className="block">
+    <a href={link} className="block w-full">
       {content}
     </a>
   ) : (
-    content
+    <div className="block w-full">{content}</div>
   );
 }
 

@@ -72,28 +72,30 @@ export default function Reviews() {
         </div>
       </div>
 
-      {/* Full Width CTA */}
-      <div className="mt-8 w-full bg-[#650a34]">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-4 py-10 text-center sm:px-6 lg:flex-row lg:py-14 lg:text-left">
-          <div>
-            <h3 className="text-2xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl">
-              Want To Create Your Own Memorable Event?
-            </h3>
+      {/* CTA */}
+      <div className="bg-white py-10 lg:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
+            <div>
+              <h3 className="text-2xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl">
+                Want To Create Your Own Memorable Event?
+              </h3>
 
-            <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
-              Talk to our team today and let us transform your ideas into an
-              unforgettable celebration with premium planning, creative décor,
-              entertainment and seamless event management.
-            </p>
+              <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
+                Talk to our team today and let us transform your ideas into an
+                unforgettable celebration with premium planning, creative décor,
+                entertainment and seamless event management.
+              </p>
+            </div>
+
+            <Link
+              to="/contact"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+            >
+              Enquire Now
+              <ArrowRight size={18} />
+            </Link>
           </div>
-
-          <Link
-            to="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
-          >
-            Enquire Now
-            <ArrowRight size={18} />
-          </Link>
         </div>
       </div>
     </section>
