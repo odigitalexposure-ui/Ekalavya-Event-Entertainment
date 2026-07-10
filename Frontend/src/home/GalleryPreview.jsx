@@ -44,11 +44,13 @@ export default function GalleryPreview() {
             <button
               key={photo.src}
               onClick={() => setSelectedItem(photo)}
-              className="group aspect-[4/3] overflow-hidden sm:aspect-square"
+              className="group aspect-square overflow-hidden sm:aspect-[4/3] lg:aspect-square"
             >
               <img
                 src={photo.src}
                 alt={photo.title}
+                loading="lazy"
+                decoding="async"
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
               />
             </button>
@@ -69,6 +71,8 @@ export default function GalleryPreview() {
             <img
               src={selectedItem.src}
               alt={selectedItem.title}
+              loading="lazy"
+              decoding="async"
               className="aspect-square max-h-[82vh] w-full object-contain"
             />
           </div>

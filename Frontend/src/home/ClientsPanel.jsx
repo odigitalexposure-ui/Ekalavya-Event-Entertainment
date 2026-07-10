@@ -62,13 +62,15 @@ export default function ClientsPanel() {
               </div>
             </div> */}
 
-            <Link
-              to="/contact"
-              className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
-            >
-              Work With Us
-              <ArrowRight size={18} />
-            </Link>
+            <div className="mt-5 flex justify-center sm:justify-start">
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              >
+                Work With Us
+                <ArrowRight size={18} />
+              </Link>
+            </div>
           </div>
 
           {/* Right Sliding Panel */}

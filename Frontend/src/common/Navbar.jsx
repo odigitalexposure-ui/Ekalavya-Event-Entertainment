@@ -53,60 +53,6 @@ export default function Navbar() {
             : "bg-white/80 backdrop-blur-md"
         }`}
       >
-        {/* Top Bar */}
-        <div className="hidden border-b border-[#650a34]/10 bg-[#650a34] text-white lg:block">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 text-sm">
-            <div className="flex items-center gap-6">
-              <a
-                href="tel:+919007744772"
-                className="flex items-center gap-2 transition hover:text-[#ffb8d5]"
-              >
-                <Phone size={14} />
-                +91 9007744772
-              </a>
-              <span className="text-white/80">|</span>
-              <a
-                href="mailto:ekalavyaentertainmentkolkata@gmail.com"
-                className="flex items-center gap-2 transition hover:text-[#ffb8d5]"
-              >
-                <Mail size={14} />
-                ekalavyaentertainmentkolkata@gmail.com
-              </a>
-            </div>
-
-            {/* <div className="flex items-center gap-4">
-              <span className="text-white/80">Follow Us</span>
-
-              <a
-                href="https://www.instagram.com/ekalavyaevententertainment/"
-                target="_blank"
-                rel="noreferrer"
-                className="transition hover:text-[#ed1968]"
-              >
-                <FaInstagram />
-              </a>
-
-              <a
-                href="https://www.facebook.com/ekalavyaevententertainment"
-                target="_blank"
-                rel="noreferrer"
-                className="transition hover:text-[#ed1968]"
-              >
-                <FaFacebookF />
-              </a>
-
-              <a
-                href="https://share.google/pkeVRIju2IvxucJqs"
-                target="_blank"
-                rel="noreferrer"
-                className="transition hover:text-[#ed1968]"
-              >
-                <FaGoogle />
-              </a>
-            </div> */}
-          </div>
-        </div>
-
         {/* Main Navbar */}
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6">
           {/* Logo */}
@@ -114,6 +60,8 @@ export default function Navbar() {
               <img
                 src="/logo.png"
                 alt="Ekalavya Event & Entertainment"
+                loading="eager"
+                decoding="async"
                 className="object-contain w-52 h-52 -my-16 transition-all duration-300"
               />
             
@@ -223,9 +171,6 @@ export default function Navbar() {
         <div className="flex items-center justify-between border-b border-gray-100 px-5 py-5">
           <div>
             <h2 className="text-xl font-bold leading-snug text-[#650a34]">Ekalavya</h2>
-            <p className="font-heading text-xs uppercase leading-snug tracking-[0.2em] text-gray-500">
-              Event & Entertainment
-            </p>
           </div>
 
           <button
@@ -267,13 +212,13 @@ export default function Navbar() {
                   mobileServiceOpen ? "max-h-[1000px] mt-2 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="mx-4 grid gap-2 rounded-2xl bg-[#650a34]/5 p-3">
+                <div className="mx-4 grid gap-1 py-2">
                   {services.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}
                       onClick={closeMenu}
-                      className="block rounded-xl bg-white px-4 py-3 text-sm font-medium text-gray-600 shadow-sm transition hover:text-[#650a34]"
+                      className="block rounded-xl px-4 py-3 text-sm font-medium text-gray-600 transition hover:bg-[#650a34]/5 hover:text-[#650a34]"
                     >
                       {item.name}
                     </Link>

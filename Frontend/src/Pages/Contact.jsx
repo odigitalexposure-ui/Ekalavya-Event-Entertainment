@@ -148,8 +148,8 @@ ${formData.message}
               <ContactCard
                 icon={Phone}
                 title="Call Us"
-                text="+91 9007744772, +91 9836169315"
-                link="tel:+919007744772"
+                text="9007744772, 9836169315"
+                link="tel:9007744772"
               />
 
               <ContactCard

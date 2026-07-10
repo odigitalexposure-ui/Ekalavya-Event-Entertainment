@@ -99,6 +99,8 @@ export default function Blog() {
                 <img
                   src={blogs[0].image}
                   alt={blogs[0].title}
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
 
@@ -158,10 +160,12 @@ export default function Blog() {
                   key={blog.title}
                   className="group bg-white transition hover:-translate-y-2"
                 >
-                  <div className="relative aspect-square overflow-hidden">
+                  <div className="aspect-square sm:aspect-[16/9] overflow-hidden bg-[#fff8fb]">
                     <img
                       src={blog.image}
                       alt={blog.title}
+                      loading="lazy"
+                      decoding="async"
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
                     />
                   </div>
@@ -214,19 +218,21 @@ export default function Blog() {
       {/* CTA */}
       <section className="bg-white py-10 lg:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="rounded-[2rem] bg-[#650a34] px-4 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-6 lg:py-16">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
-              Need Help Planning Your Event?
-            </h2>
+          <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
+            <div>
+              <h2 className="text-2xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl">
+                Need Help Planning Your Event?
+              </h2>
 
-            <p className="mx-auto mt-4 max-w-2xl text-white/80">
-              Contact Ekalavya Event &amp; Entertainment for premium event planning,
-              decor, production, hospitality and entertainment services.
-            </p>
+              <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
+                Contact Ekalavya Event &amp; Entertainment for premium event planning,
+                decor, production, hospitality and entertainment services.
+              </p>
+            </div>
 
             <Link
               to="/contact"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
             >
               Enquire Now
               <ArrowRight size={18} />
@@ -249,6 +255,8 @@ export default function Blog() {
             <img
               src={selectedBlog.image}
               alt={selectedBlog.title}
+              loading="lazy"
+              decoding="async"
               className="aspect-square w-full object-cover"
             />
 

@@ -68,10 +68,12 @@ export default function About() {
             <div className="relative order-2 lg:order-1">
 
               <div className="relative overflow-hidden bg-white p-3">
-                <div className="relative aspect-square overflow-hidden">
+                <div className="aspect-square sm:aspect-square lg:aspect-[4/5]">
                   <img
                     src="/images/g16.jpeg"
                     alt="Ekalavya Event & Entertainment"
+                    loading="lazy"
+                    decoding="async"
                     className="h-full w-full object-cover"
                   />
 
@@ -117,6 +119,8 @@ export default function About() {
                 <img
                   src="/images/g41.jpeg"
                   alt="Event Planning Journey"
+                  loading="lazy"
+                  decoding="async"
                   className="aspect-square h-full w-full object-cover lg:aspect-auto"
                 />
               </div>
@@ -295,29 +299,25 @@ export default function About() {
       {/* Final CTA */}
       <section className="bg-white py-10 lg:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="rounded-[2rem] bg-[#650a34] px-4 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-6 lg:py-16">
-            <div className="mx-auto max-w-3xl">
-              <div className="mb-6 flex justify-center text-white">
-                <CalendarCheck size={45} />
-              </div>
-
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+          <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
+            <div>
+              <h2 className="text-2xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl">
                 Ready To Plan Your Next Event?
               </h2>
 
-              <p className="mt-4 text-white/80">
+              <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
                 Let Ekalavya Event & Entertainment create a beautiful, organized
                 and memorable event experience for you.
               </p>
-
-              <Link
-                to="/contact"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
-              >
-                Enquire Now
-                <ArrowRight size={18} />
-              </Link>
             </div>
+
+            <Link
+              to="/contact"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+            >
+              Enquire Now
+              <ArrowRight size={18} />
+            </Link>
           </div>
         </div>
       </section>

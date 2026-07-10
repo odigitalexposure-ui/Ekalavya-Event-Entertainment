@@ -23,6 +23,8 @@ export default function Footer() {
               <img
                 src="/footerLogo.png"
                 alt="Ekalavya Event & Entertainment"
+                loading="lazy"
+                decoding="async"
                 className="h-14 w-auto object-contain sm:h-16"
               />
             </Link>

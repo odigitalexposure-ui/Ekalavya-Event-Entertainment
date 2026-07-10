@@ -44,11 +44,13 @@ export default function Gallery() {
               <button
                 key={item.src}
                 onClick={() => setSelectedIndex(index)}
-                className="group aspect-square w-full overflow-hidden bg-white"
+                className="group aspect-square overflow-hidden bg-[#fff8fb] sm:aspect-[4/3] lg:aspect-square"
               >
                 <img
                   src={item.src}
                   alt={item.title}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
               </button>
@@ -107,6 +109,8 @@ export default function Gallery() {
             <img
               src={selectedItem.src}
               alt={selectedItem.title}
+              loading="lazy"
+              decoding="async"
               className="aspect-square max-h-[82vh] w-full object-contain"
             />
           </div>

@@ -31,13 +31,13 @@ export const servicesData = [
   },
   {
     slug: "fb-service",
-    title: "F&B Service",
+    title: "Food & Beverage Service",
     subtitle: "Curated food and beverage experiences served with warmth and polish.",
     shortDescription:
       "We design and coordinate menus, counters, service teams, beverage plans, and presentation details that match the occasion and delight your guests.",
     heroImage: "/images/g29.jpeg",
     overview:
-      "Food is one of the strongest memories guests carry home. Our F&B service focuses on menu planning, presentation, service rhythm, hygiene, guest preferences, and smooth counter operations. Whether it is a wedding, corporate event, private party, or cultural gathering, we help create a dining experience that feels abundant, elegant, and well-managed.",
+      "Food is one of the strongest memories guests carry home. Our F & B service focuses on menu planning, presentation, service rhythm, hygiene, guest preferences, and smooth counter operations. Whether it is a wedding, corporate event, private party, or cultural gathering, we help create a dining experience that feels abundant, elegant, and well-managed.",
     features: [
       "Menu planning for event type and audience",
       "Buffet, live counter, and plated-service coordination",
@@ -177,6 +177,36 @@ export const servicesData = [
       "Premium handling of hospitality and movement",
       "Strong attention to timing and stage integration",
       "Clear communication between host, artist team, and production crew",
+    ],
+  },
+  {
+    slug: "destination-wedding",
+    title: "Destination Wedding",
+    subtitle: "Breathtaking locations, flawless logistics, and unforgettable wedding experiences.",
+    shortDescription:
+      "We plan, design, and manage spectacular destination weddings, coordinating travel, hospitality, decor, and ceremonies across stunning locations.",
+    heroImage: "/images/g21.jpeg",
+    overview:
+      "A destination wedding requires perfect synchronisation of travel, hospitality, local vendor management, and cultural traditions. Our team handles everything from venue selection and guest logistics to decor, entertainment, and ceremony coordination, ensuring you and your families can simply celebrate the joy of the occasion without stress.",
+    features: [
+      "Location scouting and venue finalization",
+      "Travel, visa, and accommodation logistics",
+      "Local vendor sourcing and coordination",
+      "Pre-wedding and main ceremony event planning",
+      "Guest hospitality, welcome desks, and itineraries",
+      "Complete on-ground event execution",
+    ],
+    process: [
+      "Understand your vision, preferred locations, guest count, and budget.",
+      "Shortlist destinations, secure venues, and negotiate group accommodations.",
+      "Plan the end-to-end logistics, decor, themes, and event schedule.",
+      "Execute the celebrations with a dedicated on-ground management team.",
+    ],
+    whyChoose: [
+      "Extensive experience in managing outstation events",
+      "Strong network of reliable vendors across popular destinations",
+      "Meticulous attention to guest comfort and travel logistics",
+      "Seamless integration of local culture with your wedding vision",
     ],
   },
 ];

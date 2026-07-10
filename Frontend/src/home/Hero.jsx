@@ -7,19 +7,17 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen overflow-hidden bg-white pt-36 sm:pt-40 lg:pt-44"
     >
-      <div className="relative z-10 mx-auto grid min-h-[calc(100vh-120px)] max-w-7xl items-center gap-6 px-4 pb-8 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
+      <div className="relative z-10 mx-auto grid min-h-[calc(100vh-120px)] max-w-6xl items-center gap-6 px-4 pb-8 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
         {/* Left Content */}
         <div className="text-center lg:text-left">
-          <h1 className="max-w-4xl text-4xl font-extrabold leading-[1.08] tracking-tight text-gray-800 sm:text-5xl sm:leading-[1.06] md:text-6xl lg:leading-[1.04] xl:text-7xl">
-            WE BUILD YOUR{" "}
-            <span className="relative inline-block text-[#650a34]">
-              DREAM EVENT
-            </span>{" "}
-            INTO REALITY
+          <h1 className="mx-auto max-w-4xl text-3xl font-extrabold leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+            <span className="block text-[#ed1968]">WE BUILD YOUR</span>
+            <span className="relative block text-[#650a34]">DREAM EVENT</span>
+            <span className="block">INTO REALITY</span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-6 sm:leading-8 text-gray-600 sm:text-lg lg:mx-0">
-            From venue management, decor production and F&B service to
+            From venue management, decor production and Food & Beverage service to
             entertainment, hospitality, logistics and celebrity management —
             Ekalavya Event & Entertainment creates unforgettable celebrations
             with style, planning and perfection.
@@ -74,7 +72,7 @@ export default function Hero() {
         <div className="relative mx-auto w-full max-w-xl">
           {/* Main Card */}
           <div className="relative overflow-hidden bg-white p-3">
-            <div className="relative min-h-[520px] overflow-hidden bg-[#650a34]">
+            <div className="relative aspect-square min-h-[auto] overflow-hidden bg-[#650a34] sm:aspect-auto sm:min-h-[520px]">
               <img
                 src="/images/g26.jpeg"
                 alt="Ekalavya Event & Entertainment"

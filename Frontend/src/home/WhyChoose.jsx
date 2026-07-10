@@ -102,7 +102,9 @@ export default function WhyChoose() {
                 <img
                   src="/images/g28.jpeg"
                   alt="Premium Event Management"
-                  className="h-[520px] w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-square h-auto w-full object-cover sm:aspect-auto sm:h-[520px]"
                 />
               </div>
             </div>

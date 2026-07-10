@@ -1,3 +1,4 @@
+import React, { memo } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import {
   ArrowRight,
@@ -80,6 +81,8 @@ export default function ServiceDetails() {
               <img
                 src={service.heroImage}
                 alt={service.title}
+                loading="eager"
+                decoding="async"
                 className="aspect-square w-full object-cover"
               />
             </div>
@@ -156,31 +159,51 @@ export default function ServiceDetails() {
         </div>
       </section>
 
-      <section className="py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <SectionHeading
-            title={
-              <>
-                A clear plan <br className="block sm:hidden" />
-                from first brief <br className="block sm:hidden" />
-                to final applause
-              </>
-            }
-            text="We keep the workflow transparent, practical, and focused on a calm event-day experience."
-          />
+      <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+        {/* Background Decorative Element */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-px bg-gradient-to-r from-transparent via-[#650a34]/20 to-transparent"></div>
+        
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl font-extrabold uppercase leading-[1.2] text-gray-800 sm:text-4xl lg:text-5xl">
+              A Clear Plan From First Brief To <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#650a34] to-[#ed1968]">Final Applause</span>
+            </h2>
+            <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
+              We keep the workflow transparent, practical, and focused on a calm event-day experience.
+            </p>
+          </div>
 
-          <div className="mt-5 grid gap-5 lg:grid-cols-4">
-            {service.process.map((step, index) => (
-              <div
-                key={step}
-                className="relative border-r-1 bg-white p-6 "
-              >
-                <span className="font-heading text-6xl font-extrabold leading-none text-gray-200">
-                  {index + 1}
-                </span>
-                <p className="mt-5 leading-7 text-gray-600">{step}</p>
-              </div>
-            ))}
+          <div className="mt-16 lg:mt-24 relative">
+            {/* Connecting Line (visible on desktop) */}
+            <div className="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-[2px] bg-gradient-to-r from-[#650a34]/10 via-[#ed1968]/30 to-[#650a34]/10"></div>
+
+            <div className="grid gap-12 lg:gap-6 lg:grid-cols-4">
+              {service.process.map((step, index) => (
+                <div
+                  key={step}
+                  className="relative flex flex-col items-center text-center group"
+                >
+                  {/* Elegant Number Marker */}
+                  <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_8px_30px_rgba(237,25,104,0.2)]">
+                    <div className="absolute inset-0 rounded-full border border-[#650a34]/5 group-hover:border-[#ed1968]/30 transition-colors duration-500"></div>
+                    <span className="font-heading text-3xl font-black text-[#650a34] transition-colors duration-500 group-hover:text-[#ed1968]">
+                      {index + 1}
+                    </span>
+                  </div>
+                  
+                  {/* Step Content */}
+                  <div className="mt-8 relative">
+                    {/* Subtle connecting line for mobile */}
+                    {index !== 0 && (
+                      <div className="absolute -top-16 left-1/2 -translate-x-1/2 h-10 w-px bg-gradient-to-b from-transparent to-[#650a34]/20 lg:hidden"></div>
+                    )}
+                    <p className="leading-7 text-gray-600 px-2 sm:px-6 transition-colors duration-300 group-hover:text-gray-900">
+                      {step}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -211,31 +234,29 @@ export default function ServiceDetails() {
         </div>
       </section>
 
-      <section className="bg-white py-6 sm:py-8">
+      <section className="bg-white py-10 lg:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="overflow-hidden rounded-[2.4rem] bg-[#650a34] p-8 text-center shadow-2xl shadow-[#650a34]/20 sm:p-12 lg:flex lg:items-center lg:justify-between lg:text-left">
+          <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
               <p className="font-heading text-sm font-bold uppercase leading-snug tracking-[0.24em] text-[#ffb8d5]">
                 Let&apos;s Plan Your Event
               </p>
-              <h2 className="mt-4 text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+              <h2 className="mt-2 text-2xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl">
                 Ready to discuss {service.title}?
               </h2>
-              <p className="mt-4 max-w-2xl leading-6 text-white/80 sm:leading-8">
+              <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
                 Share your event requirement and our team will help you shape
                 the right plan, timeline, and experience.
               </p>
             </div>
 
-            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row lg:mt-0 lg:justify-end">
-              <Link
-                to="/contact"
-                className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
-              >
-                Contact us
-                <ArrowRight size={18} />
-              </Link>
-            </div>
+            <Link
+              to="/contact"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+            >
+              Contact us
+              <ArrowRight size={18} />
+            </Link>
           </div>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3 lg:mt-10 lg:gap-6">
@@ -260,7 +281,7 @@ export default function ServiceDetails() {
   );
 }
 
-function SectionHeading({ title, text }) {
+const SectionHeading = memo(function SectionHeading({ title, text }) {
   return (
     <div className="mx-auto max-w-3xl text-center">
       <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
@@ -269,4 +290,4 @@ function SectionHeading({ title, text }) {
       <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">{text}</p>
     </div>
   );
-}
+});

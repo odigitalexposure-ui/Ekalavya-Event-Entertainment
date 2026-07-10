@@ -37,7 +37,7 @@ export default function AboutPreview() {
       className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-10"
     >
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8">
+        <div className="grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-8">
           {/* Left Image */}
           <div className="relative order-2 lg:order-1">
             <div className="relative overflow-hidden bg-white p-3">
@@ -45,14 +45,16 @@ export default function AboutPreview() {
                 <img
                   src="/images/g9.jpeg"
                   alt="Ekalavya Event Management"
-                  className="h-[420px] w-full object-cover sm:h-[520px]"
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-square h-auto w-full object-cover sm:aspect-auto sm:h-[520px]"
                 />
               </div>
             </div>
           </div>
 
           {/* Right Content */}
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-2 lg:pt-3">
             <h2 className="max-w-3xl text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               COMPLETE EVENT SOLUTIONS WITH CREATIVITY, CLASS & FLAWLESS
               EXECUTION
@@ -92,13 +94,17 @@ export default function AboutPreview() {
         <div className="mt-5 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
           {stats.map((item, index) => {
             const Icon = item.icon;
-            const isPrimary = index % 2 === 0;
+            
+            let bgClass = "";
+            if (index === 0) bgClass = "bg-[#650a34] lg:bg-[#650a34]";
+            else if (index === 1) bgClass = "bg-[#ed1968] lg:bg-[#ed1968]";
+            else if (index === 2) bgClass = "bg-[#ed1968] lg:bg-[#650a34]";
+            else if (index === 3) bgClass = "bg-[#650a34] lg:bg-[#ed1968]";
 
             return (
               <div
                 key={item.label}
-                className={`group p-4 transition hover:-translate-y-2 sm:p-6 ${isPrimary ? "bg-[#650a34]" : "bg-[#ed1968]"
-                  }`}
+                className={`group p-4 transition hover:-translate-y-2 sm:p-6 ${bgClass}`}
               >
                 <Icon size={22} className="text-white sm:h-6 sm:w-6" />
 

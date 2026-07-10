@@ -19,7 +19,7 @@ export default function Services() {
         </div>
 
         <div className="mt-5 grid gap-x-10 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
-          {servicesData.map((item) => (
+          {servicesData.filter(item => item.slug !== "destination-wedding").map((item) => (
             <Link
               key={item.title}
               to={`/services/${item.slug}`}
