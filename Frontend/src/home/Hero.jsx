@@ -5,14 +5,14 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden bg-white pt-36 sm:pt-40 lg:pt-44"
+      className="relative min-h-screen overflow-hidden bg-white pt-24 sm:pt-28 lg:pt-32"
     >
       <div className="relative z-10 mx-auto grid min-h-[calc(100vh-120px)] max-w-6xl items-center gap-6 px-4 pb-8 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
         {/* Left Content */}
         <div className="text-center lg:text-left">
           <h1 className="mx-auto max-w-4xl text-3xl font-extrabold leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
-            <span className="block text-[#ed1968]">WE BUILD YOUR</span>
-            <span className="relative block text-[#650a34]">DREAM EVENT</span>
+            <span className="block">WE BUILD </span>
+            <span className="relative block text-[#ed1968]">YOUR DREAM EVENT</span>
             <span className="block">INTO REALITY</span>
           </h1>
 
@@ -71,7 +71,7 @@ export default function Hero() {
         {/* Right Visual */}
         <div className="relative mx-auto w-full max-w-xl">
           {/* Main Card */}
-          <div className="relative overflow-hidden bg-white p-3">
+          <div className="relative overflow-hidden">
             <div className="relative aspect-square min-h-[auto] overflow-hidden bg-[#650a34] sm:aspect-auto sm:min-h-[520px]">
               <img
                 src="/images/g26.jpeg"

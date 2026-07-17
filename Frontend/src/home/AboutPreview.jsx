@@ -40,7 +40,7 @@ export default function AboutPreview() {
         <div className="grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-8">
           {/* Left Image */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative overflow-hidden bg-white p-3">
+            <div className="relative overflow-hidden">
               <div className="relative overflow-hidden">
                 <img
                   src="/images/g9.jpeg"

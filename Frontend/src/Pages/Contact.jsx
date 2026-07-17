@@ -17,6 +17,8 @@ export default function Contact() {
     email: "",
     eventType: "",
     eventDate: "",
+    numberOfGuests: "",
+    preferredLocation: "",
     message: "",
   });
 
@@ -88,6 +90,8 @@ Phone: ${formData.phone}
 Email: ${formData.email}
 Event Type: ${formData.eventType}
 Event Date: ${formData.eventDate || "Not mentioned"}
+Number of Guests: ${formData.numberOfGuests || "Not mentioned"}
+Preferred Location: ${formData.preferredLocation || "Not mentioned"}
 
 Message:
 ${formData.message}
@@ -109,7 +113,7 @@ ${formData.message}
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 sm:pb-8 lg:pt-44 lg:pb-8">
+      <section className="relative bg-[#fff8fb] pt-24 pb-6 sm:pt-28 sm:pb-8 lg:pt-32 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
           <h1 className="mx-auto max-w-4xl text-3xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
@@ -278,6 +282,31 @@ ${formData.message}
                 />
               </div>
 
+              <div className="grid gap-5 sm:grid-cols-2">
+                <FormField
+                  label="Number of Guests"
+                  name="numberOfGuests"
+                  type="number"
+                  value={formData.numberOfGuests}
+                  onChange={handleChange}
+                  placeholder="Expected guest count"
+                  error={errors.numberOfGuests}
+                  inputClass={inputClass}
+                  errorClass={errorClass}
+                />
+
+                <FormField
+                  label="Preferred Location"
+                  name="preferredLocation"
+                  value={formData.preferredLocation}
+                  onChange={handleChange}
+                  placeholder="City or Area"
+                  error={errors.preferredLocation}
+                  inputClass={inputClass}
+                  errorClass={errorClass}
+                />
+              </div>
+
               <div>
                 <label className="mb-2 block text-sm font-bold text-gray-700">
                   Message
@@ -318,7 +347,7 @@ ${formData.message}
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <h2 className="text-2xl font-extrabold uppercase leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
-                Visit Our Location
+                Locate Us
               </h2>
 
               <p className="mt-3 max-w-2xl leading-6 text-gray-600 sm:leading-8">

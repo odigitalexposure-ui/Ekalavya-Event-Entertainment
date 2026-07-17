@@ -76,7 +76,7 @@ export default function Blog() {
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
+      <section className="relative bg-[#fff8fb] pt-24 pb-6 sm:pt-28 lg:pt-32 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
           <h1 className="mx-auto max-w-4xl text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
@@ -251,7 +251,7 @@ export default function Blog() {
             <X size={22} />
           </button>
 
-          <div className="max-h-[88vh] w-full max-w-4xl overflow-y-auto bg-white p-3">
+          <div className="max-h-[88vh] w-full max-w-4xl overflow-y-auto">
             <img
               src={selectedBlog.image}
               alt={selectedBlog.title}

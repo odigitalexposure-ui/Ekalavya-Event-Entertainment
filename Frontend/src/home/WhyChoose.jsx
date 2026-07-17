@@ -97,7 +97,7 @@ export default function WhyChoose() {
           </div>
 
           <div className="relative">
-            <div className="relative bg-white p-3">
+            <div className="relative">
               <div className="relative overflow-hidden">
                 <img
                   src="/images/g28.jpeg"

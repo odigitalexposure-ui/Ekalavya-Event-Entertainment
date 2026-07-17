@@ -48,7 +48,7 @@ export default function ServiceDetails() {
 
   return (
     <main className="overflow-hidden bg-white text-gray-700">
-      <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
+      <section className="relative bg-[#fff8fb] pt-24 pb-6 sm:pt-28 lg:pt-32 lg:pb-8">
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div className="text-center lg:text-left">
@@ -77,7 +77,7 @@ export default function ServiceDetails() {
 
           <div className="relative">
 
-            <div className="relative overflow-hidden bg-white p-3">
+            <div className="relative overflow-hidden">
               <img
                 src={service.heroImage}
                 alt={service.title}
@@ -94,7 +94,8 @@ export default function ServiceDetails() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="text-center lg:text-left">
             <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
-              Designed for events that feel effortless and memorable
+              Designed for events
+               <br />that feel effortless <br />and memorable
             </h2>
           </div>
 
@@ -130,7 +131,7 @@ export default function ServiceDetails() {
         </div>
       </section>
 
-      <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
+      <section className="bg-[#f51576] py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <SectionHeading
             title={`Complete ${service.title} support`}
@@ -211,7 +212,7 @@ export default function ServiceDetails() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div className="text-center lg:text-left">
-            <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
+            <h2 className="mx-auto max-w-2xl text-2 font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               Premium execution with personal attention
             </h2>
             <p className="mx-auto mt-5 max-w-2xl leading-6 text-gray-600 sm:leading-8 lg:mx-0 lg:max-w-none">

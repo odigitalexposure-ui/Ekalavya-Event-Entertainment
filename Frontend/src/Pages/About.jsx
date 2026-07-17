@@ -32,7 +32,7 @@ export default function About() {
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-36 pb-6 sm:pt-40 lg:pt-44 lg:pb-8">
+      <section className="relative bg-[#fff8fb] pt-24 pb-6 sm:pt-28 lg:pt-32 lg:pb-8">
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
@@ -43,7 +43,7 @@ export default function About() {
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
                 Ekalavya Event & Entertainment is a professional event
-                management brand established on 28th May, 2024, dedicated to
+                management company, dedicated to
                 creating beautiful, smooth and memorable event experiences.
               </p>
 
@@ -56,18 +56,18 @@ export default function About() {
                   <ArrowRight size={18} />
                 </a>
 
-                <Link
+                {/* <Link
                   to="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-[#650a34]/20 bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-1 hover:border-[#ed1968] hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
                 >
                   Plan An Event
-                </Link>
+                </Link> */}
               </div>
             </div>
 
             <div className="relative order-2 lg:order-1">
 
-              <div className="relative overflow-hidden bg-white p-3">
+              <div className="relative overflow-hidden">
                 <div className="aspect-square sm:aspect-square lg:aspect-[4/5]">
                   <img
                     src="/images/g16.jpeg"
@@ -147,17 +147,17 @@ export default function About() {
                 smoothly from beginning to end.
               </p>
 
-              <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-4">
                 {values.map((value) => (
                   <div
                     key={value}
-                    className="group flex flex-col items-center justify-center rounded-2xl border border-[#650a34]/10 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:flex-row sm:justify-start sm:text-left"
+                    className="group flex aspect-square flex-col items-center justify-center rounded-2xl border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:aspect-auto sm:flex-row sm:justify-start sm:p-4 sm:text-left"
                   >
-                    <div className="mb-3 flex h-11 w-11 shrink-0 items-center justify-center bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12">
-                      <CheckCircle2 size={21} />
+                    <div className="mb-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12 sm:rounded-none">
+                      <CheckCircle2 size={20} className="sm:h-[21px] sm:w-[21px]" />
                     </div>
                     <div>
-                      <span className="text-base font-extrabold leading-snug text-gray-800">
+                      <span className="text-[13px] font-extrabold leading-tight text-gray-800 sm:text-base sm:leading-snug">
                         {value}
                       </span>
                     </div>

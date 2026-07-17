@@ -67,7 +67,7 @@ export default function GalleryPreview() {
             <X size={22} />
           </button>
 
-          <div className="w-full max-w-5xl overflow-hidden bg-white p-3">
+          <div className="w-full max-w-5xl overflow-hidden">
             <img
               src={selectedItem.src}
               alt={selectedItem.title}
