@@ -8,6 +8,9 @@ import {
   AlertCircle,
 } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaGoogle } from "react-icons/fa";
+import { motion } from "framer-motion";
+import AnimatedSection from "../common/AnimatedSection";
+import SnakeBorderBox from "../common/SnakeBorderBox";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -48,8 +51,8 @@ export default function Contact() {
       newErrors.email = "Enter a valid email address";
     }
 
-    if (!formData.eventType.trim()) {
-      newErrors.eventType = "Event type is required";
+    if (!formData.eventType) {
+      newErrors.eventType = "Select an event type";
     }
 
     if (!formData.message.trim()) {
@@ -62,16 +65,11 @@ export default function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
 
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-
-    setErrors((prev) => ({
-      ...prev,
-      [name]: "",
-    }));
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: "" }));
+    }
   };
 
   const handleSubmit = (e) => {
@@ -113,8 +111,7 @@ ${formData.message}
     <main className="overflow-hidden bg-white">
       {/* Hero */}
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
-
-        <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
+        <AnimatedSection className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
           <h1 className="mx-auto max-w-4xl text-2xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Let&apos;s Plan Your Next Beautiful Event Together
           </h1>
@@ -123,12 +120,12 @@ ${formData.message}
             Share your event requirement with Ekalavya Event & Entertainment.
             Our team will connect with you and help you plan the perfect event.
           </p>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Contact Details + Form */}
       <section className="relative py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <AnimatedSection className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* Left Info */}
           <div className="text-center lg:text-left">
             <h2 className="text-2xl font-extrabold uppercase leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
@@ -176,37 +173,43 @@ ${formData.message}
             </div>
 
             <div className="mt-8 flex items-center justify-center gap-4 text-[#650a34] lg:justify-start">
-              <a
+              <motion.a
+                whileHover={{ scale: 1.2, rotate: 10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 15 }}
                 href="https://www.instagram.com/ekalavyaevententertainment/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-none bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
               >
-                <FaInstagram />
-              </a>
+                <FaInstagram size={20} />
+              </motion.a>
 
-              <a
-                href="https://www.facebook.com/ekalavyaevententertainment"
+              <motion.a
+                whileHover={{ scale: 1.2, rotate: -10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                href="https://www.facebook.com/BoatPartyKolkata"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-none bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
               >
-                <FaFacebookF />
-              </a>
+                <FaFacebookF size={18} />
+              </motion.a>
 
-              <a
-                href="https://share.google/pkeVRIju2IvxucJqs"
+              <motion.a
+                whileHover={{ scale: 1.2, rotate: 10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                href="https://www.google.com/search?q=Ekalavya+Event+%26+Entertainment"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-11 w-11 items-center justify-center rounded-none bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
               >
-                <FaGoogle />
-              </a>
+                <FaGoogle size={18} />
+              </motion.a>
             </div>
           </div>
 
-          {/* Form */}
-          <div className="rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-8">
+          {/* Form with Snake Border */}
+          <SnakeBorderBox className="rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-8">
             <h3 className="text-2xl font-extrabold leading-snug text-gray-800 sm:text-3xl">
               Send Enquiry
             </h3>
@@ -330,13 +333,13 @@ ${formData.message}
                 <Send size={18} className="transition group-hover:translate-x-1" />
               </button>
             </form>
-          </div>
-        </div>
+          </SnakeBorderBox>
+        </AnimatedSection>
       </section>
 
       {/* Map */}
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
@@ -353,27 +356,27 @@ ${formData.message}
               href={mapLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:w-fit sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex w-fit items-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
-              Open Exact Navigation
+              Open Full Map
               <Navigation size={18} />
             </a>
           </div>
 
-          <div className="overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-2 shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-3">
+          <div className="relative aspect-[16/9] overflow-hidden rounded-none border border-[#650a34]/10 bg-white shadow-2xl shadow-[#650a34]/10 sm:aspect-[21/9]">
             <iframe
-              title="Ekalavya Event & Entertainment Location"
+              title="Ekalavya Location Map"
               src={mapEmbed}
               width="100%"
-              height="520"
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-[320px] rounded-none sm:h-[420px] lg:h-[520px]"
+              height="100%"
               style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-full w-full"
             />
           </div>
-        </div>
+        </AnimatedSection>
       </section>
     </main>
   );
@@ -382,9 +385,13 @@ ${formData.message}
 function ContactCard({ icon: Icon, title, text, link }) {
   const content = (
     <div className="group flex w-full flex-col items-center gap-3 rounded-none bg-white p-4 text-center transition hover:-translate-y-1 sm:flex-row sm:gap-4 sm:p-5 sm:text-left">
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:h-14 sm:w-14">
+      <motion.div
+        whileHover={{ scale: 1.2, rotate: 10 }}
+        transition={{ type: "spring", stiffness: 400, damping: 15 }}
+        className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:h-14 sm:w-14"
+      >
         <Icon size={23} />
-      </div>
+      </motion.div>
 
       <div className="min-w-0 flex-1">
         <h3 className="font-extrabold leading-snug text-gray-800 sm:text-lg">{title}</h3>

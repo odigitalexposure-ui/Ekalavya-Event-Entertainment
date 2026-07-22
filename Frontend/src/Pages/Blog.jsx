@@ -7,6 +7,7 @@ import {
   X,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
 
 export default function Blog() {
   const [selectedBlog, setSelectedBlog] = useState(null);
@@ -48,13 +49,13 @@ export default function Blog() {
     {
       title: "How Hospitality Improves Guest Experience",
       category: "Hospitality",
-      date: "30 June 2026",
+      date: "02 July 2026",
       readTime: "4 min read",
-      image: "/images/g31.jpeg",
+      image: "/images/g2.jpeg",
       excerpt:
-        "Guest welcome, help desk, travel coordination and comfort planning can completely change the event experience.",
+        "Guest comfort, welcome desks, logistics and personal attention make any celebration memorable.",
       content:
-        "Hospitality is the heart of any successful event. Guests remember how they were welcomed, guided and treated. Proper hospitality includes welcome desk, guest assistance, room coordination, transport support, food timing and emergency support. When hospitality is planned properly, guests feel comfortable and the event feels well-managed.",
+        "Hospitality is the soul of any event. From airport transfer and hotel check-in to welcome desk, seating, food service and information desk, guest care leaves a lasting impression. When guests feel comfortable and valued, the event becomes successful. Professional hospitality teams ensure every attendee has a pleasant experience.",
     },
   ];
 
@@ -77,25 +78,24 @@ export default function Blog() {
     <main className="overflow-hidden bg-white">
       {/* Hero */}
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
-
-        <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
+        <AnimatedSection className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
           <h1 className="mx-auto max-w-4xl text-2xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
-            Event Planning Tips, Ideas &amp; Inspiration
+            Event Insights, Ideas &amp; Planning Guides
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
-            Read helpful event planning guides, celebration ideas, decor tips,
-            hospitality suggestions and professional event management insights.
+            Read simple guides, event tips and practical ideas on planning,
+            decor, food, entertainment, hospitality and event management.
           </p>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Featured Blog */}
       {blogs[0] && (
         <section className="py-6 sm:py-8 lg:py-10">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6">
-            <div className="grid bg-[#fff8fb] lg:grid-cols-[1fr_0.9fr]">
-              <div className="relative aspect-square overflow-hidden">
+          <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="grid overflow-hidden rounded-none bg-white shadow-2xl shadow-gray-200 lg:grid-cols-2">
+              <div className="relative aspect-[4/3] w-full lg:aspect-auto">
                 <img
                   src={blogs[0].image}
                   alt={blogs[0].title}
@@ -103,7 +103,6 @@ export default function Blog() {
                   decoding="async"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
-
                 <div className="absolute inset-0 bg-gradient-to-t from-[#650a34]/80 via-transparent to-transparent lg:hidden" />
               </div>
 
@@ -147,76 +146,77 @@ export default function Blog() {
                 </div>
               </div>
             </div>
-          </div>
+          </AnimatedSection>
         </section>
       )}
 
       {/* Blog Grid */}
       <section className="py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-            {blogs.map((blog) => (
-                <article
-                  key={blog.title}
-                  className="group bg-white transition hover:-translate-y-2"
-                >
-                  <div className="aspect-square sm:aspect-[16/9] overflow-hidden bg-[#fff8fb]">
-                    <img
-                      src={blog.image}
-                      alt={blog.title}
-                      loading="lazy"
-                      decoding="async"
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
-                    />
+            {blogs.map((blog, index) => (
+              <AnimatedCard
+                key={blog.title}
+                delay={index * 0.1}
+                className="group bg-white transition hover:-translate-y-2 border border-gray-100 shadow-sm"
+              >
+                <div className="aspect-square sm:aspect-[16/9] overflow-hidden bg-[#fff8fb]">
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <div className="flex flex-wrap gap-4 text-xs font-semibold text-gray-500">
+                    <span className="inline-flex items-center gap-2">
+                      <CalendarDays size={15} />
+                      {blog.date}
+                    </span>
+
+                    <span className="inline-flex items-center gap-2">
+                      <Clock size={15} />
+                      {blog.readTime}
+                    </span>
                   </div>
 
-                  <div className="p-6">
-                    <div className="flex flex-wrap gap-4 text-xs font-semibold text-gray-500">
-                      <span className="inline-flex items-center gap-2">
-                        <CalendarDays size={15} />
-                        {blog.date}
-                      </span>
+                  <h3 className="mt-4 text-2xl font-extrabold leading-snug text-gray-800">
+                    {blog.title}
+                  </h3>
 
-                      <span className="inline-flex items-center gap-2">
-                        <Clock size={15} />
-                        {blog.readTime}
-                      </span>
-                    </div>
+                  <p className="mt-4 leading-7 text-gray-600">
+                    {blog.excerpt}
+                  </p>
 
-                    <h3 className="mt-4 text-2xl font-extrabold leading-snug text-gray-800">
-                      {blog.title}
-                    </h3>
+                  <div className="mt-6 flex items-center justify-between">
+                    <button
+                      onClick={() => setSelectedBlog(blog)}
+                      className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:text-[#ed1968]"
+                    >
+                      Read Article
+                      <ArrowRight size={16} />
+                    </button>
 
-                    <p className="mt-4 leading-7 text-gray-600">
-                      {blog.excerpt}
-                    </p>
-
-                    <div className="mt-6 flex items-center justify-between">
-                      <button
-                        onClick={() => setSelectedBlog(blog)}
-                        className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-[#650a34] transition hover:text-[#ed1968]"
-                      >
-                        Read More
-                        <ArrowRight size={16} />
-                      </button>
-
-                      <button
-                        onClick={() => handleShare(blog)}
-                        className="flex h-10 w-10 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition hover:bg-[#ed1968] hover:text-white"
-                      >
-                        <Share2 size={17} />
-                      </button>
-                    </div>
+                    <button
+                      onClick={() => handleShare(blog)}
+                      className="text-gray-500 transition hover:text-[#650a34]"
+                    >
+                      <Share2 size={18} />
+                    </button>
                   </div>
-                </article>
+                </div>
+              </AnimatedCard>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* CTA */}
       <section className="bg-white py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-8 rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
               <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
@@ -237,7 +237,7 @@ export default function Blog() {
               <ArrowRight size={18} />
             </Link>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Blog Modal */}
@@ -250,13 +250,13 @@ export default function Blog() {
             <X size={22} />
           </button>
 
-          <div className="max-h-[88vh] w-full max-w-4xl overflow-y-auto">
+          <div className="max-h-[88vh] w-full max-w-4xl overflow-y-auto bg-white">
             <img
               src={selectedBlog.image}
               alt={selectedBlog.title}
               loading="lazy"
               decoding="async"
-              className="aspect-square w-full object-cover"
+              className="aspect-video w-full object-cover"
             />
 
             <div className="p-5 sm:p-7">

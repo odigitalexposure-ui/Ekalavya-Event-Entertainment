@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { FaFacebookF, FaGoogle, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { servicesData } from "../data/servicesData";
 
 export default function Footer() {
@@ -142,7 +143,12 @@ function FooterRoute({ to, children }) {
 function FooterContact({ icon: Icon, text, href }) {
   const content = (
     <span className="flex gap-3 text-xs font-medium leading-6 text-gray-300 transition hover:text-white sm:text-sm">
-      <Icon size={16} className="mt-1 shrink-0 text-gray-300" />
+      <motion.div
+        whileHover={{ scale: 1.25, rotate: 10 }}
+        transition={{ type: "spring", stiffness: 400, damping: 15 }}
+      >
+        <Icon size={16} className="mt-1 shrink-0 text-gray-300 hover:text-[#ed1968]" />
+      </motion.div>
       {text}
     </span>
   );
@@ -152,14 +158,17 @@ function FooterContact({ icon: Icon, text, href }) {
 
 function SocialLink({ href, label, icon: Icon }) {
   return (
-    <a
+    <motion.a
+      whileHover={{ scale: 1.3, rotate: 12 }}
+      whileTap={{ scale: 0.9 }}
+      transition={{ type: "spring", stiffness: 400, damping: 15 }}
       href={href}
       target="_blank"
       rel="noreferrer"
       aria-label={label}
-      className="flex h-8 w-8 items-center justify-center rounded-none text-white transition hover:-translate-y-1 hover:text-[#ed1968]"
+      className="flex h-9 w-9 items-center justify-center rounded-none bg-white/10 text-white transition hover:bg-[#ed1968] hover:text-white"
     >
-      <Icon size={14} />
-    </a>
+      <Icon size={15} />
+    </motion.a>
   );
 }

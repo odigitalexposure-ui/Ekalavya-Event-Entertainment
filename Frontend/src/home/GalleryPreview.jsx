@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowRight, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { galleryImages } from "../data/galleryData";
+import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
 
 export default function GalleryPreview() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -17,11 +18,11 @@ export default function GalleryPreview() {
       id="gallery"
       className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-10"
     >
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+      <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col items-center gap-6 text-center lg:flex-row lg:items-end lg:justify-between lg:text-left">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
-              MOMENTS, MEMORIES & EVENT HIGHLIGHTS
+              MOMENTS, MEMORIES &amp; EVENT HIGHLIGHTS
             </h2>
 
             <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -40,23 +41,27 @@ export default function GalleryPreview() {
         </div>
 
         <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
-          {photos.map((photo) => (
-            <button
+          {photos.map((photo, index) => (
+            <AnimatedCard
               key={photo.src}
-              onClick={() => setSelectedItem(photo)}
-              className="group aspect-square overflow-hidden sm:aspect-[4/3] lg:aspect-square"
+              delay={index * 0.1}
             >
-              <img
-                src={photo.src}
-                alt={photo.title}
-                loading="lazy"
-                decoding="async"
-                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-              />
-            </button>
+              <button
+                onClick={() => setSelectedItem(photo)}
+                className="group aspect-square w-full overflow-hidden sm:aspect-[4/3] lg:aspect-square"
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.title}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </button>
+            </AnimatedCard>
           ))}
         </div>
-      </div>
+      </AnimatedSection>
 
       {selectedItem && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-gray-950/80 p-4 backdrop-blur-md">

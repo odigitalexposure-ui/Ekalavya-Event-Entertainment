@@ -7,6 +7,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import AnimatedSection from "../common/AnimatedSection";
 
 export default function WhyChoose() {
   const features = [
@@ -39,9 +41,14 @@ export default function WhyChoose() {
 
   return (
     <section className="relative overflow-hidden bg-white py-6 sm:py-8 lg:py-10">
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+      <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-[1fr_1.05fr] lg:gap-8">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
             <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               WE DON'T JUST MANAGE EVENTS, WE CREATE EXPERIENCES
             </h2>
@@ -67,9 +74,13 @@ export default function WhyChoose() {
                         : ""
                     }`}
                   >
-                    <div className="mb-3 flex h-11 w-11 shrink-0 items-center justify-center bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white md:mb-0 md:mr-4 md:h-12 md:w-12">
-                      <Icon size={21} />
-                    </div>
+                    <motion.div
+                      whileHover={{ scale: 1.18, rotate: 8 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                      className="mb-3 flex h-11 w-11 shrink-0 items-center justify-center bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white md:mb-0 md:mr-4 md:h-12 md:w-12"
+                    >
+                      <Icon size={22} />
+                    </motion.div>
 
                     <div>
                       <h3 className="text-base font-extrabold leading-snug text-gray-800 md:text-lg">
@@ -94,9 +105,15 @@ export default function WhyChoose() {
                 <ArrowRight size={18} />
               </Link>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="relative">
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="relative"
+          >
             <div className="relative">
               <div className="relative overflow-hidden">
                 <img
@@ -108,9 +125,9 @@ export default function WhyChoose() {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }

@@ -1,5 +1,8 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import AnimatedSection from "../common/AnimatedSection";
+import SnakeBorderBox from "../common/SnakeBorderBox";
 
 export default function ClientsPanel() {
   const clients = [
@@ -15,17 +18,16 @@ export default function ClientsPanel() {
 
   return (
     <section className="relative overflow-hidden bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
-
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+      <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid items-center gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           {/* Left Content */}
           <div>
             <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
-              A GROWING NETWORK OF HAPPY CLIENTS & MEMORABLE EVENTS
+              A GROWING NETWORK OF HAPPY CLIENTS &amp; MEMORABLE EVENTS
             </h2>
 
             <p className="mt-5 text-base leading-6 sm:leading-8 text-gray-600 sm:text-lg">
-              With years of industry experience, Ekalavya Event & Entertainment
+              With years of industry experience, Ekalavya Event &amp; Entertainment
               has successfully managed events for private clients, corporate
               brands, celebrations and entertainment experiences.
             </p>
@@ -41,8 +43,8 @@ export default function ClientsPanel() {
             </div>
           </div>
 
-          {/* Right Sliding Panel */}
-          <div className="relative overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-5 shadow-[0_30px_90px_rgba(101,10,52,0.13)] sm:p-7">
+          {/* Right Sliding Panel with Snake Border Animation */}
+          <SnakeBorderBox className="rounded-none border border-[#650a34]/10 bg-white p-5 shadow-[0_30px_90px_rgba(101,10,52,0.13)] sm:p-7">
             <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent z-10" />
             <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent z-10" />
 
@@ -62,20 +64,23 @@ export default function ClientsPanel() {
                     className="group flex items-center justify-between rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-5 transition hover:bg-[#650a34] hover:text-white"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-none bg-white text-[#650a34] shadow-sm">
-                        <Sparkles size={21} />
-                      </div>
+                      <motion.div
+                        whileHover={{ scale: 1.25, rotate: 15 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                        className="flex h-12 w-12 items-center justify-center rounded-none bg-white text-[#650a34] shadow-sm transition group-hover:bg-[#ed1968] group-hover:text-white"
+                      >
+                        <Sparkles size={22} className="animate-iconPulseGlow" />
+                      </motion.div>
 
                       <div>
                         <h4 className="text-lg font-extrabold leading-snug">
                           {client}
                         </h4>
                         <p className="text-sm text-gray-500 group-hover:text-white/75">
-                          Premium event planning & execution
+                          Premium event planning &amp; execution
                         </p>
                       </div>
                     </div>
-
                   </div>
                 ))}
               </div>
@@ -99,9 +104,9 @@ export default function ClientsPanel() {
                 animation-play-state: paused;
               }
             `}</style>
-          </div>
+          </SnakeBorderBox>
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }

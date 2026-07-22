@@ -6,6 +6,7 @@ import {
   Target,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
 
 export default function About() {
   const values = [
@@ -21,8 +22,7 @@ export default function About() {
     <main className="overflow-hidden bg-white">
       {/* Hero */}
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
-
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
             <div className="text-center lg:text-left">
               <h1 className="mx-auto max-w-3xl text-2xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:text-6xl lg:leading-[1.05]">
@@ -47,27 +47,23 @@ export default function About() {
             </div>
 
             <div className="relative order-2 lg:order-1">
-
               <div className="relative overflow-hidden">
-                <div className="aspect-square sm:aspect-square lg:aspect-[4/5]">
-                  <img
-                    src="/images/g16.jpeg"
-                    alt="Ekalavya Event & Entertainment"
-                    loading="lazy"
-                    decoding="async"
-                    className="h-full w-full object-cover"
-                  />
-
-                </div>
+                <img
+                  src="/images/g10.jpeg"
+                  alt="Ekalavya Team Planning"
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-square h-auto w-full object-cover sm:aspect-auto sm:h-[460px]"
+                />
               </div>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Journey */}
       <section id="journey" className="relative bg-white py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8 lg:items-stretch">
             <div className="relative order-2 lg:order-1 lg:h-full">
               <div className="relative h-full overflow-hidden rounded-none lg:absolute lg:inset-0">
@@ -103,9 +99,10 @@ export default function About() {
               </p>
 
               <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-2 sm:gap-4">
-                {values.map((value) => (
-                  <div
+                {values.map((value, index) => (
+                  <AnimatedCard
                     key={value}
+                    delay={index * 0.08}
                     className="group flex aspect-square flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:aspect-auto sm:flex-row sm:justify-start sm:p-4 sm:text-left"
                   >
                     <div className="mb-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12 sm:rounded-none">
@@ -116,18 +113,17 @@ export default function About() {
                         {value}
                       </span>
                     </div>
-                  </div>
+                  </AnimatedCard>
                 ))}
               </div>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Mission Vision */}
       <section className="relative bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
-
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               Built On Creativity, Trust & Seamless Execution
@@ -135,7 +131,7 @@ export default function About() {
           </div>
 
           <div className="mt-5 grid gap-6 lg:grid-cols-3">
-            <div className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
+            <AnimatedCard delay={0.1} className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
               <div className="mb-6 text-white">
                 <Target size={40} />
               </div>
@@ -148,9 +144,9 @@ export default function About() {
                 To provide complete event solutions that combine creative ideas,
                 professional planning and flawless execution for every client.
               </p>
-            </div>
+            </AnimatedCard>
 
-            <div className="rounded-none bg-[#ed1968] p-7 shadow-2xl shadow-[#ed1968]/20">
+            <AnimatedCard delay={0.2} className="rounded-none bg-[#ed1968] p-7 shadow-2xl shadow-[#ed1968]/20">
               <div className="mb-6 text-white">
                 <Crown size={40} />
               </div>
@@ -163,9 +159,9 @@ export default function About() {
                 To become a trusted event partner known for premium experiences,
                 smooth coordination and memorable celebrations.
               </p>
-            </div>
+            </AnimatedCard>
 
-            <div className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
+            <AnimatedCard delay={0.3} className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
               <div className="mb-6 text-white">
                 <ShieldCheck size={40} />
               </div>
@@ -175,63 +171,54 @@ export default function About() {
               </h3>
 
               <p className="mt-4 leading-6 text-white/80 sm:leading-8">
-                To understand your requirement, respect your vision and manage
-                every detail with care, transparency and professionalism.
+                Clear communication, honest pricing, dedicated coordination and
+                complete event ownership from start to finish.
               </p>
-            </div>
+            </AnimatedCard>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
-      {/* Work Process */}
+      {/* How We Work */}
       <section className="bg-white py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="flex flex-col items-center text-center gap-6 lg:flex-row lg:items-end lg:justify-between lg:text-left">
-            <div className="max-w-3xl">
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
-                Simple Process. Premium Result.
-              </h2>
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+              A Simple Process Designed For A Calm Event Day
+            </h2>
 
-              <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
-                Our approach keeps your event journey clear, organized and
-                stress-free.
-              </p>
-            </div>
-
-            <Link
-              to="/contact"
-              className="inline-flex w-fit items-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
-            >
-              Start Now
-              <ArrowRight size={18} />
-            </Link>
+            <p className="mt-4 leading-6 text-gray-600 sm:text-lg sm:leading-8">
+              We follow a disciplined event planning process so that every
+              requirement is captured and executed properly.
+            </p>
           </div>
 
           <div className="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 step: "01",
-                title: "Consultation",
-                text: "We understand your event type, budget, guest count and expectations.",
+                title: "Enquiry & Vision",
+                text: "We listen to your ideas, event type, audience and budget expectations.",
               },
               {
                 step: "02",
-                title: "Planning",
-                text: "We create the event concept, service flow and execution plan.",
+                title: "Planning & Design",
+                text: "We create a clear proposal covering venue, decor, production and entertainment.",
               },
               {
                 step: "03",
                 title: "Coordination",
-                text: "Our team manages vendors, venue, production, hospitality and logistics.",
+                text: "Our team manages vendors, setup timelines and event-day operational plans.",
               },
               {
                 step: "04",
                 title: "Execution",
                 text: "We deliver the event smoothly so you can enjoy every moment.",
               },
-            ].map((item) => (
-              <div
+            ].map((item, index) => (
+              <AnimatedCard
                 key={item.step}
+                delay={index * 0.1}
                 className="group relative overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-7 shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/15"
               >
                 <span className="font-heading text-6xl font-extrabold leading-none text-[#650a34]/8">
@@ -245,15 +232,15 @@ export default function About() {
                 <p className="mt-4 leading-7 text-gray-600">
                   {item.text}
                 </p>
-              </div>
+              </AnimatedCard>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Final CTA */}
       <section className="bg-white py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-8 rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
               <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
@@ -274,7 +261,7 @@ export default function About() {
               <ArrowRight size={18} />
             </Link>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
     </main>
   );

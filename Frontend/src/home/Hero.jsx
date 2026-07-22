@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { ArrowRight, ChevronDown, Volume2, VolumeX } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const [isMuted, setIsMuted] = useState(true);
@@ -26,13 +27,19 @@ export default function Hero() {
         loop
         muted={isMuted}
         playsInline
+        preload="metadata"
+        fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover"
         src="/Vedio/Home_HeroSection.mp4"
       />
 
       {/* Hero Content */}
-      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center justify-center px-4 py-12 text-center sm:px-6 sm:py-16 lg:py-20">
-        
+      <motion.div
+        initial={{ opacity: 0, y: 30, scale: 0.96 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative z-10 mx-auto flex max-w-5xl flex-col items-center justify-center px-4 py-12 text-center sm:px-6 sm:py-16 lg:py-20"
+      >
         {/* Main Heading with text shadow for crisp legibility over video */}
         <h1 className="max-w-4xl text-3xl font-extrabold uppercase leading-[1.1] text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
           <span className="block">WE BUILD </span>
@@ -62,7 +69,7 @@ export default function Hero() {
             />
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       {/* Sound On/Off Button (Icon Symbol Only) on the Left Side */}
       <button

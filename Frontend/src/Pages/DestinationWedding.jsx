@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   BadgeCheck,
@@ -14,6 +15,8 @@ import {
   Users,
   CheckCircle2,
 } from "lucide-react";
+import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
+import SnakeBorderBox from "../common/SnakeBorderBox";
 
 export default function DestinationWedding() {
   const weddingServices = [
@@ -122,7 +125,7 @@ export default function DestinationWedding() {
     <main className="overflow-hidden bg-white text-gray-700">
       {/* Hero Header */}
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
-        <div className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
+        <AnimatedSection className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div className="text-center lg:text-left">
             <h1 className="mx-auto max-w-3xl text-2xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:max-w-none lg:text-6xl lg:leading-[1.05]">
               CELEBRATE YOUR LOVE STORY IN PARADISE
@@ -143,14 +146,18 @@ export default function DestinationWedding() {
                 to="/contact"
                 className="inline-flex w-fit items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
-                Plan Your Wedding
+                Plan Your Destination Wedding
                 <ArrowRight size={18} />
               </Link>
             </div>
           </div>
 
           <div className="relative">
-            <div className="relative overflow-hidden rounded-none shadow-2xl">
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.4 }}
+              className="relative overflow-hidden rounded-none shadow-2xl border border-[#650a34]/15"
+            >
               <img
                 src="/images/g21.jpeg"
                 alt="Destination Wedding Celebration"
@@ -158,14 +165,14 @@ export default function DestinationWedding() {
                 decoding="async"
                 className="aspect-square w-full object-cover"
               />
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Dream. Design. Deliver. Section */}
       <section className="py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <AnimatedSection className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="text-center lg:text-left">
             <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               DREAM. DESIGN. DELIVER.
@@ -181,31 +188,31 @@ export default function DestinationWedding() {
             </p>
 
             <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
-              <div className="group flex min-h-[120px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md">
+              <SnakeBorderBox className="flex min-h-[120px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md">
                 <Crown size={24} className="text-[#650a34] mb-2" />
                 <span className="text-sm font-extrabold text-gray-800">10+ Years</span>
                 <span className="text-xs text-gray-600">Industry Expertise</span>
-              </div>
+              </SnakeBorderBox>
 
-              <div className="group flex min-h-[120px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md">
+              <SnakeBorderBox className="flex min-h-[120px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md">
                 <Gem size={24} className="text-[#ed1968] mb-2" />
                 <span className="text-sm font-extrabold text-gray-800">Premier Network</span>
                 <span className="text-xs text-gray-600">Venues &amp; Artists</span>
-              </div>
+              </SnakeBorderBox>
 
-              <div className="group flex min-h-[120px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md col-span-2 sm:col-span-1">
+              <SnakeBorderBox className="flex min-h-[120px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md col-span-2 sm:col-span-1">
                 <ShieldCheck size={24} className="text-[#650a34] mb-2" />
                 <span className="text-sm font-extrabold text-gray-800">Transparent</span>
                 <span className="text-xs text-gray-600">Zero Hidden Surprises</span>
-              </div>
+              </SnakeBorderBox>
             </div>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Complete Services Grid */}
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
             <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               COMPLETE DESTINATION WEDDING SERVICES
@@ -216,32 +223,38 @@ export default function DestinationWedding() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {weddingServices.map((item) => {
+            {weddingServices.map((item, index) => {
               const Icon = item.icon;
               return (
-                <div
+                <AnimatedCard
                   key={item.title}
-                  className="group rounded-none bg-white p-6 shadow-md border border-[#650a34]/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#650a34]/10"
+                  delay={index * 0.08}
                 >
-                  <div className="mb-5 flex h-13 w-13 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white">
-                    <Icon size={24} />
-                  </div>
-                  <h3 className="text-lg font-extrabold leading-snug text-gray-800">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-gray-600">
-                    {item.description}
-                  </p>
-                </div>
+                  <SnakeBorderBox className="h-full rounded-none bg-white p-6 shadow-md border border-[#650a34]/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-[#650a34]/15">
+                    <motion.div
+                      whileHover={{ scale: 1.2, rotate: 8 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                      className="mb-5 flex h-13 w-13 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white"
+                    >
+                      <Icon size={24} />
+                    </motion.div>
+                    <h3 className="text-lg font-extrabold leading-snug text-gray-800">
+                      {item.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-gray-600">
+                      {item.description}
+                    </p>
+                  </SnakeBorderBox>
+                </AnimatedCard>
               );
             })}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Why Choose Us Section */}
       <section className="bg-white py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
             <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               WHY PLAN YOUR DESTINATION WEDDING WITH US?
@@ -252,29 +265,31 @@ export default function DestinationWedding() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {whyChooseUs.map((item) => (
-              <div
+            {whyChooseUs.map((item, index) => (
+              <AnimatedCard
                 key={item.title}
-                className="rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-7 transition hover:shadow-lg"
+                delay={index * 0.1}
               >
-                <div className="mb-4 flex items-center gap-3">
-                  <CheckCircle2 size={24} className="shrink-0 text-[#ed1968]" />
-                  <h3 className="text-lg font-extrabold leading-snug text-gray-800">
-                    {item.title}
-                  </h3>
-                </div>
-                <p className="text-sm leading-6 text-gray-600">
-                  {item.description}
-                </p>
-              </div>
+                <SnakeBorderBox className="h-full rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-7 transition hover:shadow-lg">
+                  <div className="mb-4 flex items-center gap-3">
+                    <CheckCircle2 size={24} className="shrink-0 text-[#ed1968]" />
+                    <h3 className="text-lg font-extrabold leading-snug text-gray-800">
+                      {item.title}
+                    </h3>
+                  </div>
+                  <p className="text-sm leading-6 text-gray-600">
+                    {item.description}
+                  </p>
+                </SnakeBorderBox>
+              </AnimatedCard>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
       {/* Workflow Section */}
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
             <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               OUR DESTINATION WEDDING WORKFLOW
@@ -285,53 +300,57 @@ export default function DestinationWedding() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {workflowSteps.map((item) => (
-              <div
+            {workflowSteps.map((item, index) => (
+              <AnimatedCard
                 key={item.step}
-                className="group relative overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-7 shadow-lg transition hover:-translate-y-2 hover:shadow-xl"
+                delay={index * 0.1}
               >
-                <span className="font-heading text-5xl font-extrabold leading-none text-[#650a34]/10">
-                  {item.step}
-                </span>
+                <SnakeBorderBox className="relative h-full overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-7 shadow-lg transition hover:-translate-y-2 hover:shadow-xl">
+                  <span className="font-heading text-5xl font-extrabold leading-none text-[#650a34]/10 transition group-hover:text-[#ed1968]/20">
+                    {item.step}
+                  </span>
 
-                <h3 className="mt-4 text-xl font-extrabold leading-snug text-gray-800">
-                  {item.title}
-                </h3>
+                  <h3 className="mt-4 text-xl font-extrabold leading-snug text-gray-800">
+                    {item.title}
+                  </h3>
 
-                <p className="mt-3 text-sm leading-6 text-gray-600">
-                  {item.text}
-                </p>
-              </div>
+                  <p className="mt-3 text-sm leading-6 text-gray-600">
+                    {item.text}
+                  </p>
+                </SnakeBorderBox>
+              </AnimatedCard>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </section>
 
-      {/* CTA Banner */}
+      {/* CTA Banner with Mouse Hover Snake Border */}
       <section className="bg-white py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="flex flex-col items-center justify-between gap-8 rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
-            <div>
-              <p className="font-heading text-sm font-bold uppercase tracking-[0.24em] text-[#ffb8d5]">
-                Let us plan your dream wedding
-              </p>
-              <h2 className="mt-2 text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
-                READY TO PLAN YOUR DESTINATION WEDDING?
-              </h2>
-              <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
-                Planning your dream wedding should be an exciting journey, not a stressful one. We&apos;re here to turn your vision into a breathtaking reality so you can savour every moment.
-              </p>
-            </div>
+        <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
+          <SnakeBorderBox className="rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:px-12 lg:py-14 lg:text-left">
+            <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
+              <div>
+                <p className="font-heading text-sm font-bold uppercase tracking-[0.24em] text-[#ffb8d5]">
+                  Let us plan your dream wedding
+                </p>
+                <h2 className="mt-2 text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+                  READY TO PLAN YOUR DESTINATION WEDDING?
+                </h2>
+                <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
+                  Planning your dream wedding should be an exciting journey, not a stressful one. We&apos;re here to turn your vision into a breathtaking reality so you can savour every moment.
+                </p>
+              </div>
 
-            <Link
-              to="/contact"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-none bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
-            >
-              Plan Your Wedding
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-        </div>
+              <Link
+                to="/contact"
+                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-none bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+              >
+                Plan Your Wedding
+                <ArrowRight size={18} />
+              </Link>
+            </div>
+          </SnakeBorderBox>
+        </AnimatedSection>
       </section>
     </main>
   );

@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { servicesData } from "../data/servicesData";
 
 export default function Navbar() {
@@ -139,7 +140,12 @@ export default function Navbar() {
               href={`tel:${phone}`}
               className="inline-flex items-center gap-2 rounded-none bg-[#650a34] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#650a34]/25 transition hover:-translate-y-0.5 hover:bg-[#ed1968]"
             >
-              <Phone size={17} />
+              <motion.div
+                whileHover={{ rotate: 15, scale: 1.2 }}
+                transition={{ type: "spring", stiffness: 400, damping: 15 }}
+              >
+                <Phone size={17} className="animate-iconPulseGlow" />
+              </motion.div>
               Call Now
             </a>
           </div>
@@ -148,8 +154,14 @@ export default function Navbar() {
           <button
             onClick={() => setMenuOpen(true)}
             className="flex h-11 w-11 items-center justify-center rounded-none bg-[#650a34] text-white lg:hidden"
+            aria-label="Open Menu"
           >
-            <Menu size={23} />
+            <motion.div
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Menu size={22} />
+            </motion.div>
           </button>
         </nav>
       </header>
