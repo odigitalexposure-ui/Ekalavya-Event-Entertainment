@@ -10,6 +10,7 @@ const About = lazy(() => import("./Pages/About"));
 const Gallery = lazy(() => import("./Pages/Gallery"));
 const Blog = lazy(() => import("./Pages/Blog"));
 const Contact = lazy(() => import("./Pages/Contact"));
+const DestinationWedding = lazy(() => import("./Pages/DestinationWedding"));
 const ServiceDetails = lazy(() => import("./Pages/ServiceDetails"));
 
 const Loader = () => {
@@ -46,6 +47,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Suspense fallback={<Loader />}><Home /></Suspense> },
       { path: "about", element: <Suspense fallback={<Loader />}><About /></Suspense> },
+      { path: "destination-wedding", element: <Suspense fallback={<Loader />}><DestinationWedding /></Suspense> },
       { path: "gallery", element: <Suspense fallback={<Loader />}><Gallery /></Suspense> },
       { path: "blog", element: <Suspense fallback={<Loader />}><Blog /></Suspense> },
       { path: "contact", element: <Suspense fallback={<Loader />}><Contact /></Suspense> },

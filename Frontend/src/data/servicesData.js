@@ -179,36 +179,6 @@ export const servicesData = [
       "Clear communication between host, artist team, and production crew",
     ],
   },
-  {
-    slug: "destination-wedding",
-    title: "Destination Wedding",
-    subtitle: "Breathtaking locations, flawless logistics, and unforgettable wedding experiences.",
-    shortDescription:
-      "We plan, design, and manage spectacular destination weddings, coordinating travel, hospitality, decor, and ceremonies across stunning locations.",
-    heroImage: "/images/g21.jpeg",
-    overview:
-      "A destination wedding requires perfect synchronisation of travel, hospitality, local vendor management, and cultural traditions. Our team handles everything from venue selection and guest logistics to decor, entertainment, and ceremony coordination, ensuring you and your families can simply celebrate the joy of the occasion without stress.",
-    features: [
-      "Location scouting and venue finalization",
-      "Travel, visa, and accommodation logistics",
-      "Local vendor sourcing and coordination",
-      "Pre-wedding and main ceremony event planning",
-      "Guest hospitality, welcome desks, and itineraries",
-      "Complete on-ground event execution",
-    ],
-    process: [
-      "Understand your vision, preferred locations, guest count, and budget.",
-      "Shortlist destinations, secure venues, and negotiate group accommodations.",
-      "Plan the end-to-end logistics, decor, themes, and event schedule.",
-      "Execute the celebrations with a dedicated on-ground management team.",
-    ],
-    whyChoose: [
-      "Extensive experience in managing outstation events",
-      "Strong network of reliable vendors across popular destinations",
-      "Meticulous attention to guest comfort and travel logistics",
-      "Seamless integration of local culture with your wedding vision",
-    ],
-  },
 ];
 
 export const getServiceBySlug = (slug) =>

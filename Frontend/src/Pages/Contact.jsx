@@ -105,7 +105,7 @@ ${formData.message}
   };
 
   const inputClass =
-    "w-full rounded-2xl border border-[#650a34]/10 bg-white px-4 py-3.5 text-sm font-semibold text-gray-700 outline-none transition placeholder:text-gray-400 focus:border-[#ed1968] focus:ring-4 focus:ring-[#ed1968]/10 sm:px-5 sm:py-4";
+    "w-full rounded-none border border-[#650a34]/10 bg-white px-4 py-3.5 text-sm font-semibold text-gray-700 outline-none transition placeholder:text-gray-400 focus:border-[#ed1968] focus:ring-4 focus:ring-[#ed1968]/10 sm:px-5 sm:py-4";
 
   const errorClass = "mt-2 flex items-center gap-1 text-xs font-semibold text-red-500";
 
@@ -115,7 +115,7 @@ ${formData.message}
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-3xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+          <h1 className="mx-auto max-w-4xl text-2xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Let&apos;s Plan Your Next Beautiful Event Together
           </h1>
 
@@ -168,7 +168,7 @@ ${formData.message}
                 href={mapLink}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex w-fit items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="inline-flex w-fit items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 <Navigation size={18} />
                 Get Direction
@@ -180,7 +180,7 @@ ${formData.message}
                 href="https://www.instagram.com/ekalavyaevententertainment/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-none bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
               >
                 <FaInstagram />
               </a>
@@ -189,7 +189,7 @@ ${formData.message}
                 href="https://www.facebook.com/ekalavyaevententertainment"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-none bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
               >
                 <FaFacebookF />
               </a>
@@ -198,7 +198,7 @@ ${formData.message}
                 href="https://share.google/pkeVRIju2IvxucJqs"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-none bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
               >
                 <FaGoogle />
               </a>
@@ -206,7 +206,7 @@ ${formData.message}
           </div>
 
           {/* Form */}
-          <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-[#fff8fb] p-4 shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:rounded-[2.5rem] sm:p-8">
+          <div className="rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-8">
             <h3 className="text-2xl font-extrabold leading-snug text-gray-800 sm:text-3xl">
               Send Enquiry
             </h3>
@@ -324,7 +324,7 @@ ${formData.message}
 
               <button
                 type="submit"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Send Enquiry
                 <Send size={18} className="transition group-hover:translate-x-1" />
@@ -339,7 +339,7 @@ ${formData.message}
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <h2 className="text-2xl font-extrabold uppercase leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
                 Locate Us
               </h2>
 
@@ -353,14 +353,14 @@ ${formData.message}
               href={mapLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:w-fit sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:w-fit sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               Open Exact Navigation
               <Navigation size={18} />
             </a>
           </div>
 
-          <div className="overflow-hidden rounded-[1.7rem] border border-[#650a34]/10 bg-white p-2 shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:rounded-[2.5rem] sm:p-3">
+          <div className="overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-2 shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-3">
             <iframe
               title="Ekalavya Event & Entertainment Location"
               src={mapEmbed}
@@ -369,7 +369,7 @@ ${formData.message}
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              className="h-[320px] rounded-[1.3rem] sm:h-[420px] sm:rounded-[2rem] lg:h-[520px]"
+              className="h-[320px] rounded-none sm:h-[420px] lg:h-[520px]"
               style={{ border: 0 }}
             />
           </div>
@@ -381,8 +381,8 @@ ${formData.message}
 
 function ContactCard({ icon: Icon, title, text, link }) {
   const content = (
-    <div className="group flex w-full flex-col items-center gap-3 rounded-[1.4rem] bg-white p-4 text-center transition hover:-translate-y-1 sm:flex-row sm:gap-4 sm:rounded-[1.7rem] sm:p-5 sm:text-left">
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:h-14 sm:w-14">
+    <div className="group flex w-full flex-col items-center gap-3 rounded-none bg-white p-4 text-center transition hover:-translate-y-1 sm:flex-row sm:gap-4 sm:p-5 sm:text-left">
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:h-14 sm:w-14">
         <Icon size={23} />
       </div>
 

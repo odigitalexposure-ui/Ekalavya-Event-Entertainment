@@ -9,6 +9,7 @@ export default function Footer() {
   const quickLinks = [
     { name: "Home", to: "/" },
     { name: "About", to: "/about" },
+    { name: "Destination Wedding", to: "/destination-wedding" },
     { name: "Gallery", to: "/gallery" },
     { name: "Blogs", to: "/blog" },
     { name: "Contact", to: "/contact" },
@@ -105,11 +106,7 @@ export default function Footer() {
         <div className="mt-7 border-t border-white/10 pt-5">
           <div className="flex flex-col gap-3 text-xs text-gray-300 md:flex-row md:items-center md:justify-between">
             <p>
-              © {new Date().getFullYear()} Ekalavya Event & Entertainment. All
-              rights reserved.
-            </p>
-
-            <p>
+              © {new Date().getFullYear()} Ekalavya Event & Entertainment.
               Designed and developed by{" "}
               <a
                 href="https://www.teamdeoskolkata.in/"
@@ -160,7 +157,7 @@ function SocialLink({ href, label, icon: Icon }) {
       target="_blank"
       rel="noreferrer"
       aria-label={label}
-      className="flex h-8 w-8 items-center justify-center rounded-lg text-white transition hover:-translate-y-1 hover:text-[#ed1968]"
+      className="flex h-8 w-8 items-center justify-center rounded-none text-white transition hover:-translate-y-1 hover:text-[#ed1968]"
     >
       <Icon size={14} />
     </a>

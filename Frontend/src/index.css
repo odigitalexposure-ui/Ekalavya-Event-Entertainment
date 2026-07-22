@@ -16,6 +16,11 @@
 }
 
 @layer components {
+  button,
+  a:is([class*="px-5"], [class*="px-6"], [class*="px-7"], [class*="px-8"]):is([class*="py-3"], [class*="py-4"]) {
+    border-radius: 0 !important;
+  }
+
   @media (min-width: 1024px) {
     a:is([class*="rounded"]):is([class*="px-5"], [class*="px-6"]):is([class*="py-3"]),
     button:is([class*="rounded"]):is([class*="px-5"], [class*="px-6"]):is([class*="py-3"]) {

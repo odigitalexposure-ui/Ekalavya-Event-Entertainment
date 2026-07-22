@@ -43,7 +43,7 @@ export default function Hero() {
         </h1>
 
         {/* Subtitle with background pill for clean readability */}
-        <p className="mt-6 max-w-2xl rounded-2xl bg-black/40 px-6 py-3 text-base leading-6 text-white backdrop-blur-md shadow-lg drop-shadow sm:text-lg sm:leading-8">
+        <p className="mt-6 max-w-2xl rounded-none bg-black/40 px-6 py-3 text-base leading-6 text-white backdrop-blur-md shadow-lg drop-shadow sm:text-lg sm:leading-8">
           From venue management, decor production and Food &amp; Beverage service to
           entertainment, hospitality, logistics and celebrity management — we
           create unforgettable celebrations with style, planning and perfection.
@@ -53,7 +53,7 @@ export default function Hero() {
         <div className="mt-8 flex justify-center">
           <Link
             to="/contact"
-            className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-[#650a34] via-[#ed1968] to-[#650a34] bg-[length:200%_auto] px-7 py-3.5 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-2xl shadow-[#ed1968]/40 transition-all duration-300 hover:bg-right hover:-translate-y-1 sm:px-9 sm:py-4 sm:text-sm sm:tracking-wide"
+            className="group inline-flex items-center justify-center gap-2 rounded-none bg-gradient-to-r from-[#650a34] via-[#ed1968] to-[#650a34] bg-[length:200%_auto] px-7 py-3.5 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-2xl shadow-[#ed1968]/40 transition-all duration-300 hover:bg-right hover:-translate-y-1 sm:px-9 sm:py-4 sm:text-sm sm:tracking-wide"
           >
             Plan Your Event
             <ArrowRight
@@ -68,7 +68,7 @@ export default function Hero() {
       <button
         type="button"
         onClick={toggleSound}
-        className="absolute bottom-6 left-5 z-20 flex h-12 w-12 items-center justify-center rounded-xl border border-white/30 bg-black/50 text-white backdrop-blur-md shadow-xl transition-all hover:bg-black/75 hover:scale-110 sm:bottom-8 sm:left-8"
+        className="absolute bottom-6 left-5 z-20 flex h-12 w-12 items-center justify-center rounded-none border border-white/30 bg-black/50 text-white backdrop-blur-md shadow-xl transition-all hover:bg-black/75 hover:scale-110 sm:bottom-8 sm:left-8"
         aria-label={isMuted ? "Turn Sound On" : "Turn Sound Off"}
         title={isMuted ? "Unmute Sound" : "Mute Sound"}
       >

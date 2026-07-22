@@ -33,7 +33,7 @@ export default function ClientsPanel() {
             <div className="mt-5 flex justify-center sm:justify-start">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="inline-flex items-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Work With Us
                 <ArrowRight size={18} />
@@ -42,7 +42,7 @@ export default function ClientsPanel() {
           </div>
 
           {/* Right Sliding Panel */}
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-[#650a34]/10 bg-white p-5 shadow-[0_30px_90px_rgba(101,10,52,0.13)] sm:p-7">
+          <div className="relative overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-5 shadow-[0_30px_90px_rgba(101,10,52,0.13)] sm:p-7">
             <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent z-10" />
             <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent z-10" />
 
@@ -59,10 +59,10 @@ export default function ClientsPanel() {
                 {[...clients, ...clients].map((client, index) => (
                   <div
                     key={`${client}-${index}`}
-                    className="group flex items-center justify-between rounded-[1.7rem] border border-[#650a34]/10 bg-[#fff8fb] p-5 transition hover:bg-[#650a34] hover:text-white"
+                    className="group flex items-center justify-between rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-5 transition hover:bg-[#650a34] hover:text-white"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#650a34] shadow-sm">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-none bg-white text-[#650a34] shadow-sm">
                         <Sparkles size={21} />
                       </div>
 

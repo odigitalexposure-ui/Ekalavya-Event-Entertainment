@@ -28,8 +28,8 @@ export default function Reviews() {
         </div>
 
         {/* Review Card */}
-        <div className="mx-auto mt-5 max-w-5xl rounded-[2.5rem] border border-[#650a34]/10 bg-white p-6 text-center shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-8 lg:p-10">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34]">
+        <div className="mx-auto mt-5 max-w-5xl rounded-none border border-[#650a34]/10 bg-white p-6 text-center shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-8 lg:p-10">
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34]">
             <FaGoogle size={30} />
           </div>
 
@@ -53,7 +53,7 @@ export default function Reviews() {
               href={googleReviewUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               <MessageSquarePlus size={18} />
               Give Review
@@ -63,7 +63,7 @@ export default function Reviews() {
               href={googleReviewUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl border border-[#650a34]/20 bg-[#fff8fb] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:bg-white hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex items-center justify-center gap-2 rounded-none border border-[#650a34]/20 bg-[#fff8fb] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:bg-white hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               See Reviews
               <ExternalLink size={18} />
@@ -75,9 +75,9 @@ export default function Reviews() {
       {/* CTA */}
       <div className="bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
+          <div className="flex flex-col items-center justify-between gap-8 rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
-              <h3 className="text-2xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl">
+              <h3 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
                 Want To Create Your Own Memorable Event?
               </h3>
 
@@ -90,7 +90,7 @@ export default function Reviews() {
 
             <Link
               to="/contact"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-none bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
             >
               Enquire Now
               <ArrowRight size={18} />

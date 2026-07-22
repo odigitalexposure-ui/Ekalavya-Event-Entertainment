@@ -20,6 +20,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Destination Wedding", href: "/destination-wedding" },
     { name: "Gallery", href: "/gallery" },
     { name: "Blogs", href: "/blog" },
     { name: "Contact", href: "/contact" },
@@ -101,7 +102,7 @@ export default function Navbar() {
               </button>
 
               <div
-                className={`absolute left-1/2 top-9 w-72 -translate-x-1/2 rounded-3xl border border-[#650a34]/10 bg-white p-3 shadow-2xl shadow-[#650a34]/15 transition-all duration-300 ${
+                className={`absolute left-1/2 top-9 w-72 -translate-x-1/2 rounded-none border border-[#650a34]/10 bg-white p-3 shadow-2xl shadow-[#650a34]/15 transition-all duration-300 ${
                   serviceOpen
                     ? "visible translate-y-0 opacity-100"
                     : "invisible translate-y-3 opacity-0"
@@ -112,7 +113,7 @@ export default function Navbar() {
                     key={item.name}
                     to={item.href}
                     onClick={() => setServiceOpen(false)}
-                    className="block rounded-2xl px-4 py-3 text-md font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
+                    className="block rounded-none px-4 py-3 text-md font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
                   >
                     {item.name}
                   </Link>
@@ -136,7 +137,7 @@ export default function Navbar() {
           <div className="hidden items-center gap-3 lg:flex">
             <a
               href={`tel:${phone}`}
-              className="inline-flex items-center gap-2 rounded-xl bg-[#650a34] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#650a34]/25 transition hover:-translate-y-0.5 hover:bg-[#ed1968]"
+              className="inline-flex items-center gap-2 rounded-none bg-[#650a34] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#650a34]/25 transition hover:-translate-y-0.5 hover:bg-[#ed1968]"
             >
               <Phone size={17} />
               Call Now
@@ -146,7 +147,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(true)}
-            className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#650a34] text-white lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-none bg-[#650a34] text-white lg:hidden"
           >
             <Menu size={23} />
           </button>
@@ -174,7 +175,7 @@ export default function Navbar() {
 
           <button
             onClick={closeMenu}
-            className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#650a34]/10 text-[#650a34]"
+            className="flex h-10 w-10 items-center justify-center rounded-none bg-[#650a34]/10 text-[#650a34]"
           >
             <X size={22} />
           </button>
@@ -187,7 +188,7 @@ export default function Navbar() {
                 key={link.name}
                 to={link.href}
                 onClick={closeMenu}
-                className="block rounded-2xl px-4 py-3 text-base font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
+                className="block rounded-none px-4 py-3 text-base font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
               >
                 {link.name}
               </Link>
@@ -197,7 +198,7 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={() => setMobileServiceOpen((open) => !open)}
-                className="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-base font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
+                className="flex w-full items-center justify-between rounded-none px-4 py-3 text-base font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
               >
                 Services
                 <ChevronDown
@@ -217,7 +218,7 @@ export default function Navbar() {
                       key={item.name}
                       to={item.href}
                       onClick={closeMenu}
-                      className="block rounded-xl px-4 py-3 text-sm font-medium text-gray-600 transition hover:bg-[#650a34]/5 hover:text-[#650a34]"
+                      className="block rounded-none px-4 py-3 text-sm font-medium text-gray-600 transition hover:bg-[#650a34]/5 hover:text-[#650a34]"
                     >
                       {item.name}
                     </Link>
@@ -231,7 +232,7 @@ export default function Navbar() {
                 key={link.name}
                 to={link.href}
                 onClick={closeMenu}
-                className="block rounded-2xl px-4 py-3 text-base font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
+                className="block rounded-none px-4 py-3 text-base font-semibold text-gray-700 transition hover:bg-[#650a34]/8 hover:text-[#650a34]"
               >
                 {link.name}
               </Link>
@@ -241,7 +242,7 @@ export default function Navbar() {
           <div className="mt-5 space-y-3">
             <a
               href={`tel:${phone}`}
-              className="flex items-center justify-center gap-2 rounded-xl border border-[#650a34] px-5 py-3 font-semibold text-[#650a34]"
+              className="flex items-center justify-center gap-2 rounded-none border border-[#650a34] px-5 py-3 font-semibold text-[#650a34]"
             >
               <Phone size={18} />
               Call Now
@@ -250,7 +251,7 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={closeMenu}
-              className="flex items-center justify-center rounded-xl bg-[#650a34] px-5 py-3 font-semibold text-white"
+              className="flex items-center justify-center rounded-none bg-[#650a34] px-5 py-3 font-semibold text-white"
             >
               Contact Us
             </Link>

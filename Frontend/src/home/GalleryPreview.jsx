@@ -32,7 +32,7 @@ export default function GalleryPreview() {
 
           <Link
             to="/gallery"
-            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide lg:self-auto"
+            className="inline-flex items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide lg:self-auto"
           >
             View Full Gallery
             <ArrowRight size={18} />
@@ -62,7 +62,7 @@ export default function GalleryPreview() {
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-gray-950/80 p-4 backdrop-blur-md">
           <button
             onClick={() => setSelectedItem(null)}
-            className="absolute right-5 top-5 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-[#650a34]"
+            className="absolute right-5 top-5 flex h-11 w-11 items-center justify-center rounded-none bg-white text-[#650a34]"
           >
             <X size={22} />
           </button>

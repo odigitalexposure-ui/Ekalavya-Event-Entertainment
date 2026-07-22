@@ -51,13 +51,9 @@ export default function ServiceDetails() {
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div className="text-center lg:text-left">
-            <h1 className="mx-auto max-w-3xl text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-4xl sm:leading-[1.06] lg:mx-0 lg:max-w-none lg:text-6xl lg:leading-[1.05]">
-              {service.title}
-            </h1>
-
-            <p className="mx-auto mt-5 max-w-2xl font-heading text-lg font-semibold leading-snug text-[#650a34] sm:text-xl lg:mx-0">
+            <h1 className="mx-auto max-w-3xl text-2xl font-extrabold uppercase leading-[1.15] text-gray-800 sm:text-3xl sm:leading-[1.1] lg:mx-0 lg:max-w-none lg:text-4xl lg:leading-[1.1]">
               {service.subtitle}
-            </p>
+            </h1>
 
             <p className="mx-auto mt-5 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
               {service.shortDescription}
@@ -66,7 +62,7 @@ export default function ServiceDetails() {
             <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
               <Link
                 to="/contact"
-                className="inline-flex w-fit items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="inline-flex w-fit items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Enquire Now
                 <ArrowRight size={18} />
@@ -90,7 +86,7 @@ export default function ServiceDetails() {
       </section>
 
       <section className="py-6 sm:py-8 lg:py-10">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="text-center lg:text-left">
             <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               Designed for events
@@ -111,11 +107,11 @@ export default function ServiceDetails() {
                 return (
                   <div
                     key={item.label}
-                    className={`group flex min-h-[140px] flex-col items-center justify-center rounded-2xl border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md lg:min-h-0 lg:items-start lg:border-none lg:bg-transparent lg:p-0 lg:text-left lg:shadow-none lg:hover:translate-y-0 lg:hover:shadow-none ${
+                    className={`group flex min-h-[140px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md lg:min-h-0 lg:items-start lg:border-none lg:bg-transparent lg:p-0 lg:text-left lg:shadow-none lg:hover:translate-y-0 lg:hover:shadow-none ${
                       isLastOdd ? "col-span-2 mx-auto w-full max-w-[190px] sm:col-span-1 sm:mx-0 sm:max-w-none" : ""
                     }`}
                   >
-                    <div className="mb-3 flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white lg:mb-4 lg:h-12 lg:w-12">
+                    <div className="mb-3 flex h-11 w-11 shrink-0 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white lg:mb-4 lg:h-12 lg:w-12">
                       <Icon size={21} />
                     </div>
                     <div>
@@ -144,9 +140,9 @@ export default function ServiceDetails() {
               return (
                 <div
                   key={feature}
-                  className="group rounded-[2rem] bg-white p-6 transition duration-300 hover:-translate-y-2"
+                  className="group rounded-none bg-white p-6 transition duration-300 hover:-translate-y-2"
                 >
-                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white">
+                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white">
                     <Icon size={25} />
                   </div>
                   <h3 className="text-lg font-extrabold leading-snug text-gray-800">
@@ -165,7 +161,7 @@ export default function ServiceDetails() {
         
         <div className="mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.2] text-gray-800 sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               A Clear Plan From First Brief To <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#650a34] to-[#ed1968]">Final Applause</span>
             </h2>
             <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -184,8 +180,8 @@ export default function ServiceDetails() {
                   className="relative flex flex-col items-center text-center group"
                 >
                   {/* Elegant Number Marker */}
-                  <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_8px_30px_rgba(237,25,104,0.2)]">
-                    <div className="absolute inset-0 rounded-2xl border border-[#650a34]/5 group-hover:border-[#ed1968]/30 transition-colors duration-500"></div>
+                  <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-none bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_8px_30px_rgba(237,25,104,0.2)]">
+                    <div className="absolute inset-0 rounded-none border border-[#650a34]/5 group-hover:border-[#ed1968]/30 transition-colors duration-500"></div>
                     <span className="font-heading text-3xl font-black text-[#650a34] transition-colors duration-500 group-hover:text-[#ed1968]">
                       {index + 1}
                     </span>
@@ -211,7 +207,7 @@ export default function ServiceDetails() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div className="text-center lg:text-left">
-            <h2 className="mx-auto max-w-2xl text-2xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
+            <h2 className="mx-auto max-w-2xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               Premium execution with personal attention
             </h2>
             <p className="mx-auto mt-5 max-w-2xl leading-6 text-gray-600 sm:leading-8 lg:mx-0 lg:max-w-none">
@@ -236,12 +232,12 @@ export default function ServiceDetails() {
 
       <section className="bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
+          <div className="flex flex-col items-center justify-between gap-8 rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
               <p className="font-heading text-sm font-bold uppercase leading-snug tracking-[0.24em] text-[#ffb8d5]">
                 Let&apos;s Plan Your Event
               </p>
-              <h2 className="mt-2 text-2xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl">
+              <h2 className="mt-2 text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
                 Ready to discuss {service.title}?
               </h2>
               <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
@@ -252,7 +248,7 @@ export default function ServiceDetails() {
 
             <Link
               to="/contact"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-none bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
             >
               Contact us
               <ArrowRight size={18} />

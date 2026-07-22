@@ -25,7 +25,7 @@ export default function About() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
             <div className="text-center lg:text-left">
-              <h1 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:text-6xl lg:leading-[1.05]">
+              <h1 className="mx-auto max-w-3xl text-2xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:text-6xl lg:leading-[1.05]">
                 Designing Events That Feel Premium, Personal & Unforgettable
               </h1>
 
@@ -38,7 +38,7 @@ export default function About() {
               <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
                 <a
                   href="#journey"
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                  className="inline-flex items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
                 >
                   Our Journey
                   <ArrowRight size={18} />
@@ -70,7 +70,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-8 lg:items-stretch">
             <div className="relative order-2 lg:order-1 lg:h-full">
-              <div className="relative h-full overflow-hidden rounded-2xl lg:absolute lg:inset-0">
+              <div className="relative h-full overflow-hidden rounded-none lg:absolute lg:inset-0">
                 <img
                   src="/images/g41.jpeg"
                   alt="Event Planning Journey"
@@ -82,7 +82,7 @@ export default function About() {
             </div>
 
             <div className="order-1 text-center lg:order-2 lg:text-left">
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
                 From Ideas To Experiences, We Manage Every Detail With Passion
               </h2>
 
@@ -106,9 +106,9 @@ export default function About() {
                 {values.map((value) => (
                   <div
                     key={value}
-                    className="group flex aspect-square flex-col items-center justify-center rounded-2xl border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:aspect-auto sm:flex-row sm:justify-start sm:p-4 sm:text-left"
+                    className="group flex aspect-square flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:aspect-auto sm:flex-row sm:justify-start sm:p-4 sm:text-left"
                   >
-                    <div className="mb-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12 sm:rounded-none">
+                    <div className="mb-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12 sm:rounded-none">
                       <CheckCircle2 size={20} className="sm:h-[21px] sm:w-[21px]" />
                     </div>
                     <div>
@@ -129,13 +129,13 @@ export default function About() {
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
               Built On Creativity, Trust & Seamless Execution
             </h2>
           </div>
 
           <div className="mt-5 grid gap-6 lg:grid-cols-3">
-            <div className="rounded-[2rem] bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
+            <div className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
               <div className="mb-6 text-white">
                 <Target size={40} />
               </div>
@@ -150,7 +150,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="rounded-[2rem] bg-[#ed1968] p-7 shadow-2xl shadow-[#ed1968]/20">
+            <div className="rounded-none bg-[#ed1968] p-7 shadow-2xl shadow-[#ed1968]/20">
               <div className="mb-6 text-white">
                 <Crown size={40} />
               </div>
@@ -165,7 +165,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="rounded-[2rem] bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
+            <div className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
               <div className="mb-6 text-white">
                 <ShieldCheck size={40} />
               </div>
@@ -188,7 +188,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center text-center gap-6 lg:flex-row lg:items-end lg:justify-between lg:text-left">
             <div className="max-w-3xl">
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
                 Simple Process. Premium Result.
               </h2>
 
@@ -200,7 +200,7 @@ export default function About() {
 
             <Link
               to="/contact"
-              className="inline-flex w-fit items-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex w-fit items-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               Start Now
               <ArrowRight size={18} />
@@ -232,7 +232,7 @@ export default function About() {
             ].map((item) => (
               <div
                 key={item.step}
-                className="group relative overflow-hidden rounded-[2rem] border border-[#650a34]/10 bg-white p-7 shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/15"
+                className="group relative overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-7 shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/15"
               >
                 <span className="font-heading text-6xl font-extrabold leading-none text-[#650a34]/8">
                   {item.step}
@@ -254,9 +254,9 @@ export default function About() {
       {/* Final CTA */}
       <section className="bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
+          <div className="flex flex-col items-center justify-between gap-8 rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
-              <h2 className="text-2xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl">
+              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
                 Ready To Plan Your Next Event?
               </h2>
 
@@ -268,7 +268,7 @@ export default function About() {
 
             <Link
               to="/contact"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-none bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
             >
               Enquire Now
               <ArrowRight size={18} />
