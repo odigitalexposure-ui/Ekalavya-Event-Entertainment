@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
+import SnakeBorderBox from "../common/SnakeBorderBox";
 
 export default function About() {
   const values = [
@@ -26,11 +27,11 @@ export default function About() {
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
             <div className="text-center lg:text-left">
               <h1 className="mx-auto max-w-3xl text-2xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:text-6xl lg:leading-[1.05]">
-                Designing Events That Feel Premium, Personal & Unforgettable
+                Designing Events That Feel Premium, Personal &amp; Unforgettable
               </h1>
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
-                Ekalavya Event & Entertainment is a professional event
+                Ekalavya Event &amp; Entertainment is a professional event
                 management company, dedicated to
                 creating beautiful, smooth and memorable event experiences.
               </p>
@@ -83,7 +84,7 @@ export default function About() {
               </h2>
 
               <p className="mt-6 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
-                Ekalavya Event & Entertainment was built with a vision to offer
+                Ekalavya Event &amp; Entertainment was built with a vision to offer
                 complete event solutions under one trusted name. With 9 years of
                 industry experience, the team understands how to plan, manage and
                 execute events that feel effortless for the client and memorable
@@ -103,16 +104,17 @@ export default function About() {
                   <AnimatedCard
                     key={value}
                     delay={index * 0.08}
-                    className="group flex aspect-square flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:aspect-auto sm:flex-row sm:justify-start sm:p-4 sm:text-left"
                   >
-                    <div className="mb-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12 sm:rounded-none">
-                      <CheckCircle2 size={20} className="sm:h-[21px] sm:w-[21px]" />
-                    </div>
-                    <div>
-                      <span className="text-[13px] font-extrabold leading-tight text-gray-800 sm:text-base sm:leading-snug">
-                        {value}
-                      </span>
-                    </div>
+                    <SnakeBorderBox className="group flex aspect-square flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:aspect-auto sm:flex-row sm:justify-start sm:p-4 sm:text-left h-full">
+                      <div className="mb-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12 sm:rounded-none">
+                        <CheckCircle2 size={20} className="sm:h-[21px] sm:w-[21px]" />
+                      </div>
+                      <div>
+                        <span className="text-[13px] font-extrabold leading-tight text-gray-800 sm:text-base sm:leading-snug">
+                          {value}
+                        </span>
+                      </div>
+                    </SnakeBorderBox>
                   </AnimatedCard>
                 ))}
               </div>
@@ -126,60 +128,66 @@ export default function About() {
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
-              Built On Creativity, Trust & Seamless Execution
+              Built On Creativity, Trust &amp; Seamless Execution
             </h2>
           </div>
 
           <div className="mt-5 grid gap-6 lg:grid-cols-3">
-            <AnimatedCard delay={0.1} className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
-              <div className="mb-6 text-white">
-                <Target size={40} />
-              </div>
+            <AnimatedCard delay={0.1}>
+              <SnakeBorderBox className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20 h-full">
+                <div className="mb-6 text-white">
+                  <Target size={40} />
+                </div>
 
-              <h3 className="text-2xl font-extrabold leading-snug text-white">
-                Our Mission
-              </h3>
+                <h3 className="text-2xl font-extrabold leading-snug text-white">
+                  Our Mission
+                </h3>
 
-              <p className="mt-4 leading-6 text-white/80 sm:leading-8">
-                To provide complete event solutions that combine creative ideas,
-                professional planning and flawless execution for every client.
-              </p>
+                <p className="mt-4 leading-6 text-white/80 sm:leading-8">
+                  To provide complete event solutions that combine creative ideas,
+                  professional planning and flawless execution for every client.
+                </p>
+              </SnakeBorderBox>
             </AnimatedCard>
 
-            <AnimatedCard delay={0.2} className="rounded-none bg-[#ed1968] p-7 shadow-2xl shadow-[#ed1968]/20">
-              <div className="mb-6 text-white">
-                <Crown size={40} />
-              </div>
+            <AnimatedCard delay={0.2}>
+              <SnakeBorderBox className="rounded-none bg-[#ed1968] p-7 shadow-2xl shadow-[#ed1968]/20 h-full">
+                <div className="mb-6 text-white">
+                  <Crown size={40} />
+                </div>
 
-              <h3 className="text-2xl font-extrabold leading-snug text-white">
-                Our Vision
-              </h3>
+                <h3 className="text-2xl font-extrabold leading-snug text-white">
+                  Our Vision
+                </h3>
 
-              <p className="mt-4 leading-6 text-white/80 sm:leading-8">
-                To become a trusted event partner known for premium experiences,
-                smooth coordination and memorable celebrations.
-              </p>
+                <p className="mt-4 leading-6 text-white/80 sm:leading-8">
+                  To become a trusted event partner known for premium experiences,
+                  smooth coordination and memorable celebrations.
+                </p>
+              </SnakeBorderBox>
             </AnimatedCard>
 
-            <AnimatedCard delay={0.3} className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20">
-              <div className="mb-6 text-white">
-                <ShieldCheck size={40} />
-              </div>
+            <AnimatedCard delay={0.3}>
+              <SnakeBorderBox className="rounded-none bg-[#650a34] p-7 shadow-2xl shadow-[#650a34]/20 h-full">
+                <div className="mb-6 text-white">
+                  <ShieldCheck size={40} />
+                </div>
 
-              <h3 className="text-2xl font-extrabold leading-snug text-white">
-                Our Promise
-              </h3>
+                <h3 className="text-2xl font-extrabold leading-snug text-white">
+                  Our Promise
+                </h3>
 
-              <p className="mt-4 leading-6 text-white/80 sm:leading-8">
-                Clear communication, honest pricing, dedicated coordination and
-                complete event ownership from start to finish.
-              </p>
+                <p className="mt-4 leading-6 text-white/80 sm:leading-8">
+                  Clear communication, honest pricing, dedicated coordination and
+                  complete event ownership from start to finish.
+                </p>
+              </SnakeBorderBox>
             </AnimatedCard>
           </div>
         </AnimatedSection>
       </section>
 
-      {/* How We Work */}
+      {/* How We Work / Process Section with Mouse Hover Snake Border */}
       <section className="bg-white py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
@@ -219,19 +227,20 @@ export default function About() {
               <AnimatedCard
                 key={item.step}
                 delay={index * 0.1}
-                className="group relative overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-7 shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/15"
               >
-                <span className="font-heading text-6xl font-extrabold leading-none text-[#650a34]/8">
-                  {item.step}
-                </span>
+                <SnakeBorderBox className="group relative overflow-hidden rounded-none border border-[#650a34]/10 bg-white p-7 shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/15 h-full">
+                  <span className="font-heading text-6xl font-extrabold leading-none text-[#650a34]/8 transition group-hover:text-[#ed1968]/20">
+                    {item.step}
+                  </span>
 
-                <h3 className="mt-5 text-2xl font-extrabold leading-snug text-gray-800">
-                  {item.title}
-                </h3>
+                  <h3 className="mt-5 text-2xl font-extrabold leading-snug text-gray-800">
+                    {item.title}
+                  </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">
-                  {item.text}
-                </p>
+                  <p className="mt-4 leading-7 text-gray-600">
+                    {item.text}
+                  </p>
+                </SnakeBorderBox>
               </AnimatedCard>
             ))}
           </div>
@@ -241,26 +250,28 @@ export default function About() {
       {/* Final CTA */}
       <section className="bg-white py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="flex flex-col items-center justify-between gap-8 rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
-            <div>
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
-                Ready To Plan Your Next Event?
-              </h2>
+          <SnakeBorderBox className="rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:px-12 lg:py-14 lg:text-left">
+            <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
+              <div>
+                <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+                  Ready To Plan Your Next Event?
+                </h2>
 
-              <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
-                Let Ekalavya Event & Entertainment create a beautiful, organized
-                and memorable event experience for you.
-              </p>
+                <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
+                  Let Ekalavya Event &amp; Entertainment create a beautiful, organized
+                  and memorable event experience for you.
+                </p>
+              </div>
+
+              <Link
+                to="/contact"
+                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-none bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+              >
+                Enquire Now
+                <ArrowRight size={18} />
+              </Link>
             </div>
-
-            <Link
-              to="/contact"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-none bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
-            >
-              Enquire Now
-              <ArrowRight size={18} />
-            </Link>
-          </div>
+          </SnakeBorderBox>
         </AnimatedSection>
       </section>
     </main>
