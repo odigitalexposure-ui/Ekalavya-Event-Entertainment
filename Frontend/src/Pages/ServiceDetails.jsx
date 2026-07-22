@@ -5,7 +5,6 @@ import {
   BadgeCheck,
   CalendarCheck,
   CheckCircle2,
-  ClipboardList,
   ConciergeBell,
   Gem,
   HeartHandshake,
@@ -48,7 +47,7 @@ export default function ServiceDetails() {
 
   return (
     <main className="overflow-hidden bg-white text-gray-700">
-      <section className="relative bg-[#fff8fb] pt-24 pb-6 sm:pt-28 lg:pt-32 lg:pb-8">
+      <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div className="text-center lg:text-left">
@@ -67,7 +66,7 @@ export default function ServiceDetails() {
             <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
               <Link
                 to="/contact"
-                className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="inline-flex w-fit items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Enquire Now
                 <ArrowRight size={18} />
@@ -160,7 +159,7 @@ export default function ServiceDetails() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+      <section className="py-6 sm:py-8 lg:py-10 relative overflow-hidden">
         {/* Background Decorative Element */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-px bg-gradient-to-r from-transparent via-[#650a34]/20 to-transparent"></div>
         
@@ -185,8 +184,8 @@ export default function ServiceDetails() {
                   className="relative flex flex-col items-center text-center group"
                 >
                   {/* Elegant Number Marker */}
-                  <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_8px_30px_rgba(237,25,104,0.2)]">
-                    <div className="absolute inset-0 rounded-full border border-[#650a34]/5 group-hover:border-[#ed1968]/30 transition-colors duration-500"></div>
+                  <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-2xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_8px_30px_rgba(237,25,104,0.2)]">
+                    <div className="absolute inset-0 rounded-2xl border border-[#650a34]/5 group-hover:border-[#ed1968]/30 transition-colors duration-500"></div>
                     <span className="font-heading text-3xl font-black text-[#650a34] transition-colors duration-500 group-hover:text-[#ed1968]">
                       {index + 1}
                     </span>
@@ -212,7 +211,7 @@ export default function ServiceDetails() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div className="text-center lg:text-left">
-            <h2 className="mx-auto max-w-2xl text-2 font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
+            <h2 className="mx-auto max-w-2xl text-2xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               Premium execution with personal attention
             </h2>
             <p className="mx-auto mt-5 max-w-2xl leading-6 text-gray-600 sm:leading-8 lg:mx-0 lg:max-w-none">
@@ -235,7 +234,7 @@ export default function ServiceDetails() {
         </div>
       </section>
 
-      <section className="bg-white py-10 lg:py-16">
+      <section className="bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
@@ -253,7 +252,7 @@ export default function ServiceDetails() {
 
             <Link
               to="/contact"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
             >
               Contact us
               <ArrowRight size={18} />

@@ -1,25 +1,13 @@
 import {
   ArrowRight,
-  Award,
-  CalendarCheck,
   CheckCircle2,
   Crown,
-  HeartHandshake,
-  PartyPopper,
   ShieldCheck,
   Target,
-  Users,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function About() {
-  const stats = [
-    { number: "9+", label: "Years Industry Experience", icon: Award },
-    { number: "200+", label: "Events Managed", icon: PartyPopper },
-    { number: "1000+", label: "Happy Guests", icon: Users },
-    { number: "30+", label: "Corporate Clients", icon: HeartHandshake },
-  ];
-
   const values = [
     "Creative event concepts",
     "Professional planning",
@@ -32,7 +20,7 @@ export default function About() {
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-24 pb-6 sm:pt-28 lg:pt-32 lg:pb-8">
+      <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
@@ -50,18 +38,11 @@ export default function About() {
               <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
                 <a
                   href="#journey"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
                 >
                   Our Journey
                   <ArrowRight size={18} />
                 </a>
-
-                {/* <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-[#650a34]/20 bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-1 hover:border-[#ed1968] hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
-                >
-                  Plan An Event
-                </Link> */}
               </div>
             </div>
 
@@ -81,32 +62,6 @@ export default function About() {
               </div>
             </div>
           </div>
-
-          {/* Stats */}
-          {/* <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((item) => {
-              const Icon = item.icon;
-
-              return (
-                <div
-                  key={item.label}
-                  className="rounded-[2rem] border border-[#650a34]/10 bg-white p-6 shadow-lg shadow-[#650a34]/5 transition hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#650a34]/12"
-                >
-                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#650a34]/8 text-[#650a34]">
-                    <Icon size={25} />
-                  </div>
-
-                  <h3 className="text-4xl font-extrabold leading-none text-gray-800">
-                    {item.number}
-                  </h3>
-
-                  <p className="mt-2 font-semibold text-gray-500">
-                    {item.label}
-                  </p>
-                </div>
-              );
-            })}
-          </div> */}
         </div>
       </section>
 
@@ -153,7 +108,7 @@ export default function About() {
                     key={value}
                     className="group flex aspect-square flex-col items-center justify-center rounded-2xl border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:aspect-auto sm:flex-row sm:justify-start sm:p-4 sm:text-left"
                   >
-                    <div className="mb-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12 sm:rounded-none">
+                    <div className="mb-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12 sm:rounded-none">
                       <CheckCircle2 size={20} className="sm:h-[21px] sm:w-[21px]" />
                     </div>
                     <div>
@@ -245,7 +200,7 @@ export default function About() {
 
             <Link
               to="/contact"
-              className="inline-flex w-fit items-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex w-fit items-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               Start Now
               <ArrowRight size={18} />
@@ -297,7 +252,7 @@ export default function About() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-white py-10 lg:py-16">
+      <section className="bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
@@ -313,7 +268,7 @@ export default function About() {
 
             <Link
               to="/contact"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
             >
               Enquire Now
               <ArrowRight size={18} />

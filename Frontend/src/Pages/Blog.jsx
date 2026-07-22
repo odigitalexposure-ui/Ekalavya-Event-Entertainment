@@ -76,7 +76,7 @@ export default function Blog() {
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-24 pb-6 sm:pt-28 lg:pt-32 lg:pb-8">
+      <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
           <h1 className="mx-auto max-w-4xl text-4xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
@@ -92,7 +92,7 @@ export default function Blog() {
 
       {/* Featured Blog */}
       {blogs[0] && (
-        <section className="py-12">
+        <section className="py-6 sm:py-8 lg:py-10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="grid bg-[#fff8fb] lg:grid-cols-[1fr_0.9fr]">
               <div className="relative aspect-square overflow-hidden">
@@ -131,7 +131,7 @@ export default function Blog() {
                 <div className="mt-5 flex flex-col gap-3 sm:flex-row">
                   <button
                     onClick={() => setSelectedBlog(blogs[0])}
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
                   >
                     Read Blog
                     <ArrowRight size={18} />
@@ -139,7 +139,7 @@ export default function Blog() {
 
                   <button
                     onClick={() => handleShare(blogs[0])}
-                    className="inline-flex items-center justify-center gap-2 rounded-full border border-[#650a34]/15 bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                    className="inline-flex items-center justify-center gap-2 rounded-2xl border border-[#650a34]/15 bg-white px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
                   >
                     <Share2 size={18} />
                     Share
@@ -152,7 +152,7 @@ export default function Blog() {
       )}
 
       {/* Blog Grid */}
-      <section className="pb-6 sm:pb-8 lg:pb-10">
+      <section className="py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
             {blogs.map((blog) => (
@@ -202,7 +202,7 @@ export default function Blog() {
 
                       <button
                         onClick={() => handleShare(blog)}
-                        className="flex h-10 w-10 items-center justify-center rounded-full bg-[#650a34]/8 text-[#650a34] transition hover:bg-[#ed1968] hover:text-white"
+                        className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#650a34]/8 text-[#650a34] transition hover:bg-[#ed1968] hover:text-white"
                       >
                         <Share2 size={17} />
                       </button>
@@ -215,8 +215,7 @@ export default function Blog() {
       </section>
 
       {/* CTA */}
-      {/* CTA */}
-      <section className="bg-white py-10 lg:py-16">
+      <section className="bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
@@ -232,7 +231,7 @@ export default function Blog() {
 
             <Link
               to="/contact"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
             >
               Enquire Now
               <ArrowRight size={18} />
@@ -246,7 +245,7 @@ export default function Blog() {
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-gray-950/85 p-4 backdrop-blur-md">
           <button
             onClick={() => setSelectedBlog(null)}
-            className="absolute right-5 top-5 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#650a34]"
+            className="absolute right-5 top-5 z-10 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-[#650a34]"
           >
             <X size={22} />
           </button>
@@ -283,7 +282,7 @@ export default function Blog() {
 
               <button
                 onClick={() => handleShare(selectedBlog)}
-                className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white transition hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="mt-5 inline-flex items-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white transition hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 <Share2 size={18} />
                 Share Blog

@@ -4,7 +4,6 @@ import {
   Phone,
   Mail,
   Send,
-  Clock,
   Navigation,
   AlertCircle,
 } from "lucide-react";
@@ -113,7 +112,7 @@ ${formData.message}
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-24 pb-6 sm:pt-28 sm:pb-8 lg:pt-32 lg:pb-8">
+      <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
 
         <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
           <h1 className="mx-auto max-w-4xl text-3xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
@@ -162,12 +161,6 @@ ${formData.message}
                 text="ekalavyaentertainmentkolkata@gmail.com"
                 link="mailto:ekalavyaentertainmentkolkata@gmail.com"
               />
-
-              {/* <ContactCard
-                icon={Clock}
-                title="Business Support"
-                text="Available for event enquiries and consultation"
-              /> */}
             </div>
 
             <div className="mt-8 flex justify-center gap-3 sm:flex-wrap lg:justify-start">
@@ -175,7 +168,7 @@ ${formData.message}
                 href={mapLink}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex w-fit items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="inline-flex w-fit items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-lg transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 <Navigation size={18} />
                 Get Direction
@@ -187,7 +180,7 @@ ${formData.message}
                 href="https://www.instagram.com/ekalavyaevententertainment/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
               >
                 <FaInstagram />
               </a>
@@ -196,7 +189,7 @@ ${formData.message}
                 href="https://www.facebook.com/ekalavyaevententertainment"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
               >
                 <FaFacebookF />
               </a>
@@ -205,7 +198,7 @@ ${formData.message}
                 href="https://share.google/pkeVRIju2IvxucJqs"
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-11 w-11 items-center justify-center rounded-full bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#650a34]/8 transition hover:bg-[#ed1968] hover:text-white"
               >
                 <FaGoogle />
               </a>
@@ -331,7 +324,7 @@ ${formData.message}
 
               <button
                 type="submit"
-                className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Send Enquiry
                 <Send size={18} className="transition group-hover:translate-x-1" />
@@ -342,7 +335,7 @@ ${formData.message}
       </section>
 
       {/* Map */}
-      <section className="bg-[#fff8fb] py-6 sm:py-8">
+      <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
@@ -360,7 +353,7 @@ ${formData.message}
               href={mapLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:w-fit sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:w-fit sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               Open Exact Navigation
               <Navigation size={18} />

@@ -78,7 +78,7 @@ export default function AboutPreview() {
             <div className="mt-5 flex justify-center lg:justify-start">
               <Link
                 to="/#services"
-                className="group inline-flex w-auto items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/25 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="group inline-flex w-auto items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/25 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Explore Services
                 <ArrowRight

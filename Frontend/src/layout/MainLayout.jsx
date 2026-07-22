@@ -13,7 +13,6 @@ const MainLayout = () => {
     <>
       <ScrollToTop/>      
       <Navbar />
-      {/* <Outlet /> */}
       {/* Animated Page Content */}
       <main className="flex-grow w-full max-w-full mx-auto overflow-hidden">
         <AnimatePresence mode="wait">

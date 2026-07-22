@@ -17,8 +17,8 @@
 
 @layer components {
   @media (min-width: 1024px) {
-    a:is([class*="rounded-full"]):is([class*="px-5"], [class*="px-6"]):is([class*="py-3"]),
-    button:is([class*="rounded-full"]):is([class*="px-5"], [class*="px-6"]):is([class*="py-3"]) {
+    a:is([class*="rounded"]):is([class*="px-5"], [class*="px-6"]):is([class*="py-3"]),
+    button:is([class*="rounded"]):is([class*="px-5"], [class*="px-6"]):is([class*="py-3"]) {
       min-height: 42px !important;
       width: fit-content !important;
       padding: 0.75rem 1.5rem !important;
@@ -41,24 +41,4 @@
   }
 }
 
-:where(
-  div,
-  section,
-  article,
-  aside,
-  header,
-  footer,
-  nav,
-  main,
-  a,
-  button,
-  input,
-  textarea,
-  select,
-  iframe,
-  img,
-  span
-) {
-  border-radius: 0 !important;
-  border-width: 0 !important;
-}
+

@@ -12,7 +12,7 @@ export default function Reviews() {
     "https://www.google.com/search?sca_esv=a34ddc620dd62935&sxsrf=APpeQnukQVfxCYe_YEyXuAtYeBRZ9POfyQ:1782126983296&kgmid=/g/11y_9y8bhw&q=Ekalavya+Event+%26+Entertainment&shem=dlvsc,epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=e774348bc4828039&utm_source=dlvsc,epsd1,ltae,rimspwouoe,sh/x/loc/uni/m1/1#lrd=0x3a0279d65d026ee5:0x653731fc067a368f,1,,,,";
 
   return (
-    <section className="relative overflow-hidden bg-[#fff8fb] pt-6 sm:pt-8 lg:pt-10">
+    <section className="relative overflow-hidden bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
       {/* Main Content */}
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         {/* Heading */}
@@ -53,7 +53,7 @@ export default function Reviews() {
               href={googleReviewUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               <MessageSquarePlus size={18} />
               Give Review
@@ -63,7 +63,7 @@ export default function Reviews() {
               href={googleReviewUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-[#650a34]/20 bg-[#fff8fb] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:bg-white hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl border border-[#650a34]/20 bg-[#fff8fb] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] transition hover:-translate-y-1 hover:border-[#ed1968] hover:bg-white hover:text-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
             >
               See Reviews
               <ExternalLink size={18} />
@@ -73,7 +73,7 @@ export default function Reviews() {
       </div>
 
       {/* CTA */}
-      <div className="bg-white py-10 lg:py-16">
+      <div className="bg-white py-6 sm:py-8 lg:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-8 rounded-[2rem] bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
@@ -90,7 +90,7 @@ export default function Reviews() {
 
             <Link
               to="/contact"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#650a34] shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#ed1968] hover:text-white sm:px-8 sm:py-4 sm:text-sm"
             >
               Enquire Now
               <ArrowRight size={18} />

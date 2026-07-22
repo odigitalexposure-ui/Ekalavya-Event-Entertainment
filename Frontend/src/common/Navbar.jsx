@@ -3,7 +3,6 @@ import {
   Menu,
   X,
   Phone,
-  Mail,
   ChevronDown,
 } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaGoogle } from "react-icons/fa";
@@ -137,7 +136,7 @@ export default function Navbar() {
           <div className="hidden items-center gap-3 lg:flex">
             <a
               href={`tel:${phone}`}
-              className="inline-flex items-center gap-2 rounded-full bg-[#650a34] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#650a34]/25 transition hover:-translate-y-0.5 hover:bg-[#ed1968]"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#650a34] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#650a34]/25 transition hover:-translate-y-0.5 hover:bg-[#ed1968]"
             >
               <Phone size={17} />
               Call Now
@@ -147,7 +146,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(true)}
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-[#650a34] text-white lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#650a34] text-white lg:hidden"
           >
             <Menu size={23} />
           </button>
@@ -175,7 +174,7 @@ export default function Navbar() {
 
           <button
             onClick={closeMenu}
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-[#650a34]/10 text-[#650a34]"
+            className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#650a34]/10 text-[#650a34]"
           >
             <X size={22} />
           </button>
@@ -242,7 +241,7 @@ export default function Navbar() {
           <div className="mt-5 space-y-3">
             <a
               href={`tel:${phone}`}
-              className="flex items-center justify-center gap-2 rounded-full border border-[#650a34] px-5 py-3 font-semibold text-[#650a34]"
+              className="flex items-center justify-center gap-2 rounded-xl border border-[#650a34] px-5 py-3 font-semibold text-[#650a34]"
             >
               <Phone size={18} />
               Call Now
@@ -251,7 +250,7 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={closeMenu}
-              className="flex items-center justify-center rounded-full bg-[#650a34] px-5 py-3 font-semibold text-white"
+              className="flex items-center justify-center rounded-xl bg-[#650a34] px-5 py-3 font-semibold text-white"
             >
               Contact Us
             </Link>

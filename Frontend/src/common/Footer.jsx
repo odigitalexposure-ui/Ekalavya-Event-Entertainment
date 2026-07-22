@@ -160,7 +160,7 @@ function SocialLink({ href, label, icon: Icon }) {
       target="_blank"
       rel="noreferrer"
       aria-label={label}
-      className="flex h-8 w-8 items-center justify-center rounded-full text-white transition hover:-translate-y-1 hover:text-[#ed1968]"
+      className="flex h-8 w-8 items-center justify-center rounded-lg text-white transition hover:-translate-y-1 hover:text-[#ed1968]"
     >
       <Icon size={14} />
     </a>

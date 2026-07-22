@@ -1,4 +1,4 @@
-import { ArrowRight, Building2, Handshake, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function ClientsPanel() {
@@ -30,42 +30,10 @@ export default function ClientsPanel() {
               brands, celebrations and entertainment experiences.
             </p>
 
-            {/* <div className="mt-5 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
-                <Building2 className="text-[#650a34]" size={26} />
-                <h3 className="mt-4 text-3xl font-extrabold leading-none text-gray-800">
-                  30+
-                </h3>
-                <p className="mt-1 text-sm font-semibold text-gray-500">
-                  Corporate Clients
-                </p>
-              </div>
-
-              <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
-                <Sparkles className="text-[#ed1968]" size={26} />
-                <h3 className="mt-4 text-3xl font-extrabold leading-none text-gray-800">
-                  200+
-                </h3>
-                <p className="mt-1 text-sm font-semibold text-gray-500">
-                  Events Managed
-                </p>
-              </div>
-
-              <div className="rounded-[1.7rem] border border-[#650a34]/10 bg-white p-5 shadow-lg shadow-[#650a34]/5">
-                <Handshake className="text-[#650a34]" size={26} />
-                <h3 className="mt-4 text-3xl font-extrabold leading-none text-gray-800">
-                  1000+
-                </h3>
-                <p className="mt-1 text-sm font-semibold text-gray-500">
-                  Happy Guests
-                </p>
-              </div>
-            </div> */}
-
             <div className="mt-5 flex justify-center sm:justify-start">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="inline-flex items-center gap-2 rounded-2xl bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
               >
                 Work With Us
                 <ArrowRight size={18} />

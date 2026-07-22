@@ -56,37 +56,3 @@ export const galleryImages = [
   { src: "/images/g55.jpeg", title: "Grand Boat Party Facade", category: "Venue" },
 ];
 
-export const galleryCategories = [
-  "All",
-  "Venue",
-  "Decor",
-  "Wedding",
-  "F&B",
-  "Entertainment",
-  "Hospitality",
-  "Corporate",
-  "Party",
-  "Production",
-  "Guest Moments",
-];
-
-export const galleryVideos = [
-  {
-    thumbnail: "/images/g28.jpeg",
-    title: "Live Event Highlight",
-    category: "Entertainment",
-    videoUrl: "https://www.youtube.com/embed/VIDEO_ID",
-  },
-  {
-    thumbnail: "/images/g51.jpeg",
-    title: "Corporate Stage Highlight",
-    category: "Corporate",
-    videoUrl: "https://www.youtube.com/embed/VIDEO_ID",
-  },
-  {
-    thumbnail: "/images/g55.jpeg",
-    title: "Boat Party Venue Highlight",
-    category: "Venue",
-    videoUrl: "https://www.youtube.com/embed/VIDEO_ID",
-  },
-];
