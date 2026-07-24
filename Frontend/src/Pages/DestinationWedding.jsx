@@ -96,6 +96,11 @@ export default function DestinationWedding() {
       description:
         "Clear and comprehensive pricing packages tailored to suit various needs and budgets with complete cost transparency and high-end execution.",
     },
+    {
+      title: "From Family Rhythm to Wedding Symphony",
+      description:
+        "We believe every family has a rhythm. Our job is to find it, amplify it, and turn it into a grand symphony, crafting your unforgettable destination wedding journey.",
+    },
   ];
 
   const workflowSteps = [
@@ -174,7 +179,7 @@ export default function DestinationWedding() {
       <section className="py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="text-center lg:text-left">
-            <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
+            <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-[#ed1968] sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               DREAM. DESIGN. DELIVER.
             </h2>
             <p className="mt-4 font-heading text-sm font-bold uppercase tracking-[0.2em] text-[#ed1968]">
@@ -215,7 +220,7 @@ export default function DestinationWedding() {
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
             <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
-              COMPLETE DESTINATION WEDDING SERVICES
+              COMPLETE DESTINATION WEDDING PLANNING & MANAGEMENT
             </h2>
             <p className="mt-4 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
               We manage every element so your guests have the best time possible while you savour every moment.
@@ -257,7 +262,7 @@ export default function DestinationWedding() {
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
             <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
-              WHY PLAN YOUR DESTINATION WEDDING WITH US?
+              WHY WITH US?
             </h2>
             <p className="mt-4 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
               Personalised vision, expert guidance, and stress-free planning from initial concept to the final dance.

@@ -15,8 +15,11 @@ function CounterNumber({ target, suffix = "+" }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "0px 0px -40px 0px" });
 
+  const isNumeric = typeof target === "number";
+
   useEffect(() => {
-    if (!isInView) return;
+    // If target is a string (like "Thousand"), skip numerical animation logic
+    if (!isInView || !isNumeric) return;
 
     let frame = 0;
     const duration = 2200; // 2.2 seconds total animation time
@@ -39,11 +42,11 @@ function CounterNumber({ target, suffix = "+" }) {
     }, frameTime);
 
     return () => clearInterval(timer);
-  }, [isInView, target]);
+  }, [isInView, target, isNumeric]);
 
   return (
     <span ref={ref}>
-      {count}
+      {isNumeric ? count : target}
       {suffix}
     </span>
   );
@@ -65,8 +68,8 @@ export default function AboutPreview() {
     },
     {
       icon: HeartHandshake,
-      target: 1000,
-      suffix: "",
+      target: "Thousands",
+      suffix: "", // Added a plus sign, clear it to "" if you want exactly "Thousand"
       label: "Of Happy Guests",
     },
     {
