@@ -2,6 +2,7 @@
 
 @theme {
   --font-heading: "Roboto", sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
 }
 
 @layer base {

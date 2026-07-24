@@ -180,11 +180,7 @@ export default function Navbar() {
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between border-b border-gray-100 px-5 py-5">
-          <div>
-            <h2 className="text-xl font-bold leading-snug text-[#650a34]">Ekalavya</h2>
-          </div>
-
+        <div className="flex items-center justify-end border-b border-gray-100 px-5 py-5">
           <button
             onClick={closeMenu}
             className="flex h-10 w-10 items-center justify-center rounded-none bg-[#650a34]/10 text-[#650a34]"

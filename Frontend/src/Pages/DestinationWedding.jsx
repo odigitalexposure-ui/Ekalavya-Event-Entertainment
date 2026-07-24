@@ -132,15 +132,24 @@ export default function DestinationWedding() {
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div className="text-center lg:text-left">
-            <h1 className="mx-auto max-w-3xl text-2xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:max-w-none lg:text-6xl lg:leading-[1.05]">
-              CELEBRATE YOUR LOVE STORY IN PARADISE
-            </h1>
-
-            <p className="mx-auto mt-4 font-heading text-base font-bold uppercase tracking-wider text-[#650a34] sm:text-lg lg:mx-0">
-              EXQUISITE DESTINATION WEDDINGS CRAFTED WITH PASSION &amp; PERFECTION
+            {/* Top Tagline */}
+            <p className="font-serif text-sm sm:text-base lg:text-lg uppercase tracking-[0.22em] text-[#650a34] font-medium">
+              LOVE KNOWS NO BOUNDARIES, JUST LIKE A
             </p>
 
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
+            {/* Main Destination Wedding Title */}
+            <h1 className="my-2 font-serif text-5xl sm:text-7xl lg:text-8xl font-normal leading-[0.92] text-[#ed1968] tracking-tight">
+              <span className="block">Destination</span>
+              <span className="block">Wedding</span>
+            </h1>
+
+            {/* Bottom Tagline */}
+            <div className="font-serif text-xs sm:text-sm lg:text-base uppercase tracking-[0.2em] text-[#650a34] font-medium leading-snug">
+              <p>DISCOVERING LOVE</p>
+              <p>IN EVERY CORNER OF THE WORLD</p>
+            </div>
+
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
               Celebrate the union of two souls against the backdrop of a sun-kissed beach,
               atop a majestic mountain, or aboard a luxury cruise on the River Ganges.
               From pristine venues to gourmet cuisine and seamless planning, we ensure your special day is nothing short of magical.
