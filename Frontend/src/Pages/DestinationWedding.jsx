@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -19,6 +19,7 @@ import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
 import SnakeBorderBox from "../common/SnakeBorderBox";
 
 export default function DestinationWedding() {
+  const [titleImgError, setTitleImgError] = useState(false);
   const weddingServices = [
     {
       icon: MapPin,
@@ -132,22 +133,39 @@ export default function DestinationWedding() {
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div className="text-center lg:text-left">
-            {/* Top Tagline */}
-            <p className="font-serif text-sm sm:text-base lg:text-lg uppercase tracking-[0.22em] text-[#650a34] font-medium">
-              LOVE KNOWS NO BOUNDARIES, JUST LIKE A
-            </p>
-
-            {/* Main Destination Wedding Title */}
-            <h1 className="my-2 font-serif text-5xl sm:text-7xl lg:text-8xl font-normal leading-[0.92] text-[#ed1968] tracking-tight">
-              <span className="block">Destination</span>
-              <span className="block">Wedding</span>
+            {/* Screen reader accessible H1 for SEO */}
+            <h1 className="sr-only">
+              Love Knows No Boundaries, Just Like A Destination Wedding - Discovering Love In Every Corner Of The World
             </h1>
 
-            {/* Bottom Tagline */}
-            <div className="font-serif text-xs sm:text-sm lg:text-base uppercase tracking-[0.2em] text-[#650a34] font-medium leading-snug">
-              <p>DISCOVERING LOVE</p>
-              <p>IN EVERY CORNER OF THE WORLD</p>
-            </div>
+            {/* Title Image Graphic */}
+            {!titleImgError ? (
+              <div className="my-2 flex justify-center lg:justify-start">
+                <img
+                  src="/WeddingTitle.png"
+                  alt="Love Knows No Boundaries - Destination Wedding - Discovering Love In Every Corner Of The World"
+                  loading="eager"
+                  decoding="async"
+                  onError={() => setTitleImgError(true)}
+                  className="h-auto w-full max-w-[340px] sm:max-w-[460px] lg:max-w-[540px] object-contain drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
+                />
+              </div>
+            ) : (
+              /* Fallback HTML Typography if image fails to load */
+              <div>
+                <p className="font-serif text-sm sm:text-base lg:text-lg uppercase tracking-[0.22em] text-[#650a34] font-medium">
+                  LOVE KNOWS NO BOUNDARIES, JUST LIKE A
+                </p>
+                <h2 className="my-2 font-serif text-5xl sm:text-7xl lg:text-8xl font-normal leading-[0.92] text-[#ed1968] tracking-tight">
+                  <span className="block">Destination</span>
+                  <span className="block">Wedding</span>
+                </h2>
+                <div className="font-serif text-xs sm:text-sm lg:text-base uppercase tracking-[0.2em] text-[#650a34] font-medium leading-snug">
+                  <p>DISCOVERING LOVE</p>
+                  <p>IN EVERY CORNER OF THE WORLD</p>
+                </div>
+              </div>
+            )}
 
             <p className="mx-auto mt-5 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
               Celebrate the union of two souls against the backdrop of a sun-kissed beach,

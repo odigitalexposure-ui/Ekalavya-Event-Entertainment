@@ -1,21 +1,237 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import AnimatedSection from "../common/AnimatedSection";
 import SnakeBorderBox from "../common/SnakeBorderBox";
 
-export default function ClientsPanel() {
-  const clients = [
-    "Corporate Events",
-    "Wedding Clients",
-    "Private Parties",
-    "Brand Activations",
-    "Cultural Events",
-    "Artist Shows",
-    "Hospitality Events",
-    "Luxury Celebrations",
-  ];
+const clients = [
+  {
+    id: 1,
+    name: "Indian Army (Eastern Command - Fort William)",
+    subtitle: "Defense & Armed Forces",
+    logo: "/Final/Eastern-Command-Indian-Army-Kolkata.png",
+  },
+  {
+    id: 2,
+    name: "Indian Navy (WOT)",
+    subtitle: "Weapon Operating Team / Defense",
+    logo: "/Final/Indian_Navy_WOT.png",
+  },
+  {
+    id: 3,
+    name: "CGST & CX Kolkata Zone (GST Bhawan)",
+    subtitle: "Central Board of Indirect Taxes & Customs",
+    logo: "/Final/GST.png",
+  },
+  {
+    id: 4,
+    name: "Powergrid Corporation of India Limited",
+    subtitle: "Maharatna Public Sector Enterprise",
+    logo: "/Final/Power-Grid.png",
+  },
+  {
+    id: 5,
+    name: "Bharat Petroleum Limited (LPG Div.)",
+    subtitle: "Maharatna Energy Enterprise",
+    logo: "/Final/BPCL.png",
+  },
+  {
+    id: 6,
+    name: "Garden Reach Shipbuilders & Engineers (GRSE)",
+    subtitle: "Miniratna Defense PSU",
+    logo: "/Final/GRSE_.png",
+  },
+  {
+    id: 7,
+    name: "Haldia Petrochemical",
+    subtitle: "Petrochemicals & Polymers",
+    logo: "/Final/HPCL.png",
+  },
+  {
+    id: 8,
+    name: "Star Cement Limited",
+    subtitle: "Building Materials & Cement",
+    logo: "/Final/Star-Cement.png",
+  },
+  {
+    id: 9,
+    name: "Maithan Alloys Limited",
+    subtitle: "Manganese Alloy Producer",
+    logo: null,
+  },
+  {
+    id: 10,
+    name: "Dr. R Ahmed Dental College & Hospital, Sealdah",
+    subtitle: "Healthcare & Medical Education",
+    logo: "/Final/RADC.png",
+  },
+  {
+    id: 11,
+    name: "PWC",
+    subtitle: "PricewaterhouseCoopers",
+    logo: null,
+  },
+  {
+    id: 12,
+    name: "Zee Bangla (Zee Entertainment Enterprises)",
+    subtitle: "Media & Entertainment",
+    logo: "/Final/Zee Bangla.png",
+  },
+  {
+    id: 13,
+    name: "Star Jalsha (The Walt Disney Company (India)",
+    subtitle: "Media & Entertainment",
+    logo: "/Final/Star Jalsha.png",
+  },
+  {
+    id: 14,
+    name: "GlaxoSmithKline Consumer Healthcare Limited (GSK)",
+    subtitle: "Pharmaceuticals & Healthcare",
+    logo: "/Final/GSK.png",
+  },
+  {
+    id: 15,
+    name: "Canam Group",
+    subtitle: "Global Education & Consulting",
+    logo: "/Final/Canam-Group.png",
+  },
+  {
+    id: 16,
+    name: "Freudenberg",
+    subtitle: "Global Technology Group",
+    logo: "/Final/Freudenberg-1.png",
+  },
+  {
+    id: 17,
+    name: "KANTAR IMRB",
+    subtitle: "Market Research & Insights",
+    logo: "/Final/Kantar-IMRB.png",
+  },
+  {
+    id: 18,
+    name: "Cooper Surgical",
+    subtitle: "Medical Devices & Healthcare",
+    logo: "/Final/Cooper-Surgical-1.png",
+  },
+  {
+    id: 19,
+    name: "Nicco Group",
+    subtitle: "Engineering & Parks",
+    logo: "/Final/Nicco-Group.png",
+  },
+  {
+    id: 20,
+    name: "Reliance Nippon Life Insurance",
+    subtitle: "Financial Services & Insurance",
+    logo: "/Final/Relience-Insurance.png",
+  },
+  {
+    id: 21,
+    name: "HDFC Bank",
+    subtitle: "Banking & Financial Services",
+    logo: "/Final/HDFC-Bank.png",
+  },
+  {
+    id: 22,
+    name: "IDFC First Bank",
+    subtitle: "Banking & Financial Services",
+    logo: "/Final/IDFC.png",
+  },
+  {
+    id: 23,
+    name: "Federal bank",
+    subtitle: "Banking & Financial Services",
+    logo: "/Final/Federal-Bank.png",
+  },
+  {
+    id: 24,
+    name: "Interra Information Technologies",
+    subtitle: "IT & Software Solutions",
+    logo: null,
+  },
+  {
+    id: 25,
+    name: "Innovation Junction, LLC",
+    subtitle: "Technology & Business Solutions",
+    logo: null,
+  },
+  {
+    id: 26,
+    name: "Indusnet Technologies",
+    subtitle: "IT Services & Digital Transformation",
+    logo: "/Final/Indusnet-Tech.png",
+  },
+  {
+    id: 27,
+    name: "Future-first Technologies",
+    subtitle: "Next-Gen Tech Solutions",
+    logo: null,
+  },
+  {
+    id: 28,
+    name: "Bhandari Automobile",
+    subtitle: "Automotive Dealership & Services",
+    logo: null,
+  },
+  {
+    id: 29,
+    name: "Rotary Club of New Town",
+    subtitle: "Social Service & Community",
+    logo: "/Final/Rotary-Club.png",
+  },
+];
 
+function ClientCard({ client }) {
+  const [imgError, setImgError] = useState(false);
+
+  const getInitials = (name) => {
+    return name
+      .replace(/\([^)]*\)/g, "")
+      .trim()
+      .split(/\s+/)
+      .map((w) => w[0])
+      .filter(Boolean)
+      .slice(0, 2)
+      .join("")
+      .toUpperCase();
+  };
+
+  return (
+    <div className="group flex items-center justify-between rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 sm:p-5 transition-all duration-300 hover:border-[#650a34]/30 hover:bg-[#650a34] hover:text-white hover:shadow-lg">
+      <div className="flex items-center gap-4 min-w-0 w-full">
+        <div className="flex h-14 w-14 sm:h-16 sm:w-16 flex-shrink-0 items-center justify-center rounded-none bg-white p-2 border border-[#650a34]/15 shadow-sm transition group-hover:border-white/40 group-hover:bg-white/95">
+          {client.logo && !imgError ? (
+            <img
+              src={encodeURI(client.logo)}
+              alt={client.name}
+              loading="lazy"
+              onError={() => setImgError(true)}
+              className="max-h-full max-w-full object-contain"
+            />
+          ) : (
+            <div className="flex flex-col items-center justify-center text-[#650a34] transition-colors group-hover:text-[#650a34]">
+              <Building2 size={18} className="mb-0.5" />
+              <span className="text-[11px] font-extrabold tracking-wider leading-none">
+                {getInitials(client.name)}
+              </span>
+            </div>
+          )}
+        </div>
+
+        <div className="min-w-0 flex-1">
+          <h4 className="text-base sm:text-lg font-extrabold leading-snug text-gray-800 transition-colors duration-200 group-hover:text-white line-clamp-2">
+            {client.name}
+          </h4>
+          <p className="mt-0.5 text-xs sm:text-sm text-gray-500 transition-colors duration-200 group-hover:text-white/80 line-clamp-1">
+            {client.subtitle}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function ClientsPanel() {
   return (
     <section className="relative overflow-hidden bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
       <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
@@ -45,43 +261,27 @@ export default function ClientsPanel() {
 
           {/* Right Sliding Panel with Snake Border Animation */}
           <SnakeBorderBox className="rounded-none border border-[#650a34]/10 bg-white p-5 shadow-[0_30px_90px_rgba(101,10,52,0.13)] sm:p-7">
-            <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent z-10" />
-            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent z-10" />
+            <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none" />
 
             <div className="mb-6 flex items-center justify-between">
               <div>
                 <h3 className="text-2xl font-extrabold leading-snug text-gray-800">
-                  Events We Proudly Serve
+                  Our Prestigious Clients
                 </h3>
+                <p className="text-xs sm:text-sm text-[#650a34] font-semibold mt-0.5">
+                  Trusted by 29+ Government, Defense &amp; Corporate Organizations
+                </p>
               </div>
             </div>
 
-            <div className="relative h-[430px] overflow-hidden">
+            <div className="relative h-[480px] overflow-hidden">
               <div className="animate-clientSlide space-y-4">
                 {[...clients, ...clients].map((client, index) => (
-                  <div
-                    key={`${client}-${index}`}
-                    className="group flex items-center justify-between rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-5 transition hover:bg-[#650a34] hover:text-white"
-                  >
-                    <div className="flex items-center gap-4">
-                      <motion.div
-                        whileHover={{ scale: 1.25, rotate: 15 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 15 }}
-                        className="flex h-12 w-12 items-center justify-center rounded-none bg-white text-[#650a34] shadow-sm transition group-hover:bg-[#ed1968] group-hover:text-white"
-                      >
-                        <Sparkles size={22} className="animate-iconPulseGlow" />
-                      </motion.div>
-
-                      <div>
-                        <h4 className="text-lg font-extrabold leading-snug">
-                          {client}
-                        </h4>
-                        <p className="text-sm text-gray-500 group-hover:text-white/75">
-                          Premium event planning &amp; execution
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  <ClientCard
+                    key={`${client.id}-${index}`}
+                    client={client}
+                  />
                 ))}
               </div>
             </div>
@@ -97,7 +297,7 @@ export default function ClientsPanel() {
               }
 
               .animate-clientSlide {
-                animation: clientSlide 18s linear infinite;
+                animation: clientSlide 60s linear infinite;
               }
 
               .animate-clientSlide:hover {
