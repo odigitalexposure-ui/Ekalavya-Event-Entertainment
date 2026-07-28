@@ -112,7 +112,7 @@ ${formData.message}
       {/* Hero */}
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-2xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+          <h1 className="mx-auto max-w-4xl text-2xl font-medium uppercase leading-[1.1] text-[#232020] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Let&apos;s Plan Your Next Beautiful Event Together
           </h1>
 
@@ -128,7 +128,7 @@ ${formData.message}
         <AnimatedSection className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* Left Info */}
           <div className="text-center lg:text-left">
-            <h2 className="text-2xl font-extrabold uppercase leading-[1.14] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-2xl font-medium uppercase leading-[1.14] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               Contact Details
             </h2>
 
@@ -210,7 +210,7 @@ ${formData.message}
 
           {/* Form with Snake Border */}
           <SnakeBorderBox className="rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 shadow-[0_25px_80px_rgba(101,10,52,0.12)] sm:p-8">
-            <h3 className="text-2xl font-extrabold leading-snug text-gray-800 sm:text-3xl">
+            <h3 className="text-2xl font-medium leading-snug text-[#232020] sm:text-3xl">
               Send Enquiry
             </h3>
 

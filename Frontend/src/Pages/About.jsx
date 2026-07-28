@@ -26,7 +26,7 @@ export default function About() {
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
             <div className="text-center lg:text-left">
-              <h1 className="mx-auto max-w-3xl text-2xl font-extrabold uppercase leading-[1.08] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:text-6xl lg:leading-[1.05]">
+              <h1 className="mx-auto max-w-3xl text-2xl font-medium uppercase leading-[1.08] text-[#232020] sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:text-6xl lg:leading-[1.05]">
                 Designing Events That Feel Premium, Personal &amp; Unforgettable
               </h1>
 
@@ -79,7 +79,7 @@ export default function About() {
             </div>
 
             <div className="order-1 text-center lg:order-2 lg:text-left">
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+              <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
                 From Ideas To Experiences, We Manage Every Detail With Passion
               </h2>
 
@@ -110,7 +110,7 @@ export default function About() {
                         <CheckCircle2 size={20} className="sm:h-[21px] sm:w-[21px]" />
                       </div>
                       <div>
-                        <span className="text-[13px] font-extrabold leading-tight text-gray-800 sm:text-base sm:leading-snug">
+                        <span className="text-[13px] font-medium leading-tight text-[#232020] sm:text-base sm:leading-snug">
                           {value}
                         </span>
                       </div>
@@ -127,7 +127,7 @@ export default function About() {
       <section className="relative bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               Built On Creativity, Trust &amp; Seamless Execution
             </h2>
           </div>
@@ -191,7 +191,7 @@ export default function About() {
       <section className="bg-white py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               A Simple Process Designed For A Calm Event Day
             </h2>
 
@@ -233,7 +233,7 @@ export default function About() {
                     {item.step}
                   </span>
 
-                  <h3 className="mt-5 text-2xl font-extrabold leading-snug text-gray-800">
+                  <h3 className="mt-5 text-2xl font-medium leading-snug text-[#232020]">
                     {item.title}
                   </h3>
 

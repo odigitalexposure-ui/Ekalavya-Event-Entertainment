@@ -219,7 +219,7 @@ function ClientCard({ client }) {
         </div>
 
         <div className="min-w-0 flex-1">
-          <h4 className="text-base sm:text-lg font-extrabold leading-snug text-gray-800 transition-colors duration-200 group-hover:text-white line-clamp-2">
+          <h4 className="text-base sm:text-lg font-medium leading-snug text-[#232020] transition-colors duration-200 group-hover:text-white line-clamp-2">
             {client.name}
           </h4>
           <p className="mt-0.5 text-xs sm:text-sm text-gray-500 transition-colors duration-200 group-hover:text-white/80 line-clamp-1">
@@ -238,7 +238,7 @@ export default function ClientsPanel() {
         <div className="grid items-center gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+            <h2 className="text-3xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               A GROWING NETWORK OF HAPPY CLIENTS &amp; MEMORABLE EVENTS
             </h2>
 
@@ -266,7 +266,7 @@ export default function ClientsPanel() {
 
             <div className="mb-6 flex items-center justify-between">
               <div>
-                <h3 className="text-2xl font-extrabold leading-snug text-gray-800">
+                <h3 className="text-2xl font-medium leading-snug text-[#232020]">
                   Our Prestigious Clients
                 </h3>
                 <p className="text-xs sm:text-sm text-[#650a34] font-semibold mt-0.5">

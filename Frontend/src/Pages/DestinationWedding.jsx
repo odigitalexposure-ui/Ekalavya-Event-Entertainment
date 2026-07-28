@@ -246,7 +246,7 @@ export default function DestinationWedding() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               COMPLETE DESTINATION WEDDING PLANNING & MANAGEMENT
             </h2>
             <p className="mt-4 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -270,7 +270,7 @@ export default function DestinationWedding() {
                     >
                       <Icon size={24} />
                     </motion.div>
-                    <h3 className="text-lg font-extrabold leading-snug text-gray-800">
+                    <h3 className="text-lg font-medium leading-snug text-[#232020]">
                       {item.title}
                     </h3>
                     <p className="mt-3 text-sm leading-6 text-gray-600">
@@ -288,7 +288,7 @@ export default function DestinationWedding() {
       <section className="bg-white py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               WHY WITH US?
             </h2>
             <p className="mt-4 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -305,7 +305,7 @@ export default function DestinationWedding() {
                 <SnakeBorderBox className="h-full rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-7 transition hover:shadow-lg">
                   <div className="mb-4 flex items-center gap-3">
                     <CheckCircle2 size={24} className="shrink-0 text-[#ed1968]" />
-                    <h3 className="text-lg font-extrabold leading-snug text-gray-800">
+                    <h3 className="text-lg font-medium leading-snug text-[#232020]">
                       {item.title}
                     </h3>
                   </div>
@@ -323,7 +323,7 @@ export default function DestinationWedding() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               OUR DESTINATION WEDDING WORKFLOW
             </h2>
             <p className="mt-4 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -342,7 +342,7 @@ export default function DestinationWedding() {
                     {item.step}
                   </span>
 
-                  <h3 className="mt-4 text-xl font-extrabold leading-snug text-gray-800">
+                  <h3 className="mt-4 text-xl font-medium leading-snug text-[#232020]">
                     {item.title}
                   </h3>
 

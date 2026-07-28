@@ -46,7 +46,7 @@ export default function Gallery() {
           <span className="font-heading text-xs font-bold uppercase tracking-[0.24em] text-[#ed1968]">
             Visual Showcase
           </span>
-          <h1 className="mx-auto mt-2 max-w-4xl text-3xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+          <h1 className="mx-auto mt-2 max-w-4xl text-3xl font-medium uppercase leading-[1.1] text-[#232020] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Explore Our Event Moments &amp; Highlights
           </h1>
 

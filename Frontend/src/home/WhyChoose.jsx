@@ -49,7 +49,7 @@ export default function WhyChoose() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <h2 className="text-3xl font-extrabold leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+            <h2 className="text-3xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               WE DON'T JUST MANAGE EVENTS, WE CREATE EXPERIENCES
             </h2>
 
@@ -83,7 +83,7 @@ export default function WhyChoose() {
                     </motion.div>
 
                     <div>
-                      <h3 className="text-base font-extrabold leading-snug text-gray-800 md:text-lg">
+                      <h3 className="text-base font-medium leading-snug text-[#232020] md:text-lg">
                         {item.title}
                       </h3>
 

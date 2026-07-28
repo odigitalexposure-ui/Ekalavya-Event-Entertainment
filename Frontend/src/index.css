@@ -6,6 +6,10 @@
 }
 
 @layer base {
+  body {
+    color: #232020;
+  }
+
   h1,
   h2,
   h3,
@@ -13,6 +17,8 @@
   h5,
   h6 {
     font-family: var(--font-heading);
+    font-weight: 500;
+    color: #232020;
   }
 }
 

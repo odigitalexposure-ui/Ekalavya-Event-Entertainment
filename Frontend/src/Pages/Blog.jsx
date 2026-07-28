@@ -79,7 +79,7 @@ export default function Blog() {
       {/* Hero */}
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-2xl font-extrabold uppercase leading-[1.1] text-gray-800 sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+          <h1 className="mx-auto max-w-4xl text-2xl font-medium uppercase leading-[1.1] text-[#232020] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Event Insights, Ideas &amp; Planning Guides
           </h1>
 
@@ -107,7 +107,7 @@ export default function Blog() {
               </div>
 
               <div className="p-6 sm:p-8 lg:p-10">
-                <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+                <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
                   {blogs[0].title}
                 </h2>
 
@@ -183,7 +183,7 @@ export default function Blog() {
                     </span>
                   </div>
 
-                  <h3 className="mt-4 text-2xl font-extrabold leading-snug text-gray-800">
+                  <h3 className="mt-4 text-2xl font-medium leading-snug text-[#232020]">
                     {blog.title}
                   </h3>
 

@@ -53,7 +53,7 @@ export default function ServiceDetails() {
       <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div className="text-center lg:text-left">
-            <h1 className="mx-auto max-w-3xl text-2xl sm:text-3xl lg:text-4xl lg:leading-[1.1] font-extrabold uppercase text-gray-800 lg:mx-0 lg:max-w-none">
+            <h1 className="mx-auto max-w-3xl text-2xl sm:text-3xl lg:text-4xl lg:leading-[1.1] font-medium uppercase text-[#232020] lg:mx-0 lg:max-w-none">
               {service.subtitle}
             </h1>
 
@@ -96,7 +96,7 @@ export default function ServiceDetails() {
       <section className="py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="text-center lg:text-left">
-            <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
+            <h2 className="mx-auto max-w-3xl text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               Designed for events
                <br />that feel effortless <br />and memorable
             </h2>
@@ -131,7 +131,7 @@ export default function ServiceDetails() {
                       <Icon size={21} />
                     </motion.div>
                     <div>
-                      <h3 className="text-sm font-extrabold leading-snug text-gray-800 sm:text-base">{item.label}</h3>
+                      <h3 className="text-sm font-medium leading-snug text-[#232020] sm:text-base">{item.label}</h3>
                       <p className="mt-1 text-xs leading-5 text-gray-600 sm:mt-1.5 sm:text-xs sm:leading-5">{item.value}</p>
                     </div>
                   </SnakeBorderBox>
@@ -166,7 +166,7 @@ export default function ServiceDetails() {
                     >
                       <Icon size={25} />
                     </motion.div>
-                    <h3 className="text-lg font-extrabold leading-snug text-gray-800">
+                    <h3 className="text-lg font-medium leading-snug text-[#232020]">
                       {feature}
                     </h3>
                   </SnakeBorderBox>
@@ -183,7 +183,7 @@ export default function ServiceDetails() {
         
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               A Clear Plan From First Brief To <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#650a34] to-[#ed1968]">Final Applause</span>
             </h2>
             <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -307,7 +307,7 @@ export default function ServiceDetails() {
 const SectionHeading = memo(function SectionHeading({ title, text }) {
   return (
     <div className="mx-auto max-w-3xl text-center">
-      <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-[#fff] sm:text-4xl sm:leading-[1.1]">
+      <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#fff] sm:text-4xl sm:leading-[1.1]">
         {title}
       </h2>
       <p className="mt-4 leading-6 text-[#fff] sm:text-lg sm:leading-8">
