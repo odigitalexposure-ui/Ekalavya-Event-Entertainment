@@ -41,16 +41,16 @@ export default function Gallery() {
   return (
     <main className="overflow-hidden bg-white text-gray-700">
       {/* Hero Header */}
-      <section className="relative bg-[#fff8fb] pt-20 pb-6 sm:pt-24 sm:pb-8 lg:pt-28 lg:pb-10">
+      <section className="relative bg-[#fff8fb] pt-28 pb-8 sm:pt-24 sm:pb-8 lg:pt-28 lg:pb-10">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
           <span className="font-heading text-xs font-bold uppercase tracking-[0.24em] text-[#ed1968]">
             Visual Showcase
           </span>
-          <h1 className="mx-auto mt-2 max-w-4xl text-3xl font-medium uppercase leading-[1.1] text-[#232020] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+          <h1 className="mx-auto mt-2 max-w-4xl text-2xl font-medium uppercase leading-snug text-[#232020] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Explore Our Event Moments &amp; Highlights
           </h1>
 
-          <p className="mx-auto mt-4 max-w-3xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg sm:leading-8">
             Browse real event moments including luxury river cruises, opulent weddings,
             decor production, entertainment nights, and hospitality excellence.
           </p>

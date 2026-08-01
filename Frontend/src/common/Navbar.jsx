@@ -5,7 +5,6 @@ import {
   Phone,
   ChevronDown,
 } from "lucide-react";
-import { FaFacebookF, FaInstagram, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { servicesData } from "../data/servicesData";
@@ -245,50 +244,6 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-          </div>
-
-          <div className="mt-5 space-y-3">
-            <a
-              href={`tel:${phone}`}
-              className="flex items-center justify-center gap-2 rounded-none border border-[#650a34] px-5 py-3 font-semibold text-[#650a34]"
-            >
-              <Phone size={18} />
-              Call Now
-            </a>
-
-            <Link
-              to="/contact"
-              onClick={closeMenu}
-              className="flex items-center justify-center rounded-none bg-[#650a34] px-5 py-3 font-semibold text-white"
-            >
-              Contact Us
-            </Link>
-          </div>
-
-          <div className="mt-5 flex items-center justify-center gap-5 text-[#650a34]">
-            <a
-              href="https://www.instagram.com/ekalavyaevententertainment/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaInstagram size={20} />
-            </a>
-
-            <a
-              href="https://www.facebook.com/ekalavyaevententertainment"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaFacebookF size={18} />
-            </a>
-
-            <a
-              href="https://share.google/pkeVRIju2IvxucJqs"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGoogle size={19} />
-            </a>
           </div>
         </div>
       </aside>

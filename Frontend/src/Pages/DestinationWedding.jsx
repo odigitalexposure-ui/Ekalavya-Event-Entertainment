@@ -130,7 +130,7 @@ export default function DestinationWedding() {
   return (
     <main className="overflow-hidden bg-white text-gray-700">
       {/* Hero Header */}
-      <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
+      <section className="relative bg-[#fff8fb] pt-28 pb-6 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div className="text-center lg:text-left">
             {/* Screen reader accessible H1 for SEO */}
@@ -167,13 +167,13 @@ export default function DestinationWedding() {
               </div>
             )}
 
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
               Celebrate the union of two souls against the backdrop of a sun-kissed beach,
               atop a majestic mountain, or aboard a luxury cruise on the River Ganges.
               From pristine venues to gourmet cuisine and seamless planning, we ensure your special day is nothing short of magical.
             </p>
 
-            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
+            <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:mt-6 sm:flex-row lg:justify-start">
               <Link
                 to="/contact"
                 className="inline-flex w-fit items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
@@ -184,7 +184,7 @@ export default function DestinationWedding() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative mt-8 lg:mt-0">
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.4 }}

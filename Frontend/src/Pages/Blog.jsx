@@ -77,13 +77,13 @@ export default function Blog() {
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
+      <section className="relative bg-[#fff8fb] pt-28 pb-6 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
-          <h1 className="mx-auto max-w-4xl text-2xl font-medium uppercase leading-[1.1] text-[#232020] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+          <h1 className="mx-auto max-w-4xl text-2xl font-medium uppercase leading-snug text-[#232020] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
             Event Insights, Ideas &amp; Planning Guides
           </h1>
 
-          <p className="mx-auto mt-6 max-w-3xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg sm:leading-8">
             Read simple guides, event tips and practical ideas on planning,
             decor, food, entertainment, hospitality and event management.
           </p>

@@ -22,21 +22,21 @@ export default function About() {
   return (
     <main className="overflow-hidden bg-white">
       {/* Hero */}
-      <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
+      <section className="relative bg-[#fff8fb] pt-28 pb-6 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_0.9fr] lg:gap-8">
             <div className="text-center lg:text-left">
-              <h1 className="mx-auto max-w-3xl text-2xl font-medium uppercase leading-[1.08] text-[#232020] sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:text-6xl lg:leading-[1.05]">
+              <h1 className="mx-auto max-w-3xl text-2xl font-medium uppercase leading-snug text-[#232020] sm:text-5xl sm:leading-[1.06] lg:mx-0 lg:text-6xl lg:leading-[1.05]">
                 Designing Events That Feel Premium, Personal &amp; Unforgettable
               </h1>
 
-              <p className="mx-auto mt-6 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
                 Ekalavya Event &amp; Entertainment is a professional event
                 management company, dedicated to
                 creating beautiful, smooth and memorable event experiences.
               </p>
 
-              <div className="mt-5 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
+              <div className="mt-7 flex flex-col justify-center gap-4 sm:mt-5 sm:flex-row lg:justify-start">
                 <a
                   href="#journey"
                   className="inline-flex items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
@@ -47,7 +47,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="relative order-2 lg:order-1">
+            <div className="relative mt-8 lg:mt-0 order-2 lg:order-1">
               <div className="relative overflow-hidden">
                 <img
                   src="/images/g10.jpeg"

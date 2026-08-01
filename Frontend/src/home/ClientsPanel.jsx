@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, Building2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimatedSection from "../common/AnimatedSection";
 import SnakeBorderBox from "../common/SnakeBorderBox";
@@ -184,54 +184,24 @@ const clients = [
 function ClientCard({ client }) {
   const [imgError, setImgError] = useState(false);
 
-  const getInitials = (name) => {
-    return name
-      .replace(/\([^)]*\)/g, "")
-      .trim()
-      .split(/\s+/)
-      .map((w) => w[0])
-      .filter(Boolean)
-      .slice(0, 2)
-      .join("")
-      .toUpperCase();
-  };
+  if (!client.logo || imgError) return null;
 
   return (
-    <div className="group flex items-center justify-between rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 sm:p-5 transition-all duration-300 hover:border-[#650a34]/30 hover:bg-[#650a34] hover:text-white hover:shadow-lg">
-      <div className="flex items-center gap-4 min-w-0 w-full">
-        <div className="flex h-14 w-14 sm:h-16 sm:w-16 flex-shrink-0 items-center justify-center rounded-none bg-white p-2 border border-[#650a34]/15 shadow-sm transition group-hover:border-white/40 group-hover:bg-white/95">
-          {client.logo && !imgError ? (
-            <img
-              src={encodeURI(client.logo)}
-              alt={client.name}
-              loading="lazy"
-              onError={() => setImgError(true)}
-              className="max-h-full max-w-full object-contain"
-            />
-          ) : (
-            <div className="flex flex-col items-center justify-center text-[#650a34] transition-colors group-hover:text-[#650a34]">
-              <Building2 size={18} className="mb-0.5" />
-              <span className="text-[11px] font-extrabold tracking-wider leading-none">
-                {getInitials(client.name)}
-              </span>
-            </div>
-          )}
-        </div>
-
-        <div className="min-w-0 flex-1">
-          <h4 className="text-base sm:text-lg font-medium leading-snug text-[#232020] transition-colors duration-200 group-hover:text-white line-clamp-2">
-            {client.name}
-          </h4>
-          <p className="mt-0.5 text-xs sm:text-sm text-gray-500 transition-colors duration-200 group-hover:text-white/80 line-clamp-1">
-            {client.subtitle}
-          </p>
-        </div>
-      </div>
+    <div className="group flex aspect-square w-full items-center justify-center rounded-none border border-[#650a34]/15 bg-white p-5 shadow-sm transition-all duration-300 hover:border-[#650a34] hover:shadow-xl hover:-translate-y-1">
+      <img
+        src={encodeURI(client.logo)}
+        alt={client.name}
+        loading="lazy"
+        onError={() => setImgError(true)}
+        className="max-h-[85%] max-w-[85%] object-contain transition-transform duration-300 group-hover:scale-105"
+      />
     </div>
   );
 }
 
 export default function ClientsPanel() {
+  const logoClients = clients.filter((client) => Boolean(client.logo));
+
   return (
     <section className="relative overflow-hidden bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
       <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
@@ -275,9 +245,9 @@ export default function ClientsPanel() {
               </div>
             </div>
 
-            <div className="relative h-[480px] overflow-hidden">
-              <div className="animate-clientSlide space-y-4">
-                {[...clients, ...clients].map((client, index) => (
+            <div className="relative h-[540px] sm:h-[580px] overflow-hidden">
+              <div className="animate-clientSlide grid grid-cols-2 gap-4 sm:gap-6">
+                {[...logoClients, ...logoClients].map((client, index) => (
                   <ClientCard
                     key={`${client.id}-${index}`}
                     client={client}

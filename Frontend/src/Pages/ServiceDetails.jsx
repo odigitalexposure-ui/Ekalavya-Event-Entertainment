@@ -50,20 +50,20 @@ export default function ServiceDetails() {
   return (
     <main className="overflow-hidden bg-white text-gray-700">
       {/* Hero Section */}
-      <section className="relative bg-[#fff8fb] pt-20 pb-4 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
+      <section className="relative bg-[#fff8fb] pt-28 pb-6 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">
           <div className="text-center lg:text-left">
-            <h1 className="mx-auto max-w-3xl text-2xl sm:text-3xl lg:text-4xl lg:leading-[1.1] font-medium uppercase text-[#232020] lg:mx-0 lg:max-w-none">
+            <h1 className="mx-auto max-w-3xl text-2xl font-medium uppercase leading-snug text-[#232020] sm:text-3xl lg:text-4xl lg:leading-[1.1] lg:mx-0 lg:max-w-none">
               {service.subtitle}
             </h1>
 
             {/* Main Short Description */}
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-6 text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg sm:leading-8 lg:mx-0">
               {service.shortDescription || service.description}
             </p>
 
             {/* CTA Button */}
-            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
+            <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:mt-6 sm:flex-row lg:justify-start">
               <Link
                 to="/contact"
                 className="inline-flex w-fit items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
@@ -74,7 +74,7 @@ export default function ServiceDetails() {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative mt-8 lg:mt-0">
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.4 }}
@@ -184,7 +184,7 @@ export default function ServiceDetails() {
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
-              A Clear Plan From First Brief To <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#650a34] to-[#ed1968]">Final Applause</span>
+              A Clear Plan From First Brief To <br /> <span className="text-[#232020]">Final Applause</span>
             </h2>
             <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
               We keep the workflow transparent, practical, and focused on a calm event-day experience.
