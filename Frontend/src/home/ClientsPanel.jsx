@@ -208,7 +208,7 @@ export default function ClientsPanel() {
         <div className="grid items-center gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+            <h2 className="text-2xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               A GROWING NETWORK OF HAPPY CLIENTS &amp; MEMORABLE EVENTS
             </h2>
 

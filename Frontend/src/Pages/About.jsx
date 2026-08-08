@@ -50,7 +50,7 @@ export default function About() {
             <div className="relative mt-8 lg:mt-0 order-2 lg:order-1">
               <div className="relative overflow-hidden">
                 <img
-                  src="/images/g10.jpeg"
+                  src="/ExtraImages/About-Page.png"
                   alt="Ekalavya Team Planning"
                   loading="lazy"
                   decoding="async"
@@ -69,7 +69,7 @@ export default function About() {
             <div className="relative order-2 lg:order-1 lg:h-full">
               <div className="relative h-full overflow-hidden rounded-none lg:absolute lg:inset-0">
                 <img
-                  src="/images/g41.jpeg"
+                  src="/ExtraImages/About-Page.png"
                   alt="Event Planning Journey"
                   loading="lazy"
                   decoding="async"
@@ -79,7 +79,7 @@ export default function About() {
             </div>
 
             <div className="order-1 text-center lg:order-2 lg:text-left">
-              <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
+              <h2 className="text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
                 From Ideas To Experiences, We Manage Every Detail With Passion
               </h2>
 

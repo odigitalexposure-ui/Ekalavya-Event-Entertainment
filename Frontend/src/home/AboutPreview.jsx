@@ -98,7 +98,7 @@ export default function AboutPreview() {
             <div className="relative overflow-hidden">
               <div className="relative overflow-hidden">
                 <img
-                  src="/images/g9.jpeg"
+                  src="/ExtraImages/Home Page Img 1.png"
                   alt="Ekalavya Event Management"
                   loading="lazy"
                   decoding="async"
@@ -116,7 +116,7 @@ export default function AboutPreview() {
             transition={{ duration: 0.7 }}
             className="order-1 lg:order-2 lg:pt-3"
           >
-            <h2 className="max-w-3xl text-3xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+            <h2 className="max-w-3xl text-2xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               COMPLETE EVENT SOLUTIONS WITH CREATIVITY, CLASS &amp; FLAWLESS
               EXECUTION
             </h2>

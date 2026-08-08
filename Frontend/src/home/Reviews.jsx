@@ -20,7 +20,7 @@ export default function Reviews() {
       <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+          <h2 className="text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
             Trusted By Clients For Beautiful Event Experiences
           </h2>
 
@@ -40,7 +40,7 @@ export default function Reviews() {
             <FaGoogle size={32} className="animate-iconPulseGlow" />
           </motion.div>
 
-          <h3 className="mt-5 text-3xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
+          <h3 className="mt-5 text-2xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
             Review Us On Google
           </h3>
 

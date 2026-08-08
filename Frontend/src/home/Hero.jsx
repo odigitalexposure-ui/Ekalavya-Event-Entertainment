@@ -41,7 +41,7 @@ export default function Hero() {
         className="relative z-10 mx-auto flex max-w-5xl flex-col items-center justify-center px-5 py-4 text-center sm:px-6 sm:py-16 lg:py-20"
       >
         {/* Main Heading with text shadow for crisp legibility over video */}
-        <h1 className="max-w-4xl text-[32px] font-extrabold uppercase leading-[1.1] tracking-wide text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
+        <h1 className="hero-banner-title max-w-4xl text-[32px] font-extrabold uppercase leading-[1.1] tracking-wide text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)] sm:text-5xl sm:leading-[1.06] lg:text-6xl lg:leading-[1.05]">
           <span className="block">WE BUILD </span>
           <span className="relative inline-block text-[#ed1968]">
             YOUR DREAM EVENT

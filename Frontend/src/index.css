@@ -51,6 +51,14 @@
       text-align: center !important;
     }
   }
+
+  @media (max-width: 639px) {
+    main h1:not(.hero-banner-title),
+    main h2 {
+      font-size: 1.5rem !important;
+      line-height: 1.35 !important;
+    }
+  }
 }
 
 @layer utilities {

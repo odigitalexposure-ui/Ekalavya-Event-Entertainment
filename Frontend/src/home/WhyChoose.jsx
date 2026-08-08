@@ -49,7 +49,7 @@ export default function WhyChoose() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <h2 className="text-3xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+            <h2 className="text-2xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               WE DON'T JUST MANAGE EVENTS, WE CREATE EXPERIENCES
             </h2>
 
@@ -117,7 +117,7 @@ export default function WhyChoose() {
             <div className="relative">
               <div className="relative overflow-hidden">
                 <img
-                  src="/images/g28.jpeg"
+                  src="/ExtraImages/Home Page Img 2.png"
                   alt="Premium Event Management"
                   loading="lazy"
                   decoding="async"

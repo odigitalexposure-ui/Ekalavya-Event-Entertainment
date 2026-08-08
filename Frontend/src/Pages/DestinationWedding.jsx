@@ -191,7 +191,7 @@ export default function DestinationWedding() {
               className="relative overflow-hidden rounded-none shadow-2xl border border-[#650a34]/15"
             >
               <img
-                src="/images/g21.jpeg"
+                src="/ExtraImages/Destination-wedding.png"
                 alt="Destination Wedding Celebration"
                 loading="eager"
                 decoding="async"
@@ -206,7 +206,7 @@ export default function DestinationWedding() {
       <section className="py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="text-center lg:text-left">
-            <h2 className="mx-auto max-w-3xl text-3xl font-extrabold uppercase leading-[1.12] text-[#ed1968] sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
+            <h2 className="mx-auto max-w-3xl text-2xl font-medium uppercase leading-[1.12] text-[#ed1968] sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               DREAM. DESIGN. DELIVER.
             </h2>
             <p className="mt-4 font-heading text-sm font-bold uppercase tracking-[0.2em] text-[#ed1968]">
@@ -246,7 +246,7 @@ export default function DestinationWedding() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
-            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               COMPLETE DESTINATION WEDDING PLANNING & MANAGEMENT
             </h2>
             <p className="mt-4 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -288,7 +288,7 @@ export default function DestinationWedding() {
       <section className="bg-white py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
-            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               WHY WITH US?
             </h2>
             <p className="mt-4 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -323,7 +323,7 @@ export default function DestinationWedding() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center mb-10">
-            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
+            <h2 className="text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
               OUR DESTINATION WEDDING WORKFLOW
             </h2>
             <p className="mt-4 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
@@ -365,7 +365,7 @@ export default function DestinationWedding() {
                 <p className="font-heading text-sm font-bold uppercase tracking-[0.24em] text-[#ffb8d5]">
                   Let us plan your dream wedding
                 </p>
-                <h2 className="mt-2 text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+                <h2 className="mt-2 text-2xl font-medium uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
                   READY TO PLAN YOUR DESTINATION WEDDING?
                 </h2>
                 <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">

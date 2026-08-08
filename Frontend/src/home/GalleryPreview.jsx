@@ -21,7 +21,7 @@ export default function GalleryPreview() {
       <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col items-center gap-6 text-center lg:flex-row lg:items-end lg:justify-between lg:text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
+            <h2 className="text-2xl font-medium leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:text-4xl lg:leading-[1.08]">
               MOMENTS, MEMORIES &amp; EVENT HIGHLIGHTS
             </h2>
 

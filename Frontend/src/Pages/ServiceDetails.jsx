@@ -3,16 +3,40 @@ import { Link, Navigate, useParams } from "react-router-dom";
 import {
   ArrowRight,
   BadgeCheck,
+  Building2,
+  Calendar,
   CalendarCheck,
+  Camera,
+  Car,
+  ChefHat,
+  ClipboardCheck,
   ConciergeBell,
+  Crown,
+  DoorOpen,
+  Eye,
   Gem,
+  GlassWater,
+  Headphones,
   HeartHandshake,
+  LayoutGrid,
+  Lightbulb,
   MapPin,
+  Mic2,
   Music,
+  Palette,
+  PartyPopper,
   Plane,
+  Shield,
+  ShieldCheck,
+  Sliders,
   Sparkles,
   Star,
+  Timer,
+  Truck,
   Utensils,
+  UtensilsCrossed,
+  Volume2,
+  Wrench,
 } from "lucide-react";
 import { getServiceBySlug, servicesData } from "../data/servicesData";
 import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
@@ -20,16 +44,56 @@ import SnakeBorderBox from "../common/SnakeBorderBox";
 import { motion } from "framer-motion";
 
 const highlightIcons = [Gem, ConciergeBell, CalendarCheck];
-const featureIcons = [
-  MapPin,
-  Utensils,
-  Sparkles,
-  Music,
-  Plane,
-  Star,
-  HeartHandshake,
-  BadgeCheck,
-];
+
+const featureIconMap = {
+  // Venue Management
+  "Venue shortlisting and inspection": MapPin,
+  "Layout, seating, and guest-flow planning": LayoutGrid,
+  "Vendor coordination and access control": ShieldCheck,
+  "Permissions, timing, and venue operations": ClipboardCheck,
+  "Stage, entry, parking, and back-area planning": Car,
+  "On-ground supervision during the event": Eye,
+
+  // Food & Beverage Service
+  "Menu planning for event type and audience": UtensilsCrossed,
+  "Buffet, live counter, and plated-service coordination": Utensils,
+  "Beverage and mocktail station planning": GlassWater,
+  "Service staff and counter movement management": ConciergeBell,
+  "Presentation styling and food-zone layout": ChefHat,
+  "Guest preference and special meal coordination": HeartHandshake,
+
+  // Decor & Production
+  "Theme and color palette development": Palette,
+  "Stage, mandap, entry, and photo-zone design": Crown,
+  "Lighting, sound, and technical production planning": Lightbulb,
+  "Floral, fabric, prop, and installation styling": Sparkles,
+  "Vendor and setup crew coordination": Wrench,
+  "Event-day production supervision": Sliders,
+
+  // Entertainment
+  "Artist, anchor, DJ, and performer coordination": Mic2,
+  "Live music, cultural acts, and specialty performances": Music,
+  "Show flow, cue sheet, and stage timing": Timer,
+  "Technical support for sound, lights, and AV": Volume2,
+  "Backstage, green room, and artist movement planning": DoorOpen,
+  "Audience-specific entertainment curation": PartyPopper,
+
+  // Hospitality & Logistics
+  "Guest welcome and registration desk management": HeartHandshake,
+  "Transport, pickup, drop, and route coordination": Car,
+  "Accommodation and rooming-list assistance": Building2,
+  "Guest itinerary and schedule communication": Calendar,
+  "Vendor movement and loading coordination": Truck,
+  "On-ground support team deployment": Headphones,
+
+  // Celebrity Management
+  "Celebrity and artist appearance coordination": Star,
+  "Schedule, travel, and hospitality planning": Plane,
+  "Stage entry, interaction, and show-flow alignment": Sparkles,
+  "Green room and privacy arrangements": Shield,
+  "Brand, media, and photo-op coordination": Camera,
+  "On-ground liaison and movement support": BadgeCheck,
+};
 
 export default function ServiceDetails() {
   const { slug } = useParams();
@@ -96,7 +160,7 @@ export default function ServiceDetails() {
       <section className="py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="text-center lg:text-left">
-            <h2 className="mx-auto max-w-3xl text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
+            <h2 className="mx-auto max-w-3xl text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               Designed for events
                <br />that feel effortless <br />and memorable
             </h2>
@@ -152,7 +216,7 @@ export default function ServiceDetails() {
 
           <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {service.features.map((feature, index) => {
-              const Icon = featureIcons[index % featureIcons.length];
+              const Icon = featureIconMap[feature] || Sparkles;
 
               return (
                 <AnimatedCard
@@ -183,8 +247,8 @@ export default function ServiceDetails() {
         
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
-              A Clear Plan From First Brief To <br /> <span className="text-[#232020]">Final Applause</span>
+            <h2 className="mx-auto max-w-3xl text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
+              A Clear Plan From First Brief To Final Applause
             </h2>
             <p className="mt-5 text-base leading-6 text-gray-600 sm:text-lg sm:leading-8">
               We keep the workflow transparent, practical, and focused on a calm event-day experience.
@@ -224,7 +288,7 @@ export default function ServiceDetails() {
       <section className="bg-[#fff8fb] py-6 sm:py-8 lg:py-10">
         <AnimatedSection className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div className="text-center lg:text-left">
-            <h2 className="mx-auto max-w-2xl text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
+            <h2 className="mx-auto max-w-2xl text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1] lg:mx-0 lg:max-w-none">
               Premium execution with personal attention
             </h2>
             <p className="mx-auto mt-5 max-w-2xl leading-6 text-gray-600 sm:leading-8 lg:mx-0 lg:max-w-none">
@@ -256,7 +320,7 @@ export default function ServiceDetails() {
                 <p className="font-heading text-sm font-bold uppercase leading-snug tracking-[0.24em] text-[#ffb8d5]">
                   Let&apos;s Plan Your Event
                 </p>
-                <h2 className="mt-2 text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+                <h2 className="mt-2 text-2xl font-medium uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
                   Ready to discuss {service.title}?
                 </h2>
                 <p className="mt-3 max-w-2xl text-base leading-7 text-white/80">
@@ -307,7 +371,7 @@ export default function ServiceDetails() {
 const SectionHeading = memo(function SectionHeading({ title, text }) {
   return (
     <div className="mx-auto max-w-3xl text-center">
-      <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#fff] sm:text-4xl sm:leading-[1.1]">
+      <h2 className="text-2xl font-medium uppercase leading-[1.12] text-[#fff] sm:text-4xl sm:leading-[1.1]">
         {title}
       </h2>
       <p className="mt-4 leading-6 text-[#fff] sm:text-lg sm:leading-8">

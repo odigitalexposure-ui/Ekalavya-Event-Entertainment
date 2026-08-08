@@ -5,7 +5,7 @@ export const servicesData = [
     subtitle: "Signature venues planned, prepared, and managed with calm precision.",
     shortDescription:
       "From finding the right setting to coordinating floor plans, vendors, permissions, and on-day operations, we manage every venue detail for a polished guest experience.",
-    heroImage: "/images/g55.jpeg",
+    heroImage: "/ExtraImages/Venue-Management.png",
     overview:
       "Ekalavya Event & Entertainment helps you choose, prepare, and operate venues that fit your celebration, audience, budget, and brand mood. Our team coordinates site checks, layouts, technical requirements, vendor movement, guest flow, setup timelines, and venue-side communication so your event feels effortless from arrival to farewell.",
     features: [
@@ -35,7 +35,7 @@ export const servicesData = [
     subtitle: "Curated food and beverage experiences served with warmth and polish.",
     shortDescription:
       "We design and coordinate menus, counters, service teams, beverage plans, and presentation details that match the occasion and delight your guests.",
-    heroImage: "/images/g29.jpeg",
+    heroImage: "/ExtraImages/Food-&-Beverages.png",
     overview:
       "Food is one of the strongest memories guests carry home. Our F & B service focuses on menu planning, presentation, service rhythm, hygiene, guest preferences, and smooth counter operations. Whether it is a wedding, corporate event, private party, or cultural gathering, we help create a dining experience that feels abundant, elegant, and well-managed.",
     features: [
@@ -65,7 +65,7 @@ export const servicesData = [
     subtitle: "Immersive styling, stagecraft, and production built around your story.",
     shortDescription:
       "We create decor concepts, stages, lighting moods, entry setups, floral styling, and production plans for visually memorable events.",
-    heroImage: "/images/g4.jpeg",
+    heroImage: "/ExtraImages/Decor-&-Production.png",
     overview:
       "Our decor and production team turns an event brief into a complete visual experience. We plan themes, color palettes, stage designs, lighting, floral moments, photo areas, entry installations, and technical production details so every corner feels intentional, premium, and aligned with the occasion.",
     features: [
@@ -95,7 +95,7 @@ export const servicesData = [
     subtitle: "Live moments, artist experiences, and show flow that keep guests engaged.",
     shortDescription:
       "From music and anchors to performers, live acts, DJs, and curated show segments, we shape entertainment that suits your crowd.",
-    heroImage: "/images/g28.jpeg",
+    heroImage: "/ExtraImages/Entertainment.png",
     overview:
       "Entertainment brings energy to an event, but the best experiences are carefully timed and audience-aware. Ekalavya coordinates performers, music, anchors, show cues, technical needs, and backstage movement so each act lands at the right moment and keeps the celebration alive.",
     features: [
@@ -125,7 +125,7 @@ export const servicesData = [
     subtitle: "Thoughtful guest care and movement planning from arrival to departure.",
     shortDescription:
       "We manage guest welcomes, transport, accommodation, help desks, schedules, and movement plans so hosts can focus on the occasion.",
-    heroImage: "/images/g31.jpeg",
+    heroImage: "/ExtraImages/Hospitality.png",
     overview:
       "Hospitality and logistics decide how comfortable an event feels. Our team plans arrival experiences, welcome desks, transport routes, accommodation coordination, rooming support, guest itineraries, vendor movement, and emergency readiness to keep every person and detail moving smoothly.",
     features: [
@@ -155,7 +155,7 @@ export const servicesData = [
     subtitle: "Professional celebrity coordination for appearances, performances, and brand moments.",
     shortDescription:
       "We handle celebrity and artist coordination, appearance planning, schedules, travel, hospitality, and event integration with discretion.",
-    heroImage: "/images/g39.jpeg",
+    heroImage: "/ExtraImages/Celebrity-Management.png",
     overview:
       "Celebrity management requires planning, timing, privacy, and professional coordination. Ekalavya supports artist and celebrity appearances by aligning requirements, schedules, hospitality, travel movement, stage cues, media moments, and host expectations so the experience feels premium and controlled.",
     features: [

@@ -107,7 +107,7 @@ export default function Blog() {
               </div>
 
               <div className="p-6 sm:p-8 lg:p-10">
-                <h2 className="text-3xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
+                <h2 className="text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
                   {blogs[0].title}
                 </h2>
 
@@ -219,7 +219,7 @@ export default function Blog() {
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-8 rounded-none bg-[#650a34] px-6 py-10 text-center shadow-2xl shadow-[#650a34]/20 sm:px-8 lg:flex-row lg:px-12 lg:py-14 lg:text-left">
             <div>
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
+              <h2 className="text-2xl font-medium uppercase leading-[1.12] text-white sm:text-4xl sm:leading-[1.1]">
                 Need Help Planning Your Event?
               </h2>
 
@@ -260,7 +260,7 @@ export default function Blog() {
             />
 
             <div className="p-5 sm:p-7">
-              <h2 className="text-3xl font-extrabold uppercase leading-[1.12] text-gray-800 sm:text-4xl sm:leading-[1.1]">
+              <h2 className="text-2xl font-medium uppercase leading-[1.12] text-[#232020] sm:text-4xl sm:leading-[1.1]">
                 {selectedBlog.title}
               </h2>
 
