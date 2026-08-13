@@ -50,7 +50,7 @@ export default function About() {
             <div className="relative mt-8 lg:mt-0 order-2 lg:order-1">
               <div className="relative overflow-hidden">
                 <img
-                  src="/ExtraImages/About-Page.png"
+                  src="/ExtraImages/About-Page-2.png"
                   alt="Ekalavya Team Planning"
                   loading="lazy"
                   decoding="async"
