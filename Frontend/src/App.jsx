@@ -76,14 +76,14 @@ const router = createBrowserRouter([
           </Suspense>
         ),
       },
-      {
-        path: "gallery",
-        element: (
-          <Suspense fallback={<Loader />}>
-            <Gallery />
-          </Suspense>
-        ),
-      },
+      // {
+      //   path: "gallery",
+      //   element: (
+      //     <Suspense fallback={<Loader />}>
+      //       <Gallery />
+      //     </Suspense>
+      //   ),
+      // },
       {
         path: "blog",
         element: (

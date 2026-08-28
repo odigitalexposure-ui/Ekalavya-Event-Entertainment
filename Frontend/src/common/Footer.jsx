@@ -11,7 +11,7 @@ export default function Footer() {
     { name: "Home", to: "/" },
     { name: "About", to: "/about" },
     { name: "Destination Wedding", to: "/destination-wedding" },
-    { name: "Gallery", to: "/gallery" },
+    // { name: "Gallery", to: "/gallery" },
     { name: "Blogs", to: "/blog" },
     { name: "Contact", to: "/contact" },
   ];

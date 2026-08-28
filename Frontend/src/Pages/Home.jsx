@@ -4,7 +4,7 @@ import AboutPreview from '../home/AboutPreview'
 import Services from '../home/Services'
 import WhyChoose from '../home/WhyChoose'
 import ClientsPanel from '../home/ClientsPanel'
-import GalleryPreview from '../home/GalleryPreview'
+// import GalleryPreview from '../home/GalleryPreview'
 import Reviews from '../home/Reviews'
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
       <Services />
       <WhyChoose/>
       <ClientsPanel/>
-      <GalleryPreview/>
+      {/* <GalleryPreview/> */}
       <Reviews/>
     </div>
   )
