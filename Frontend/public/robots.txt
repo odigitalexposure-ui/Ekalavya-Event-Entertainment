@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ekalavyaevententertainment.com/
+
+# Sitemaps
+Sitemap: https://www.ekalavyaevententertainment.com/sitemap.xml

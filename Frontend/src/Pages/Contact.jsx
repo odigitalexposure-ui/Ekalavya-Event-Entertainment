@@ -11,6 +11,7 @@ import { FaFacebookF, FaInstagram, FaGoogle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import AnimatedSection from "../common/AnimatedSection";
 import SnakeBorderBox from "../common/SnakeBorderBox";
+import SEO from "../common/SEO";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -109,6 +110,12 @@ ${formData.message}
 
   return (
     <main className="overflow-hidden bg-white">
+      <SEO
+        title="Contact Us | Book Best Event Planner in Kolkata - Ekalavya Event & Entertainment"
+        description="Get in touch with Ekalavya Event & Entertainment in Howrah & Kolkata for a free event consultation. Call +91 9007744772 / +91 9836169315 today."
+        keywords="Contact event planner Kolkata, Book event planner Howrah, Event management phone number Kolkata, Ekalavya Event contact"
+        canonicalPath="/contact"
+      />
       {/* Hero */}
       <section className="relative bg-[#fff8fb] pt-28 pb-6 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">

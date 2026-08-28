@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
 import { blogPosts } from "../data/blogData";
+import SEO from "../common/SEO";
 
 export default function Blog() {
   const [selectedBlog, setSelectedBlog] = useState(null);
@@ -82,6 +83,12 @@ export default function Blog() {
 
   return (
     <main className="overflow-hidden bg-white text-gray-800">
+      <SEO
+        title="Latest Event Insights & Wedding Trends Blog | Ekalavya Event & Entertainment"
+        description="Read expert articles on wedding planning tips, event decor trends, venue selection guides, and destination wedding ideas in Kolkata and India."
+        keywords="Event planning blog Kolkata, Wedding trends tips, Destination wedding guide, Event decor ideas Kolkata, Ekalavya Event blog"
+        canonicalPath="/blog"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-[#fff5f8] via-[#fff8fb] to-white pt-28 pb-6 sm:pt-32 sm:pb-8">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">

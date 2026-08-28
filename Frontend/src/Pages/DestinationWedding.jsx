@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
 import SnakeBorderBox from "../common/SnakeBorderBox";
+import SEO from "../common/SEO";
 
 export default function DestinationWedding() {
   const [titleImgError, setTitleImgError] = useState(false);
@@ -129,6 +130,12 @@ export default function DestinationWedding() {
 
   return (
     <main className="overflow-hidden bg-white text-gray-700">
+      <SEO
+        title="Destination Wedding Planner in Kolkata | Royal & Luxury Weddings - Ekalavya Event"
+        description="Plan your dream destination wedding with Ekalavya Event. From Ganges river cruises to palace & beach weddings, we provide end-to-end venue selection, decor, and guest hospitality."
+        keywords="Destination wedding planner Kolkata, Royal wedding planner West Bengal, Ganges cruise wedding, Luxury beach wedding India, Heritage palace wedding planner"
+        canonicalPath="/destination-wedding"
+      />
       {/* Hero Header */}
       <section className="relative bg-[#fff8fb] pt-28 pb-6 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">

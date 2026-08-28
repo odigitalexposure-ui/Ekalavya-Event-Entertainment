@@ -42,8 +42,42 @@ import { getServiceBySlug, servicesData } from "../data/servicesData";
 import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
 import SnakeBorderBox from "../common/SnakeBorderBox";
 import { motion } from "framer-motion";
+import SEO from "../common/SEO";
 
 const highlightIcons = [Gem, ConciergeBell, CalendarCheck];
+
+const serviceSeoMap = {
+  "venue-management": {
+    title: "Venue Management Services Kolkata | Site Inspection & Floor Planning",
+    description: "Professional venue management, site check, seating layout, permission handling, and vendor access control in Kolkata & Howrah by Ekalavya Event.",
+    keywords: "Venue management Kolkata, Event site check, Seating layout planning, Event permissions Howrah, Ekalavya Event venue coordination"
+  },
+  "fb-service": {
+    title: "Food & Beverage Catering Management | Premium Event Dining Kolkata",
+    description: "Curated event menus, live counters, buffet coordination, beverage management, and hospitality service teams for weddings & corporate events.",
+    keywords: "Food and beverage catering Kolkata, Event catering management, Wedding menu planning, Live counters catering Kolkata, Beverage station planning"
+  },
+  "decor-production": {
+    title: "Event Decor & Stage Production | Custom Themes & Lighting Kolkata",
+    description: "Immersive event styling, mandap & stagecraft design, floral installations, ambient lighting, and technical sound production in Kolkata.",
+    keywords: "Event decor production Kolkata, Wedding mandap stage lighting, Floral event styling Kolkata, Theme decor planner, Sound AV production Kolkata"
+  },
+  "entertainment": {
+    title: "Live Entertainment & Artist Management | Shows & Anchors Kolkata",
+    description: "Live music bands, celebrity anchors, DJs, cultural performers, cue sheet management, and backstage artist coordination for celebrations.",
+    keywords: "Live entertainment artist management Kolkata, Event anchors DJs Kolkata, Wedding band live music, Performer booking Kolkata, Show cue management"
+  },
+  "hospitality-logistics": {
+    title: "Guest Hospitality & Transport Logistics | Event Management Kolkata",
+    description: "Guest welcome desks, hotel rooming list management, airport transfers, itinerary schedules, and seamless movement planning for event hosts.",
+    keywords: "Event hospitality logistics Kolkata, Guest rooming transport, Wedding travel coordination, Hotel welcome desk Kolkata, Event movement planning"
+  },
+  "celebrity-management": {
+    title: "Celebrity & Artist Management Services | Event Guest Stars Kolkata",
+    description: "Professional celebrity booking, appearance coordination, hospitality, green room arrangements, and backstage security management.",
+    keywords: "Celebrity management Kolkata, Artist booking event appearance, Guest star coordinator Kolkata, Green room arrangements, Celebrity security liaison"
+  }
+};
 
 const featureIconMap = {
   // Venue Management
@@ -103,6 +137,12 @@ export default function ServiceDetails() {
     return <Navigate to="/" replace />;
   }
 
+  const seoData = serviceSeoMap[service.slug] || {
+    title: `${service.title} Services | Ekalavya Event & Entertainment`,
+    description: service.shortDescription || service.subtitle,
+    keywords: `${service.title}, Event management Kolkata, Ekalavya Event`
+  };
+
   const relatedServices = servicesData.filter((item) => item.slug !== service.slug).slice(0, 3);
 
   const highlights = [
@@ -113,6 +153,13 @@ export default function ServiceDetails() {
 
   return (
     <main className="overflow-hidden bg-white text-gray-700">
+      <SEO
+        title={seoData.title}
+        description={seoData.description}
+        keywords={seoData.keywords}
+        canonicalPath={`/services/${service.slug}`}
+        ogImage={service.heroImage ? `https://www.ekalavyaevententertainment.com${service.heroImage}` : undefined}
+      />
       {/* Hero Section */}
       <section className="relative bg-[#fff8fb] pt-28 pb-6 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto grid max-w-7xl items-center gap-6 px-4 sm:px-6 lg:grid-cols-[1fr_0.92fr]">

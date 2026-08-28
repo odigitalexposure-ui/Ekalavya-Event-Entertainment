@@ -8,6 +8,7 @@ import {
 import { Link } from "react-router-dom";
 import AnimatedSection, { AnimatedCard } from "../common/AnimatedSection";
 import SnakeBorderBox from "../common/SnakeBorderBox";
+import SEO from "../common/SEO";
 
 export default function About() {
   const values = [
@@ -21,6 +22,12 @@ export default function About() {
 
   return (
     <main className="overflow-hidden bg-white">
+      <SEO
+        title="About Us | Leading Event Planners in Kolkata - Ekalavya Event & Entertainment"
+        description="Learn about Ekalavya Event & Entertainment, Kolkata's top event management agency with 10+ years of expertise in crafting bespoke weddings, corporate galas & cultural events."
+        keywords="About Ekalavya Event, Top event management agency Kolkata, Experienced event planners West Bengal, Professional wedding directors"
+        canonicalPath="/about"
+      />
       {/* Hero */}
       <section className="relative bg-[#fff8fb] pt-28 pb-6 sm:pt-24 sm:pb-6 lg:pt-28 lg:pb-6">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 sm:px-6">
