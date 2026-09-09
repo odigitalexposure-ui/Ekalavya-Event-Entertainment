@@ -90,7 +90,7 @@ export default function Blog() {
         canonicalPath="/blog"
       />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-[#fff5f8] via-[#fff8fb] to-white pt-28 pb-6 sm:pt-32 sm:pb-8">
+      <section className="relative bg-linear-to-b from-[#fff5f8] via-[#fff8fb] to-white pt-28 pb-6 sm:pt-32 sm:pb-8">
         <AnimatedSection className="relative mx-auto max-w-7xl px-4 text-center sm:px-6">
           {/* Search Bar & Categories */}
           <div className="mx-auto max-w-3xl space-y-4">
@@ -152,7 +152,7 @@ export default function Blog() {
             <div className="grid overflow-hidden rounded-none bg-white border border-gray-100 shadow-2xl shadow-gray-200/80 lg:grid-cols-12">
               {/* Media */}
               <div
-                className="relative aspect-[16/10] w-full cursor-pointer lg:col-span-7 lg:aspect-auto overflow-hidden group bg-black min-h-[320px] sm:min-h-[420px]"
+                className="relative aspect-16/10 w-full cursor-pointer lg:col-span-7 lg:aspect-auto overflow-hidden group bg-black min-h-80 sm:min-h-105"
                 onClick={() => setSelectedBlog(featuredBlog)}
               >
                 {featuredBlog.mediaType === "video" ? (
@@ -175,13 +175,13 @@ export default function Blog() {
                     </span>
                   </div>
                 ) : (
-                  <div className="relative h-full w-full flex items-center justify-center p-2 sm:p-4 bg-gradient-to-b from-gray-950 to-slate-900">
+                  <div className="relative h-full w-full flex items-center justify-center p-2 sm:p-4 bg-linear-to-b from-gray-950 to-slate-900">
                     <img
                       src={featuredBlog.media}
                       alt={featuredBlog.title}
                       loading="lazy"
                       decoding="async"
-                      className="h-full w-full max-h-[520px] object-contain transition duration-700 group-hover:scale-[1.02] rounded-none drop-shadow-lg"
+                      className="h-full w-full max-h-130 object-contain transition duration-700 group-hover:scale-[1.02] rounded-none drop-shadow-lg"
                     />
                   </div>
                 )}
@@ -326,7 +326,7 @@ export default function Blog() {
                   <div>
                     {/* Media Container - Square shape */}
                     <div
-                      className="relative aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-gradient-to-b from-gray-900 to-slate-900 cursor-pointer flex items-center justify-center p-2 sm:p-3"
+                      className="relative aspect-4/3 sm:aspect-16/11 overflow-hidden bg-linear-to-b from-gray-900 to-slate-900 cursor-pointer flex items-center justify-center p-2 sm:p-3"
                       onClick={() => setSelectedBlog(blog)}
                     >
                       {blog.mediaType === "video" ? (
@@ -354,7 +354,7 @@ export default function Blog() {
                           alt={blog.title}
                           loading="lazy"
                           decoding="async"
-                          className="h-full w-full max-h-[320px] object-contain transition duration-500 group-hover:scale-105 rounded-none drop-shadow-md"
+                          className="h-full w-full max-h-80 object-contain transition duration-500 group-hover:scale-105 rounded-none drop-shadow-md"
                         />
                       )}
 
@@ -432,7 +432,7 @@ export default function Blog() {
       {/* Direct Contact Call-To-Action - Square shape */}
       <section className="bg-white py-8 sm:py-12 lg:py-16">
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="relative overflow-hidden rounded-none bg-gradient-to-r from-[#650a34] via-[#7d0d42] to-[#650a34] px-6 py-12 text-center shadow-2xl shadow-[#650a34]/30 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between lg:text-left">
+          <div className="relative overflow-hidden rounded-none bg-linear-to-r from-[#650a34] via-[#7d0d42] to-[#650a34] px-6 py-12 text-center shadow-2xl shadow-[#650a34]/30 sm:px-12 sm:py-16 lg:flex lg:items-center lg:justify-between lg:text-left">
             <div className="relative z-10 max-w-2xl">
               <span className="inline-flex items-center gap-2 rounded-none bg-white/10 px-4 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md">
                 <Sparkles size={14} className="text-[#ed1968]" />
@@ -475,7 +475,7 @@ export default function Blog() {
       {/* Reader Detail Modal - Square shape */}
       {selectedBlog && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-gray-950/85 p-3 sm:p-6 backdrop-blur-md overflow-y-auto animate-fadeIn"
+          className="fixed inset-0 z-100 flex items-center justify-center bg-gray-950/85 p-3 sm:p-6 backdrop-blur-md overflow-y-auto animate-fadeIn"
           onClick={() => setSelectedBlog(null)}
         >
           <div
@@ -492,7 +492,7 @@ export default function Blog() {
             </button>
 
             {/* Top Media Header - Square shape */}
-            <div className="relative min-h-[300px] max-h-[75vh] w-full bg-slate-950 flex items-center justify-center p-3 sm:p-5">
+            <div className="relative min-h-75 max-h-[75vh] w-full bg-slate-950 flex items-center justify-center p-3 sm:p-5">
               {selectedBlog.mediaType === "video" ? (
                 <video
                   src={selectedBlog.media}

@@ -80,7 +80,7 @@ export default function Gallery() {
                   />
 
                   {/* Subtle Hover Info Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col justify-end p-4 text-left">
+                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col justify-end p-4 text-left">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-[#ff80ab]">
                       {item.category}
                     </span>
@@ -129,7 +129,7 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 backdrop-blur-md"
+            className="fixed inset-0 z-100 flex items-center justify-center bg-black/90 p-4 backdrop-blur-md"
             onClick={() => setSelectedIndex(null)}
           >
             {/* Close Button */}

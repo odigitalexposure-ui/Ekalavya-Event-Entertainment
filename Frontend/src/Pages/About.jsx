@@ -61,7 +61,7 @@ export default function About() {
                   alt="Ekalavya Team Planning"
                   loading="lazy"
                   decoding="async"
-                  className="aspect-square h-auto w-full object-cover sm:aspect-auto sm:h-[460px]"
+                  className="aspect-square h-auto w-full object-cover sm:aspect-auto sm:h-115"
                 />
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function About() {
                   >
                     <SnakeBorderBox className="group flex aspect-square flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md sm:aspect-auto sm:flex-row sm:justify-start sm:p-4 sm:text-left h-full">
                       <div className="mb-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-none bg-[#650a34]/8 text-[#650a34] transition group-hover:bg-[#ed1968] group-hover:text-white sm:mb-0 sm:mr-4 sm:h-12 sm:w-12 sm:rounded-none">
-                        <CheckCircle2 size={20} className="sm:h-[21px] sm:w-[21px]" />
+                        <CheckCircle2 size={20} className="sm:h-5.25 sm:w-5.25" />
                       </div>
                       <div>
                         <span className="text-[13px] font-medium leading-tight text-[#232020] sm:text-base sm:leading-snug">

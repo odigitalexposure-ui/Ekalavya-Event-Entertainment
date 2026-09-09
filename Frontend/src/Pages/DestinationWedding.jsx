@@ -154,7 +154,7 @@ export default function DestinationWedding() {
                   loading="eager"
                   decoding="async"
                   onError={() => setTitleImgError(true)}
-                  className="h-auto w-full max-w-[340px] sm:max-w-[460px] lg:max-w-[540px] object-contain drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
+                  className="h-auto w-full max-w-85 sm:max-w-115 lg:max-w-135 object-contain drop-shadow-sm transition-transform duration-300 hover:scale-[1.01]"
                 />
               </div>
             ) : (
@@ -227,19 +227,19 @@ export default function DestinationWedding() {
             </p>
 
             <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
-              <SnakeBorderBox className="flex min-h-[120px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md">
+              <SnakeBorderBox className="flex min-h-30 flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md">
                 <Crown size={24} className="text-[#650a34] mb-2" />
                 <span className="text-sm font-extrabold text-gray-800">10+ Years</span>
                 <span className="text-xs text-gray-600">Industry Expertise</span>
               </SnakeBorderBox>
 
-              <SnakeBorderBox className="flex min-h-[120px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md">
+              <SnakeBorderBox className="flex min-h-30 flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md">
                 <Gem size={24} className="text-[#ed1968] mb-2" />
                 <span className="text-sm font-extrabold text-gray-800">Premier Network</span>
                 <span className="text-xs text-gray-600">Venues &amp; Artists</span>
               </SnakeBorderBox>
 
-              <SnakeBorderBox className="flex min-h-[120px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md col-span-2 sm:col-span-1">
+              <SnakeBorderBox className="flex min-h-30 flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-[#fff8fb] p-4 text-center transition hover:-translate-y-1 hover:shadow-md col-span-2 sm:col-span-1">
                 <ShieldCheck size={24} className="text-[#650a34] mb-2" />
                 <span className="text-sm font-extrabold text-gray-800">Transparent</span>
                 <span className="text-xs text-gray-600">Zero Hidden Surprises</span>

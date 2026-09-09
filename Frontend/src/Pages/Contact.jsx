@@ -370,7 +370,7 @@ ${formData.message}
             </a>
           </div>
 
-          <div className="relative aspect-[16/9] overflow-hidden rounded-none border border-[#650a34]/10 bg-white shadow-2xl shadow-[#650a34]/10 sm:aspect-[21/9]">
+          <div className="relative aspect-video overflow-hidden rounded-none border border-[#650a34]/10 bg-white shadow-2xl shadow-[#650a34]/10 sm:aspect-21/9">
             <iframe
               title="Ekalavya Location Map"
               src={mapEmbed}
@@ -402,7 +402,7 @@ function ContactCard({ icon: Icon, title, text, link }) {
 
       <div className="min-w-0 flex-1">
         <h3 className="font-extrabold leading-snug text-gray-800 sm:text-lg">{title}</h3>
-        <p className="mt-1 break-words text-sm leading-6 text-gray-600 sm:text-base sm:leading-7">{text}</p>
+        <p className="mt-1 wrap-break-word text-sm leading-6 text-gray-600 sm:text-base sm:leading-7">{text}</p>
       </div>
     </div>
   );

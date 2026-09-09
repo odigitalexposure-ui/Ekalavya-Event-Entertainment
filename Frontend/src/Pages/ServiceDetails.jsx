@@ -231,8 +231,8 @@ export default function ServiceDetails() {
                 return (
                   <SnakeBorderBox
                     key={item.label}
-                    className={`group flex min-h-[140px] flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md lg:items-start lg:p-4 lg:text-left ${
-                      isLastOdd ? "col-span-2 mx-auto w-full max-w-[190px] sm:col-span-1 sm:mx-0 sm:max-w-none" : ""
+                    className={`group flex min-h-35 flex-col items-center justify-center rounded-none border border-[#650a34]/10 bg-white p-3 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md lg:items-start lg:p-4 lg:text-left ${
+                      isLastOdd ? "col-span-2 mx-auto w-full max-w-47.5 sm:col-span-1 sm:mx-0 sm:max-w-none" : ""
                     }`}
                   >
                     <motion.div
@@ -290,7 +290,7 @@ export default function ServiceDetails() {
 
       {/* Process Workflow */}
       <section className="py-6 sm:py-8 lg:py-10 relative overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-px bg-gradient-to-r from-transparent via-[#650a34]/20 to-transparent"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-px bg-linear-to-r from-transparent via-[#650a34]/20 to-transparent"></div>
         
         <AnimatedSection className="mx-auto max-w-7xl px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
@@ -303,7 +303,7 @@ export default function ServiceDetails() {
           </div>
 
           <div className="mt-16 lg:mt-24 relative">
-            <div className="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-[2px] bg-gradient-to-r from-[#650a34]/10 via-[#ed1968]/30 to-[#650a34]/10"></div>
+            <div className="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-0.5 bg-linear-to-r from-[#650a34]/10 via-[#ed1968]/30 to-[#650a34]/10"></div>
 
             <div className="grid gap-12 lg:gap-6 lg:grid-cols-4">
               {service.process.map((step, index) => (
@@ -421,7 +421,7 @@ const SectionHeading = memo(function SectionHeading({ title, text }) {
       <h2 className="text-2xl font-medium uppercase leading-[1.12] text-[#fff] sm:text-4xl sm:leading-[1.1]">
         {title}
       </h2>
-      <p className="mt-4 leading-6 text-[#fff] sm:text-lg sm:leading-8">
+      <p className="mt-4 leading-6 text-white sm:text-lg sm:leading-8">
         {text}
       </p>
     </div>
