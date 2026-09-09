@@ -15,7 +15,7 @@ const homeSchema = {
   "image": "https://www.ekalavyaevententertainment.com/logo.png",
   "@id": "https://www.ekalavyaevententertainment.com/#organization",
   "url": "https://www.ekalavyaevententertainment.com/",
-  "telephone": "+919007744772",
+  "telephone": "+917044423322",
   "email": "ekalavyaentertainmentkolkata@gmail.com",
   "priceRange": "₹₹₹",
   "address": {

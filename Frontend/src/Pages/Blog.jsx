@@ -451,15 +451,15 @@ export default function Blog() {
 
             <div className="relative z-10 mt-8 flex flex-col gap-3 sm:flex-row lg:mt-0 lg:shrink-0">
               <a
-                href="tel:+919007744772"
+                href="tel:+917044423322"
                 className="inline-flex items-center justify-center gap-2 rounded-none bg-white px-7 py-4 text-xs font-bold uppercase tracking-wider text-[#650a34] shadow-lg transition hover:-translate-y-0.5 hover:bg-[#ed1968] hover:text-white"
               >
                 <Phone size={18} />
-                Call +91 9007744772
+                Call +91 7044423322
               </a>
 
               <a
-                href="https://wa.me/919007744772?text=Hello%20Ekalavya%20Events,%20I%20would%20like%20to%20consult%20about%20event%20planning"
+                href="https://wa.me/917044423322?text=Hello%20Ekalavya%20Events,%20I%20would%20like%20to%20consult%20about%20event%20planning"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-none border border-white/30 bg-white/10 px-7 py-4 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white/20"

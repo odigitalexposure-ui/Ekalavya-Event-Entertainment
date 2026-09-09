@@ -27,7 +27,7 @@ export default function Contact() {
 
   const [errors, setErrors] = useState({});
 
-  const whatsappNumber = "919007744772";
+  const whatsappNumber = "917044423322";
 
   const mapLink =
     "https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRifBTIHCAIQIRiPAtIBCDEzOTZqMGo3qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KeVuAl3WeQI6MY82egb8MTdl&daddr=26/1,+Bhagaban+Chatterjee+Ln,+Bantra,+Ichapur,+Howrah,+West+Bengal+711101";
@@ -112,7 +112,7 @@ ${formData.message}
     <main className="overflow-hidden bg-white">
       <SEO
         title="Contact Us | Book Best Event Planner in Kolkata - Ekalavya Event & Entertainment"
-        description="Get in touch with Ekalavya Event & Entertainment in Howrah & Kolkata for a free event consultation. Call +91 9007744772 / +91 9836169315 today."
+        description="Get in touch with Ekalavya Event & Entertainment in Howrah & Kolkata for a free event consultation. Call +91 7044423322 today."
         keywords="Contact event planner Kolkata, Book event planner Howrah, Event management phone number Kolkata, Ekalavya Event contact"
         canonicalPath="/contact"
       />
@@ -155,8 +155,8 @@ ${formData.message}
               <ContactCard
                 icon={Phone}
                 title="Call Us"
-                text="9007744772, 9836169315"
-                link="tel:9007744772"
+                text="+91 7044423322"
+                link="tel:7044423322"
               />
 
               <ContactCard

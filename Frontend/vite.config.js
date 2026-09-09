@@ -5,9 +5,13 @@ import react from '@vitejs/plugin-react';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  esbuild: {
+    drop: ['console', 'debugger'],
+  },
   build: {
     target: 'esnext',
     minify: 'esbuild',
+    cssMinify: 'esbuild',
     cssCodeSplit: true,
     chunkSizeWarningLimit: 1000,
     rollupOptions: {

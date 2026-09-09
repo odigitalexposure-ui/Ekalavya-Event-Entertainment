@@ -7,8 +7,8 @@ export const blogPosts = [
     readTime: "5 min read",
     media: "/ExtraImages/Blog-7.mp4",
     mediaType: "video",
-    phone: "+91 9007744772",
-    whatsapp: "919007744772",
+    phone: "+91 7044423322",
+    whatsapp: "917044423322",
     excerpt:
       "Transforming high-stakes events from overwhelming logistical headaches into seamless, unforgettable experiences. Discover how expert event management elevates your celebration.",
     content: `WHY DO YOU NEED AN EVENT MANAGER?
@@ -46,7 +46,7 @@ Be completely present to network, engage with VIPs, and enjoy your own event com
 
 Ready to host your next event? Partner with professionals to turn your event vision into a flawless, stress-free reality.
 
-Send us a DM or call us at 9007744772 to book your free consultation today!`,
+Send us a DM or call us at 7044423322 to book your free consultation today!`,
     highlights: [
       "Reclaim 100+ Hours of Detailed Event Planning",
       "Access Exclusive Insider Vendor Rates & Budget Control",
@@ -56,7 +56,7 @@ Send us a DM or call us at 9007744772 to book your free consultation today!`,
       "100% Host Presence with Dedicated On-Site Director",
     ],
     calloutText:
-      "Send us a DM or call us at 9007744772 to book your free consultation today!",
+      "Send us a DM or call us at 7044423322 to book your free consultation today!",
   },
   {
     id: "blog-1",
@@ -66,13 +66,13 @@ Send us a DM or call us at 9007744772 to book your free consultation today!`,
     readTime: "3 min read",
     media: "/ExtraImages/Blog-1.png",
     mediaType: "image",
-    phone: "+91 9007744772",
-    whatsapp: "919007744772",
+    phone: "+91 7044423322",
+    whatsapp: "917044423322",
     excerpt:
       "We nourish your dream of a memorable wedding with the utmost care and bring your ideas to life with passion, making the beginning of your love story unique.",
     content: `Make your dream wedding "all is well" with us. We nourish your dream of a memorable wedding with the utmost care and bring your ideas to life with the passion for our job so that the beginning of your love story turns out to be unique.
 
-Call us today at +91 9007744772 and let your love story begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.`,
+Call us today at +91 7044423322 and let your love story begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.`,
     highlights: [
       "Utmost care & personalized wedding concepts",
       "End-to-end execution from decor to guest hospitality",
@@ -87,8 +87,8 @@ Call us today at +91 9007744772 and let your love story begin. Your journey to '
     readTime: "4 min read",
     media: "/ExtraImages/Blog-2.png",
     mediaType: "image",
-    phone: "+91 9007744772",
-    whatsapp: "919007744772",
+    phone: "+91 7044423322",
+    whatsapp: "917044423322",
     excerpt:
       "From high-level meetings and incentive programs to seamless conferences and exhibitions, we deliver complete corporate event management solutions.",
     content: `Experience premium MICE Corporate Events designed to elevate your business objectives. From high-level meetings and motivating incentive programs to seamless conferences and powerful exhibitions, we deliver complete event management solutions across industries.
@@ -99,7 +99,7 @@ Enhance your corporate travel strategy with flawlessly executed business events 
 
 Ready to host your next event? Partner with professionals to turn your event vision into a flawless, stress-free reality.
 
-Call us at 9007744772 to book your free consultation today!`,
+Call us at 7044423322 to book your free consultation today!`,
     highlights: [
       "High-level executive meetings & incentive programs",
       "Seamless conferences & powerful brand exhibitions",
@@ -115,8 +115,8 @@ Call us at 9007744772 to book your free consultation today!`,
     readTime: "5 min read",
     media: "/ExtraImages/Blog-3.png",
     mediaType: "image",
-    phone: "+91 9007744772",
-    whatsapp: "919007744772",
+    phone: "+91 7044423322",
+    whatsapp: "917044423322",
     excerpt:
       "Celebrate the union of two souls against the backdrop of a sun-kissed beach, atop a majestic mountain, or within the enchanting embrace of a historic city.",
     content: `Embark on an Unforgettable Journey : Your Dream Destination Wedding Awaits!
@@ -129,7 +129,7 @@ Indulge in the romance of a lifetime as you exchange the varmala surrounded by t
 
 Leave the stress behind and let us handle the logistics while you focus on creating cherished memories with your loved ones. Our experienced team is dedicated to bringing your dreams to life, ensuring that your destination wedding is as breathtaking as your love.
 
-Call us today at +91 9007744772 and let the adventure begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.`,
+Call us today at +91 7044423322 and let the adventure begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.`,
     highlights: [
       "Beachfront, mountain peak, or historic city venue curation",
       "Luxury accommodation, travel & guest logistics setup",
@@ -145,8 +145,8 @@ Call us today at +91 9007744772 and let the adventure begin. Your journey to 'ha
     readTime: "4 min read",
     media: "/ExtraImages/Blog-4.png",
     mediaType: "image",
-    phone: "+91 9836169315",
-    whatsapp: "919836169315",
+    phone: "+91 7044423322",
+    whatsapp: "917044423322",
     excerpt:
       "A dream wedding is a blend of heavenly moments. EKALAVYA does all the heavy lifting and takes care of all your needs so your guests have the best time possible.",
     content: `Experience an extraordinary wedding with us. It is believed that a wedding is one of the most exciting and important times of life. But, a dream wedding is a blend of heavenly moments created on the big day. The expectation, the grandeur, and the sheer joy that comes in celebrating two people spending their lives together forever is a lifetime moment.
@@ -163,7 +163,7 @@ EKALAVYA does all the heavy lifting and takes care of all your needs in respect 
       "And more",
     ],
     calloutText:
-      "Call us today at +91 9836169315 and let your love story begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.",
+      "Call us today at +91 7044423322 and let your love story begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.",
   },
   {
     id: "blog-5",
@@ -173,8 +173,8 @@ EKALAVYA does all the heavy lifting and takes care of all your needs in respect 
     readTime: "3 min read",
     media: "/ExtraImages/Blog-5.mp4",
     mediaType: "video",
-    phone: "+91 9007744772",
-    whatsapp: "919007744772",
+    phone: "+91 7044423322",
+    whatsapp: "917044423322",
     excerpt:
       "Planning your dream wedding should be an exciting journey, not a stressful one. Let us take the responsibility to deliver you the perfect celebration with expertise.",
     content: `We Plan, You Celebrate.
@@ -183,7 +183,7 @@ Planning your dream wedding should be an exciting journey, not a stressful one. 
 
 All the dreams that you have for the big day - to bring it to life is what we do.
 
-Call us today at +91 9007744772 and let your love story begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.`,
+Call us today at +91 7044423322 and let your love story begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.`,
     bulletPoints: [
       "Venue Management",
       "F & B Management",
@@ -192,7 +192,7 @@ Call us today at +91 9007744772 and let your love story begin. Your journey to '
       "Hospitality & Logistics",
     ],
     calloutText:
-      "Call us today at +91 9007744772 and let your love story begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.",
+      "Call us today at +91 7044423322 and let your love story begin. Your journey to 'happily ever after' starts here with Ekalavya Event & Entertainment.",
   },
   {
     id: "blog-6",
@@ -202,8 +202,8 @@ Call us today at +91 9007744772 and let your love story begin. Your journey to '
     readTime: "3 min read",
     media: "/ExtraImages/Blog-6.png",
     mediaType: "image",
-    phone: "+91 9007744772",
-    whatsapp: "919007744772",
+    phone: "+91 7044423322",
+    whatsapp: "917044423322",
     excerpt:
       "Securing the location is one of the biggest milestones in wedding planning—but what comes next? From vendor coordination to day-of management, we handle it all.",
     content: `Got your dream venue locked in? Congratulations! Securing the location is one of the biggest milestones in wedding planning—but what comes next?
@@ -214,7 +214,7 @@ Let us take the stress off your plate.
 
 Whether you need full event management or seamless coordination, our team ensures every single detail runs smoothly so you can focus on making memories.
 
-Call us at 9007744772 to book your free consultation today!`,
+Call us at 7044423322 to book your free consultation today!`,
     highlights: [
       "Vendor coordination & master event timelines",
       "Custom decor design & spatial layout setup",

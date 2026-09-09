@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimatedSection from "../common/AnimatedSection";
@@ -192,6 +192,7 @@ function ClientCard({ client }) {
         src={encodeURI(client.logo)}
         alt={client.name}
         loading="lazy"
+        decoding="async"
         onError={() => setImgError(true)}
         className="max-h-[85%] max-w-[85%] object-contain transition-transform duration-300 group-hover:scale-105"
       />
@@ -200,7 +201,10 @@ function ClientCard({ client }) {
 }
 
 export default function ClientsPanel() {
-  const logoClients = clients.filter((client) => Boolean(client.logo));
+  const logoClients = useMemo(
+    () => clients.filter((client) => Boolean(client.logo)),
+    []
+  );
 
   return (
     <section className="relative overflow-hidden bg-[#fff8fb] py-6 sm:py-8 lg:py-10">

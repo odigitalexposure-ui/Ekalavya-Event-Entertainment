@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { servicesData } from "../data/servicesData";
 
 export default function Footer() {
-  const phone = "+919007744772";
+  const phone = "+917044423322";
 
   const quickLinks = [
     { name: "Home", to: "/" },
@@ -92,7 +92,7 @@ export default function Footer() {
               />
               <FooterContact
                 icon={Phone}
-                text="+91 9007744772, +91 9836169315"
+                text="+91 7044423322"
                 href={`tel:${phone}`}
               />
               <FooterContact

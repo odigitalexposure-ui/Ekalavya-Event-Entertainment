@@ -2,8 +2,8 @@ import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const WhatsAppButton = () => {
-  const phone = "919007744772";
-  const displayPhone = "+919007744772";
+  const phone = "917044423322";
+  const displayPhone = "+917044423322";
   const message = encodeURIComponent(
     "Hello Ekalavya Event & Entertainment, I want to enquire about your event services."
   );
