@@ -155,7 +155,7 @@ ${formData.message}
               <ContactCard
                 icon={Phone}
                 title="Call Us"
-                text="+91 7044423322"
+                text="+91 9007744772, +91 7044423322"
                 link="tel:7044423322"
               />
 
