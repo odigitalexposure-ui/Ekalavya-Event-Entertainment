@@ -9,25 +9,25 @@ export default defineConfig({
     drop: ['console', 'debugger'],
   },
   build: {
-    target: 'esnext',
+    target: 'es2020',
     minify: 'esbuild',
     cssMinify: 'esbuild',
     cssCodeSplit: true,
+    reportCompressedSize: false,
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            if (id.includes('react-router-dom') || id.includes('react-dom') || id.includes('react')) {
-              return 'react-vendor';
-            }
             if (id.includes('framer-motion')) {
               return 'motion-vendor';
             }
             if (id.includes('lucide-react') || id.includes('react-icons')) {
               return 'icons-vendor';
             }
-            return 'vendor';
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+              return 'react-vendor';
+            }
           }
         },
       },

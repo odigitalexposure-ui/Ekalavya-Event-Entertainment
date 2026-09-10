@@ -57,7 +57,7 @@ export default function About() {
             <div className="relative mt-8 lg:mt-0 order-2 lg:order-1">
               <div className="relative overflow-hidden">
                 <img
-                  src="/ExtraImages/About-Page-2.png"
+                  src="/ExtraImages/About-Page-2.webp"
                   alt="Ekalavya Team Planning"
                   loading="lazy"
                   decoding="async"
@@ -76,7 +76,7 @@ export default function About() {
             <div className="relative order-2 lg:order-1 lg:h-full">
               <div className="relative h-full overflow-hidden rounded-none lg:absolute lg:inset-0">
                 <img
-                  src="/ExtraImages/About-Page.png"
+                  src="/ExtraImages/About-Page.webp"
                   alt="Event Planning Journey"
                   loading="lazy"
                   decoding="async"

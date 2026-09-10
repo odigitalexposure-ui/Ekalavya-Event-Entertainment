@@ -98,7 +98,7 @@ export default function AboutPreview() {
             <div className="relative overflow-hidden">
               <div className="relative overflow-hidden">
                 <img
-                  src="/ExtraImages/Home Page Img 1.png"
+                  src="/ExtraImages/Home Page Img 1.webp"
                   alt="Ekalavya Event Management"
                   loading="lazy"
                   decoding="async"

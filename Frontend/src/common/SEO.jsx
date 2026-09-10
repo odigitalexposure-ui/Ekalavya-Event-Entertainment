@@ -5,7 +5,7 @@ const DEFAULT_DOMAIN = "https://www.ekalavyaevententertainment.com";
 const DEFAULT_TITLE = "Ekalavya Event & Entertainment | Best Event Management Company in Kolkata & Howrah";
 const DEFAULT_DESC = "Premier event planning company in Kolkata & Howrah specializing in destination weddings, corporate events, decor & production, venue management, hospitality & celebrity coordination.";
 const DEFAULT_KEYWORDS = "Event management company in Kolkata, Best event planner Howrah, Destination wedding planner Kolkata, Corporate event organizer, Event decor production, Ekalavya Event Entertainment";
-const DEFAULT_IMAGE = `${DEFAULT_DOMAIN}/logo.png`;
+const DEFAULT_IMAGE = `${DEFAULT_DOMAIN}/logo.webp`;
 
 export default function SEO({
   title = DEFAULT_TITLE,

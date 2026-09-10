@@ -117,7 +117,7 @@ export default function WhyChoose() {
             <div className="relative">
               <div className="relative overflow-hidden">
                 <img
-                  src="/ExtraImages/Home Page Img 2.png"
+                  src="/ExtraImages/Home Page Img 2.webp"
                   alt="Premium Event Management"
                   loading="lazy"
                   decoding="async"

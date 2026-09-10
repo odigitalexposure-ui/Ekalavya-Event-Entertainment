@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { servicesData } from "../data/servicesData";
 
 export default function Footer() {
-  const phone = "+917044423322";
+  const phone1 = "+917044423322";
+  const phone2 = "+919007744772";
 
   const quickLinks = [
     { name: "Home", to: "/" },
@@ -23,7 +24,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="inline-flex items-center">
               <img
-                src="/footerLogo.png"
+                src="/footerLogo.webp"
                 alt="Ekalavya Event & Entertainment"
                 loading="lazy"
                 decoding="async"
@@ -93,7 +94,12 @@ export default function Footer() {
               <FooterContact
                 icon={Phone}
                 text="+91 7044423322"
-                href={`tel:${phone}`}
+                href={`tel:${phone1}`}
+              />
+              <FooterContact
+                icon={Phone}
+                text="+91 9007744772"
+                href={`tel:${phone2}`}
               />
               <FooterContact
                 icon={Mail}

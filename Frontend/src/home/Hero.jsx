@@ -28,6 +28,7 @@ export default function Hero() {
         muted={isMuted}
         playsInline
         preload="metadata"
+        poster="/Vedio/Home_HeroSection_poster.webp"
         fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover"
         src="/Vedio/Home_HeroSection.mp4"

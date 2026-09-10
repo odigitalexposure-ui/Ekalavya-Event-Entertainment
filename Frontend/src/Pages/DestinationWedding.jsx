@@ -149,7 +149,7 @@ export default function DestinationWedding() {
             {!titleImgError ? (
               <div className="my-2 flex justify-center lg:justify-start">
                 <img
-                  src="/WeddingTitle.png"
+                  src="/WeddingTitle.webp"
                   alt="Love Knows No Boundaries - Destination Wedding - Discovering Love In Every Corner Of The World"
                   loading="eager"
                   decoding="async"
@@ -180,25 +180,27 @@ export default function DestinationWedding() {
               From pristine venues to gourmet cuisine and seamless planning, we ensure your special day is nothing short of magical.
             </p>
 
-            <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:mt-6 sm:flex-row lg:justify-start">
+            <div className="mt-8 flex justify-center lg:justify-start">
               <Link
                 to="/contact"
-                className="inline-flex w-fit items-center justify-center gap-2 rounded-none bg-[#650a34] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/20 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:px-8 sm:py-4 sm:text-sm sm:tracking-wide"
+                className="group inline-flex items-center justify-center gap-2 rounded-none bg-[#650a34] px-8 py-4 text-xs font-bold uppercase tracking-[0.08em] text-white shadow-xl shadow-[#650a34]/25 transition hover:-translate-y-1 hover:bg-[#ed1968] sm:text-sm sm:tracking-wide"
               >
-                Plan Your Destination Wedding
-                <ArrowRight size={18} />
+                Book Your Dream Destination
+                <ArrowRight size={18} className="transition group-hover:translate-x-1" />
               </Link>
             </div>
           </div>
 
-          <div className="relative mt-8 lg:mt-0">
+          <div className="relative mx-auto w-full max-w-md lg:max-w-none order-2 lg:order-2">
             <motion.div
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.4 }}
-              className="relative overflow-hidden rounded-none shadow-2xl border border-[#650a34]/15"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="relative overflow-hidden rounded-none shadow-2xl shadow-[#650a34]/15 border border-[#650a34]/10"
             >
               <img
-                src="/ExtraImages/Destination-wedding.png"
+                src="/ExtraImages/Destination-wedding.webp"
                 alt="Destination Wedding Celebration"
                 loading="eager"
                 decoding="async"

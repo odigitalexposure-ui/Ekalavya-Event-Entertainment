@@ -66,7 +66,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Ekalavya Event & Entertainment"
                 loading="eager"
                 decoding="async"
